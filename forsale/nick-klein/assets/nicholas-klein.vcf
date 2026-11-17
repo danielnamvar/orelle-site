@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Klein;Nicholas;F.;;Esq.
+FN:Nicholas F. Klein, Esq.
+TITLE:Attorney
+TEL;TYPE=WORK,VOICE:+1-310-820-8500
+EMAIL;TYPE=WORK:Nick@nfkrelaw.com
+ADR;TYPE=WORK:;;12301 Wilshire Boulevard\, Suite 520;Los Angeles;CA;90025;USA
+URL:https://nfkrelaw.com/
+END:VCARD
