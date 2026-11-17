@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#000000">
+<meta name="description" content="Orélle is an independent design studio creating refined websites and thoughtful brand identities.">
+<title>Orélle | Web Design &amp; Branding</title>
+<style>
+  /* Design tokens: colors and type matched to Facility Design Co. */
+  :root{
+    color-scheme: dark;
+    --black:#000000;          /* page field */
+    --white:#FFFFFF;          /* primary type */
+    --accent:#A3DCFF;         /* Facility light blue */
+    --grey:#6F7685;           /* Facility "grayish" */
+    --rule:#1E293B;           /* hairline on black */
+    --sans: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --ease: cubic-bezier(.22,.61,.36,1);
+    --pad: clamp(24px, 5vw, 72px);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--black);color:var(--white);overflow-x:hidden}
+  body{font-family:var(--sans);font-size:16px;line-height:24px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+  a{color:inherit;text-decoration:none}
+  a:focus-visible{outline:1px solid var(--accent);outline-offset:6px}
+
+  .page{min-height:100svh;display:flex;flex-direction:column;max-width:1366px;margin:0 auto;padding:0 var(--pad)}
+
+  header{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:88px;font-size:18px;line-height:28px;font-weight:500}
+  header .loc{color:var(--grey)}
+  header a{white-space:nowrap;transition:color .3s var(--ease)}
+  header a:hover{color:var(--accent)}
+
+  main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:48px 0 48px}
+
+  .wordmark{width:min(560px,82vw);margin:0 0 48px}
+  .wordmark img{display:block;width:100%;height:auto}
+
+  h1{margin:0;font-weight:300;font-size:48px;line-height:1;letter-spacing:normal}
+  h1 span{display:block}
+  h1 .a{color:var(--accent)}
+
+  .intro{margin:32px 0 0;max-width:640px;font-size:18px;line-height:28px;color:var(--grey)}
+
+  .cta{display:inline-flex;align-items:center;justify-content:center;gap:14px;min-height:48px;padding:10px 30px;margin-top:40px;border:1px solid var(--white);border-radius:0;font-size:18px;line-height:28px;font-weight:500;color:var(--white);transition:color .3s var(--ease),border-color .3s var(--ease)}
+  .cta svg{transition:transform .3s var(--ease)}
+  .cta:hover{color:var(--accent);border-color:var(--accent)}
+  .cta:hover svg{transform:translate(3px,-3px)}
+
+  footer{display:flex;justify-content:space-between;align-items:center;gap:16px;border-top:1px solid var(--rule);padding:20px 0 24px;font-size:16px;line-height:24px;color:var(--grey)}
+
+  /* Arrival: rise 14px and fade, staggered ~70ms */
+  .rise{opacity:0;transform:translateY(14px);animation:rise .55s var(--ease) forwards;animation-delay:calc(var(--i,0) * 70ms)}
+  @keyframes rise{to{opacity:1;transform:none}}
+
+  @media (min-width:768px){
+    h1{font-size:72px}
+    .intro{font-size:24px;line-height:36px}
+  }
+  @media (min-width:1280px) and (min-height:900px){
+    h1{font-size:96px}
+    .wordmark{width:620px}
+  }
+  @media (max-width:600px){
+    header{min-height:72px;font-size:13px;line-height:20px;gap:12px}
+    main{padding:20px 0 32px}
+    .wordmark{margin-bottom:28px}
+    h1{font-size:36px;line-height:1.08}
+    .intro{font-size:16px;line-height:24px;max-width:300px;margin-top:20px}
+    .intro br{display:none}
+    .cta{font-size:16px;margin-top:28px}
+    footer{font-size:12px;line-height:18px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .rise{opacity:1;transform:none;animation:none}
+    *{transition:none!important}
+  }
+</style>
+</head>
+<body>
+<script>
+  /* ===== SITE DATA: edit here, no HTML changes needed ===== */
+  const SITE = {
+    email: "dnamvar1@gmail.com",
+    emailSubject: "Let’s create something"
+  };
+</script>
+<div class="page">
+  <main>
+    <div class="wordmark rise" style="--i:1"><img src="data:image/png;base64,/*LOGO*/" alt="orélle" width="1193" height="399" fetchpriority="high"></div>
+    <h1 class="rise" style="--i:2"><span>Distinctive websites.</span><span class="a">Lasting impressions.</span></h1>
+    <p class="intro rise" style="--i:3">Refined websites and thoughtful brand identities. <br>Designed with intention. Built around you.</p>
+    <a class="cta rise" style="--i:4" id="cta" href="mailto:dnamvar1@gmail.com">Let’s create something
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 19 19 5M5 5h14v14"/></svg></a>
+  </main>
+
+  <footer class="rise" style="--i:5">
+    <span>© <span id="year">2026</span> Orélle Studio</span>
+    <span>Web design &amp; brand identity</span>
+  </footer>
+</div>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('cta').href = 'mailto:' + SITE.email + '?subject=' + encodeURIComponent(SITE.emailSubject);
+</script>
+</body>
+</html>
