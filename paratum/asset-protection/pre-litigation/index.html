@@ -338,24 +338,10 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .sol-links a{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--rule);text-decoration:none;font-family:var(--serif);font-size:1.25rem;color:var(--ink)}
 .sol-links a::after{content:"";width:22px;height:1px;background:var(--brass-deep);transition:width .25s var(--ease)}
 .sol-links a:hover::after{width:34px}
-/* team */
-.team{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:24px}
-@media (min-width:960px){.team{grid-template-columns:repeat(3,1fr);gap:24px}}
-.person{position:relative;z-index:0;display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:8px;min-height:180px;padding:26px 24px;border:1px solid var(--rule);background:#fff;box-shadow:0 1px 2px rgba(14,24,34,.05);transition:border-color .2s,box-shadow .2s}
-.person:hover{border-color:var(--rule-2);box-shadow:0 2px 10px rgba(14,24,34,.08)}
-.person b{font-family:var(--serif);font-weight:500;font-size:1.6rem;line-height:1.15;color:var(--ink)}
-.person b span,#bio-name span{color:var(--grey);font-size:.75em}
-.person em{font-style:normal;color:var(--text);font-size:1rem;flex:1}
-@media (max-width:959.98px){.person{min-height:150px;padding:18px 16px}.person b{font-size:1.3rem}.person em{font-size:.92rem}}
+
 .bio-modal{position:fixed;inset:0;z-index:200;background:rgba(14,24,34,.6);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;transition:opacity .25s}
 .bio-modal.open{opacity:1}
 .bio-modal[hidden]{display:none}
-.bio-card{position:relative;background:#fff;max-width:780px;width:100%;max-height:88vh;overflow:auto;padding:48px 44px 44px}
-.bio-card h2{font-size:2.2rem;margin-bottom:6px;padding-right:60px}
-.bio-role{font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:22px}
-.bio-close{position:absolute;top:18px;right:20px;font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);padding:8px}
-@media (max-width:959.98px){.bio-card{max-height:94vh;padding:40px 24px 28px}.bio-card h2{font-size:1.7rem}}
-
 /* dropdown */
 .dd{position:relative;display:flex;align-items:center;height:var(--navh)}
 .dd-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);display:grid;grid-template-columns:repeat(3,minmax(190px,auto));gap:34px;padding:30px 34px 32px;background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 34px rgba(14,24,34,.16);border-top:2px solid var(--brass);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;z-index:130}
@@ -376,19 +362,51 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .drawer .m-sub a.m-sub2{font-family:var(--sans);font-size:1rem;padding:4px 0 4px 16px;color:var(--grey)}
 /* firm intro */
 .firm-intro{font-size:1.2rem;line-height:1.7;margin:18px 0 8px;max-width:44rem}
-/* portraits */
-.person{padding:0;min-height:0;flex-direction:row;gap:0;align-items:stretch}
-.person .pic{flex:0 0 38%}
-.pinfo{display:flex;flex-direction:column;gap:8px;padding:22px 20px;flex:1;min-width:0}
-.pic{position:relative;display:block;aspect-ratio:4/5;background:var(--ivory);overflow:hidden}
-.pic img{width:100%;height:100%;object-fit:cover}
-.ph{position:absolute;inset:0;display:block}
-.ph svg{position:absolute;left:12%;right:12%;bottom:0;width:76%;fill:#E6DFD1}
-.ph i{position:absolute;left:12px;top:10px;font-style:normal;font-family:var(--label);font-size:.62rem;font-weight:600;letter-spacing:.14em;color:var(--brass-deep)}
-.bio-grid{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start}
-@media (max-width:959.98px){.person{flex-direction:column}.person .pic{flex:none;width:100%}.pinfo{padding:14px 14px 16px}.bio-grid{grid-template-columns:110px 1fr;gap:18px}}
 @media (max-width:959.98px){.dd-panel{display:none}}
 @media (max-width:959.98px){.hdr-right{margin-left:auto}}
+
+/* team: same layout as the Elbridge site */
+.sec-h{font-family:var(--label);font-weight:600;font-size:1.0625rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);margin-top:clamp(46px,5vw,66px);padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.team-grid{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:36px 30px;margin:30px 0 0;max-width:1100px}
+.team-grid>.member{flex:0 0 250px}
+.member{cursor:pointer;text-align:center;outline-offset:4px}
+.member-photo{position:relative;aspect-ratio:4/5;background:#fff;border:1px solid var(--rule);box-shadow:0 1px 2px rgba(14,24,34,.06),0 6px 16px rgba(14,24,34,.06);display:flex;align-items:center;justify-content:center;overflow:hidden;transition:border-color .2s}
+.member-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.member-photo.is-mono,.m-face.is-mono{background:var(--ink);border-color:var(--ink)}
+.mono{font-family:var(--serif);font-weight:500;font-size:2.75rem;letter-spacing:.04em;color:var(--brass)}
+.member:hover .member-photo{border-color:var(--brass)}
+.member h3{font-size:1.5rem;font-weight:500;padding-top:20px}
+.member .role{font-family:var(--label);font-size:.9rem;line-height:1.3;color:var(--text);padding-top:10px}
+.member .more{padding-top:16px;font-family:var(--label);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-deep)}
+.member:hover .more{color:var(--ink)}
+.bio-card{position:relative;background:#fff;max-width:900px;width:calc(100% - 32px);max-height:88vh;overflow-y:auto;padding:60px;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.bio-close{position:absolute;top:14px;right:20px;font-size:34px;line-height:1;color:var(--grey-2);padding:6px 10px}
+.bio-close:hover{color:var(--brass-deep)}
+.m-face{width:132px;aspect-ratio:4/5;margin-bottom:22px;background:var(--ivory);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+.m-face img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.m-face .mono{font-size:2.2rem}
+.m-kicker{font-family:var(--label);font-weight:600;font-size:.875rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-deep);padding-bottom:12px}
+.bio-card h2{font-size:2.2rem;padding-bottom:6px}
+.bio-body{margin-top:24px}
+.bio-body p{margin-bottom:18px;line-height:1.6}
+@media (max-width:959.98px){
+ .team-grid{gap:0;margin-top:22px}
+ .team-grid>.member{flex:0 0 100%}
+ .member{display:grid;grid-template-columns:96px 1fr;align-items:center;column-gap:18px;text-align:left;width:100%;padding:18px 0;border-top:1px solid var(--rule)}
+ .member:first-child{border-top:0}
+ .member-photo{grid-row:1/span 4;width:96px;aspect-ratio:3/4}
+ .mono{font-size:1.75rem}
+ .member h3{font-size:1.15rem;padding-top:0}
+ .member .role{font-size:.85rem;padding-top:6px}
+ .member .more{padding-top:10px;font-size:.6875rem;letter-spacing:.1em}
+ .bio-card{max-height:94vh;padding:22px 20px 26px;width:calc(100% - 24px)}
+ .bio-close{top:6px;right:10px;font-size:30px}
+ .m-face{width:104px;margin-bottom:16px}
+ .m-kicker{font-size:.6875rem;letter-spacing:.1em}
+ .bio-card h2{font-size:1.5rem}
+ .bio-body p{font-size:.95rem;line-height:1.55;margin-bottom:12px}
+}
+.member .more::after{display:none}
 
 </style>
 </head>
@@ -935,8 +953,8 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p class="firm-intro">The firm is built on a simple idea: the best outcomes belong to those who are ready before the moment arrives. Its advisors in tax, law, banking, asset management and insurance work as one team, so that every client is ready for the sale, ready for the claim and ready for the next generation.</p>
     </div>
     <div class="wrap">
-      <h2 class="h-rule">Team</h2>
-      <div class="team" id="people"></div>
+      <h2 class="sec-h">Team</h2>
+      <div class="team-grid" id="people"></div>
     </div>
   </div>
 </section>
@@ -1068,7 +1086,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 </main>
 
 <div class="bio-modal" id="bio-modal" role="dialog" aria-modal="true" aria-labelledby="bio-name" hidden>
-  <div class="bio-card"><button class="bio-close" type="button">Close</button><div class="bio-grid"><div class="pic" id="bio-pic"></div><div><h2 id="bio-name"></h2><p class="bio-role" id="bio-role"></p><p id="bio-text"></p></div></div></div>
+  <div class="bio-card"><button class="bio-close" type="button" aria-label="Close">&times;</button><div class="m-face" id="bio-pic"></div><p class="m-kicker" id="bio-role"></p><h2 id="bio-name"></h2><div class="bio-body" id="bio-text"></div></div>
 </div>
 
 <footer class="site">
@@ -1232,12 +1250,13 @@ const INSIGHTS = [
   const fig = $('#figures'); if (fig) fig.innerHTML = FIGURES.map(f => `<div class="fig"><b>${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join('');
   const ppl = $('#people');
   const initials = n => n.split(' ').map(w => w[0]).slice(0, 2).join('');
-  const portrait = p => p.photo ? `<img src="${p.photo}" alt="${esc(p.name)}" loading="lazy">` : `<span class="ph" aria-hidden="true"><svg viewBox="0 0 80 100"><circle cx="40" cy="38" r="17"/><path d="M8 100c3-22 16-34 32-34s29 12 32 34z"/></svg><i>${esc(initials(p.name))}</i></span>`;
-  if (ppl) ppl.innerHTML = PEOPLE.map((p, i) => `<button class="person" type="button" data-i="${i}"><span class="pic">${portrait(p)}</span><span class="pinfo"><b>${esc(p.name)}${p.cred ? `<span>, ${esc(p.cred)}</span>` : ''}</b><em>${esc(p.role)}</em><span class="more">Biography</span></span></button>`).join('');
+  const fullName = p => esc(p.name) + (p.cred ? ', ' + esc(p.cred) : '');
+  const portrait = p => p.photo ? `<img src="${p.photo}" alt="${esc(p.name)}" loading="lazy" decoding="async">` : `<span class="mono" aria-hidden="true">${esc(initials(p.name))}</span>`;
+  if (ppl) ppl.innerHTML = PEOPLE.map((p, i) => `<div class="member" role="button" tabindex="0" data-i="${i}"><div class="member-photo${p.photo ? '' : ' is-mono'}">${portrait(p)}</div><h3>${fullName(p)}</h3><p class="role">${esc(p.role)}</p><div class="more">Read Bio \u2192</div></div>`).join('');
   const modal = $('#bio-modal'); let lastFocus = null;
-  function openBio(i) { const p = PEOPLE[i]; lastFocus = document.activeElement; $('#bio-pic').innerHTML = portrait(p); $('#bio-name').innerHTML = esc(p.name) + (p.cred ? `<span>, ${esc(p.cred)}</span>` : ''); $('#bio-role').textContent = p.role; $('#bio-text').textContent = p.bio || 'Biography to follow.'; modal.hidden = false; requestAnimationFrame(() => modal.classList.add('open')); body.style.overflow = 'hidden'; $('.bio-close', modal).focus(); }
+  function openBio(i) { const p = PEOPLE[i]; lastFocus = document.activeElement; $('#bio-pic').innerHTML = portrait(p); $('#bio-pic').className = 'm-face' + (p.photo ? '' : ' is-mono'); $('#bio-name').innerHTML = fullName(p); $('#bio-role').textContent = p.role; $('#bio-text').innerHTML = (p.bio || 'Biography to follow.').split(/\n\n+/).map(t => `<p>${esc(t)}</p>`).join(''); modal.hidden = false; requestAnimationFrame(() => modal.classList.add('open')); body.style.overflow = 'hidden'; $('.bio-close', modal).focus(); }
   function closeBio() { if (modal.hidden) return; modal.classList.remove('open'); body.style.overflow = ''; setTimeout(() => { modal.hidden = true; }, 250); if (lastFocus) lastFocus.focus(); }
-  if (ppl) ppl.addEventListener('click', e => { const b = e.target.closest('.person'); if (b) openBio(+b.dataset.i); });
+  if (ppl) { ppl.addEventListener('click', e => { const b = e.target.closest('.member'); if (b) openBio(+b.dataset.i); }); ppl.addEventListener('keydown', e => { const b = e.target.closest('.member'); if (b && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); openBio(+b.dataset.i); } }); }
   if (modal) { modal.addEventListener('click', e => { if (e.target === modal || e.target.closest('.bio-close')) closeBio(); }); addEventListener('keydown', e => { if (e.key === 'Escape') closeBio(); }); }
   const cs = $('#cases');
   if (cs) {
