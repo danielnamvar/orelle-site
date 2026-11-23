@@ -416,6 +416,18 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .serve-note{margin-top:24px;max-width:46rem;color:var(--grey)}
 .nav .dd-panel a.dd-gap{margin-top:18px}
 
+/* hamburger that turns into an X (Paratum, at the owner's request) */
+.menu-btn{width:40px;height:40px;padding:0;display:none;align-items:center;justify-content:center}
+@media (max-width:959.98px){.menu-btn{display:inline-flex}}
+.bars{position:relative;display:block;width:24px;height:16px}
+.bars i{position:absolute;left:0;width:100%;height:1.5px;background:currentColor;transition:transform .3s var(--ease),opacity .2s,top .3s var(--ease)}
+.bars i:nth-child(1){top:0}.bars i:nth-child(2){top:7.25px}.bars i:nth-child(3){top:14.5px}
+.menu-btn.is-open .bars i:nth-child(1){top:7.25px;transform:rotate(45deg)}
+.menu-btn.is-open .bars i:nth-child(2){opacity:0}
+.menu-btn.is-open .bars i:nth-child(3){top:7.25px;transform:rotate(-45deg)}
+.drawer .m-sub a{transition:none}
+@media (max-width:959.98px){.menu-btn{margin-right:-8px}}
+
 </style>
 </head>
 <body>
@@ -445,7 +457,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
     </nav>
     <div class="hdr-right">
       <button class="icon-btn search-btn" type="button" aria-label="Search"><svg viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="6"/><path d="M13 13l5 5"/></svg></button>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer"><span class="lbl">Menu</span></button>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span class="bars" aria-hidden="true"><i></i><i></i><i></i></span></button>
     </div>
   </div>
   <div class="drawer" id="drawer">
@@ -1355,8 +1367,9 @@ const INSIGHTS = [
   function openMenu() {
     savedY = scrollY; body.classList.add('menu-open'); drawer.classList.add('open');
     body.style.position = 'fixed'; body.style.top = -savedY + 'px'; body.style.width = '100%';
-    menuBtn.querySelector('.lbl').textContent = 'Close'; menuBtn.setAttribute('aria-expanded', 'true');
-    $$('.drawer nav a').forEach((a, i) => a.style.transitionDelay = (120 + i * 50) + 'ms');
+    menuBtn.classList.add('is-open'); menuBtn.setAttribute('aria-label', 'Close menu'); menuBtn.setAttribute('aria-expanded', 'true');
+    // stagger only the top-level links; the collapsed Solutions sub-list must not add to the count
+    $$('.drawer nav > a, .drawer nav > .m-group > a').forEach((a, i) => a.style.transitionDelay = (100 + i * 45) + 'ms');
     onScroll();
   }
   function closeMenu() {
@@ -1364,7 +1377,7 @@ const INSIGHTS = [
     drawer.classList.remove('open'); body.classList.remove('menu-open');
     body.style.position = ''; body.style.top = ''; body.style.width = '';
     window.scrollTo({ top: savedY, behavior: 'instant' });
-    menuBtn.querySelector('.lbl').textContent = 'Menu'; menuBtn.setAttribute('aria-expanded', 'false');
+    menuBtn.classList.remove('is-open'); menuBtn.setAttribute('aria-label', 'Open menu'); menuBtn.setAttribute('aria-expanded', 'false');
     $$('.drawer nav a').forEach(a => a.style.transitionDelay = '0ms');
     onScroll();
   }
