@@ -77,7 +77,8 @@ header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{d
 .icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
 .menu-btn{display:none;position:relative;z-index:125;font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:10px 0}
 .hdr-right{display:flex;align-items:center;gap:10px;position:relative;z-index:125}
-@media (min-width:960px) and (max-width:1099.98px){.nav{gap:24px}.nav a{font-size:1.12rem}}
+@media (min-width:960px) and (max-width:1099.98px){.nav{gap:15px}.nav a{font-size:1.02rem}.nav a.btn{padding:0 14px}header.site .bar{gap:16px}header.site .brand img{height:26px}}
+@media (min-width:1100px) and (max-width:1199.98px){.nav{gap:24px}}
 @media (max-width:959.98px){.nav{display:none}.menu-btn{display:block}:root{--navh:64px}header.site .brand img{height:24px}}
 
 /* drawer */
@@ -351,7 +352,7 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .nav .dd-panel a{font-family:var(--sans);font-size:.98rem;color:var(--text);padding:5px 0;white-space:nowrap}
 .nav .dd-panel a.dd-h{font-family:var(--serif);font-size:1.2rem;color:var(--ink);padding-bottom:6px}
 .nav .dd-panel a:hover{color:var(--brass-deep)}
-.dd-col a.dd-h~a.dd-h{margin-top:0}
+
 /* mobile sub menu */
 .drawer .m-group{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--rule)}
 .drawer .m-group a{border-bottom:0;flex:1}
@@ -408,6 +409,13 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 }
 .member .more::after{display:none}
 
+.serve{display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule)}
+@media (min-width:960px){.serve{grid-template-columns:repeat(3,1fr);column-gap:48px}}
+.serve>div{padding:24px 0;border-bottom:1px solid var(--rule)}
+.serve h3{font-size:1.5rem;margin-bottom:6px}
+.serve-note{margin-top:24px;max-width:46rem;color:var(--grey)}
+.nav .dd-panel a.dd-gap{margin-top:18px}
+
 </style>
 </head>
 <body>
@@ -427,9 +435,10 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
         <div class="dd-panel" role="menu">
           <div class="dd-col"><a class="dd-h" href="/tax-strategy">Tax strategy</a><a href="/tax-strategy/oil-and-gas">Oil and gas</a><a href="/tax-strategy/ppli">PPLI</a><a href="/tax-strategy/income-shifting">Income shifting</a><a href="/tax-strategy/real-estate">Real estate</a></div>
           <div class="dd-col"><a class="dd-h" href="/asset-protection">Asset protection</a><a href="/asset-protection/structures">Protection structures</a><a href="/asset-protection/trusts-and-fiduciary">Trusts and fiduciary</a><a href="/asset-protection/succession">Succession</a><a href="/asset-protection/pre-litigation">Pre-litigation planning</a></div>
-          <div class="dd-col"><a class="dd-h" href="/ma-advisory">M&amp;A advisory</a><a class="dd-h" href="/family-office">Family office</a><a class="dd-h" href="/clients">Who we serve</a><a class="dd-h" href="/experience">Case studies</a></div>
+          <div class="dd-col"><a class="dd-h" href="/ma-advisory">M&amp;A advisory</a><a href="/ma-advisory">Sell-side and buy-side</a><a href="/ma-advisory">Tax attribute monetization</a><a class="dd-h dd-gap" href="/family-office">Family office</a><a href="/family-office">Wealth management oversight</a><a href="/family-office">Merchant banking</a></div>
         </div>
       </div>
+      <a class="nl" href="/experience">Case studies</a>
       <a class="nl" href="/firm">The Firm</a>
       <a class="nl" href="/insights">Insights</a>
       <a class="btn" href="/contact">Contact</a>
@@ -448,8 +457,9 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <div class="m-sub">
         <a href="/tax-strategy">Tax strategy</a><a class="m-sub2" href="/tax-strategy/oil-and-gas">Oil and gas</a><a class="m-sub2" href="/tax-strategy/ppli">PPLI</a><a class="m-sub2" href="/tax-strategy/income-shifting">Income shifting</a><a class="m-sub2" href="/tax-strategy/real-estate">Real estate</a>
         <a href="/asset-protection">Asset protection</a><a class="m-sub2" href="/asset-protection/structures">Protection structures</a><a class="m-sub2" href="/asset-protection/trusts-and-fiduciary">Trusts and fiduciary</a><a class="m-sub2" href="/asset-protection/succession">Succession</a><a class="m-sub2" href="/asset-protection/pre-litigation">Pre-litigation planning</a>
-        <a href="/ma-advisory">M&amp;A advisory</a><a href="/family-office">Family office</a><a href="/clients">Who we serve</a><a href="/experience">Case studies</a>
+        <a href="/ma-advisory">M&amp;A advisory</a><a href="/family-office">Family office</a>
       </div>
+      <a href="/experience">Case studies</a>
       <a href="/firm">The Firm</a>
       <a href="/insights">Insights</a>
     </nav>
@@ -488,20 +498,17 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 
 <!-- ============ APPROACH ============ -->
 <section class="page" id="p-approach" data-route="/approach" data-img="approach" data-next="/solutions" data-next-label="Solutions"
-  data-title="How We Work | A Single Point of Contact for Complex Wealth | Paratum"
-  data-desc="Paratum designs the strategy, selects the right tax attorneys, trustees, advisers and banks for each situation, and manages those relationships over time.">
+  data-title="How We Work | Who We Serve | Paratum"
+  data-desc="How Paratum works and who it serves: one point of contact for institutions, families and business owners, coordinating the attorneys, trustees, advisers and banks behind every strategy.">
   <header class="banner"><div class="banner-media" data-img="approach"></div><div class="wrap"><h1>How we work</h1></div></header>
   <div class="band band-light">
-    <div class="wrap narrow prose">
-      <p class="lede">Paratum is a concierge, not a single-discipline firm. It designs the strategy, brings in the specialists the situation calls for, and stays responsible for the whole.</p>
-      <h2>The problem</h2>
-      <p>Significant wealth attracts advisers. Over time a family accumulates an estate attorney, a tax attorney, a CPA, a trustee, one or two investment advisers, a private bank and an insurance broker. Each is accountable for a part. None is accountable for how the parts fit together, and the gaps between them are where tax is overpaid, protection fails and succession plans stall.</p>
-      <h2>Paratum's role</h2>
-      <p>Paratum sits at the center. It looks at the client's assets, income, entities and exposure as one picture, designs a strategy across them, and then selects the attorneys, trustees, advisers, lenders and carriers best suited to carry it out. Because Paratum sells no products and is tied to no provider, the choice of specialist follows the situation, not a commission.</p>
-      <p>Once a structure is in place, Paratum keeps managing it: the trustee relationships, the annual reviews, the changes in law and in the family's circumstances. Clients stay with Paratum for decades for that reason.</p>
-    </div>
-    <div class="wrap">
-      <div class="diagram diagram-wide" aria-hidden="true"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paratum at the center, coordinating the client's specialists" font-family="Source Sans 3, system-ui, sans-serif">
+    <div class="wrap split">
+      <div>
+        <p class="lede">Paratum is a single point of contact for complex wealth.</p>
+        <p>Most families and businesses of means work with an attorney, a CPA, a trustee, an investment adviser and a banker, each responsible for one part. Paratum looks at the whole, designs the strategy across it, brings in the right specialists for each situation and stays responsible for how the parts fit together, for as long as the client needs it.</p>
+        <p>Paratum sells no products and is tied to no provider, so the choice of specialist always follows the situation.</p>
+      </div>
+      <div class="diagram" aria-hidden="true"><svg viewBox="0 0 740 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Paratum at the center, coordinating the client's specialists" font-family="Source Sans 3, system-ui, sans-serif">
   <g fill="none" stroke="#B59A6A" stroke-width="1">
     <path d="M150 210H228"/><path d="M432 210H470"/><path d="M470 50V370"/>
     <path d="M470 50H500"/><path d="M470 114H500"/><path d="M470 178H500"/><path d="M470 242H500"/><path d="M470 306H500"/><path d="M470 370H500"/>
@@ -527,18 +534,46 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 <ol class="hub-list"><li><b>Client or family</b></li><li class="hub-core"><b>Paratum</b><span>Designs the strategy, selects the specialists, manages the relationships</span></li><li><span>Tax attorneys and CPAs · Trustees and trust companies · Estate and offshore counsel · Advisers and fund managers · Private banks and lenders · Insurance carriers</span></li></ol>
 </div>
     </div>
+  </div>
+
+  <div class="band band-dark">
+    <div class="wrap">
+      <h2 class="h-rule light">Where others see walls, we see doors.</h2>
+      <p class="lead light">The situations Paratum is built for are the ones where the standard answer is a dead end.</p>
+      <ul class="situations">
+        <li><a href="/ma-advisory"><span>A business sale or large capital gain ahead</span></a></li>
+        <li><a href="/tax-strategy"><span>A high-income year with few deductions</span></a></li>
+        <li><a href="/ma-advisory"><span>A company carrying losses or credits it cannot use</span></a></li>
+        <li><a href="/asset-protection/pre-litigation"><span>Wealth exposed to litigation</span></a></li>
+        <li><a href="/asset-protection/succession"><span>A business or estate passing to the next generation</span></a></li>
+        <li><a href="/family-office"><span>A family office that needs a capital partner</span></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="band band-light" data-sec-id="who-we-serve">
+    <div class="wrap">
+      <h2 class="h-rule">Who we serve</h2>
+      <div class="serve">
+        <div><h3>Institutions</h3><p>Companies, funds and institutions with tax attributes to use, transactions to structure or capital to raise.</p></div>
+        <div><h3>Business owners</h3><p>Before or after a sale, a recapitalization or a public offering.</p></div>
+        <div><h3>High-income professionals</h3><p>Physicians, attorneys and executives with large incomes and real exposure to litigation.</p></div>
+        <div><h3>Real estate owners</h3><p>Investors and developers with gains to defer and assets that need separating.</p></div>
+        <div><h3>Families</h3><p>Families planning how wealth, and a business, pass to the next generation.</p></div>
+        <div><h3>Family offices</h3><p>Single-family offices that need a structuring and capital partner.</p></div>
+      </div>
+      <p class="serve-note">Paratum also works alongside the attorneys, CPAs and wealth managers who refer complex matters, and keeps them informed throughout.</p>
+    </div>
     <div class="wrap narrow prose">
       <h2>How an engagement runs</h2>
       <ol class="steps">
-        <li><h3>Private conversation</h3><p>An unhurried discussion of the client's position, goals and concerns. No obligation, and no documents required to begin.</p></li>
-        <li><h3>Review</h3><p>Paratum maps assets, income, entities, existing structures and exposure, and identifies where tax, protection or succession falls short.</p></li>
-        <li><h3>Strategy design</h3><p>Paratum designs the strategy and brings in the specialists who will review and implement it, including the client's own attorney and CPA where they are already in place.</p></li>
-        <li><h3>Implementation and stewardship</h3><p>The structures are put in place by licensed professionals. Paratum coordinates the work, then manages the relationships and reviews the plan as law and circumstances change.</p></li>
+        <li><h3>Private conversation</h3><p>An unhurried discussion of the client's position and goals. No obligation, and nothing to prepare.</p></li>
+        <li><h3>Review</h3><p>Paratum maps assets, income, entities and exposure, and finds where tax, protection or succession falls short.</p></li>
+        <li><h3>Strategy</h3><p>Paratum designs the strategy and brings in the specialists who will review and implement it, including the client's own attorney and CPA.</p></li>
+        <li><h3>Stewardship</h3><p>Licensed professionals put the structures in place. Paratum coordinates the work and keeps the plan current as law and circumstances change.</p></li>
       </ol>
-      <h2>Who Paratum coordinates</h2>
-      <p>Tax attorneys and CPAs; estate and offshore counsel; trustees and trust companies; registered investment advisers and fund managers; private banks and lenders; insurance carriers and licensed agents; valuation firms and appraisers. Paratum keeps a client's existing advisers in the loop rather than replacing them.</p>
       <h2>Discretion</h2>
-      <p>Discretion is not a courtesy Paratum extends, it is the product. Client names are never published, information is shared with specialists only as each engagement requires, and much of Paratum's work is introduced by referral from the advisers it has worked beside for years.</p>
+      <p>Discretion is not a courtesy Paratum extends, it is the product. Client names are never published, and information is shared with specialists only as each engagement requires.</p>
     </div>
   </div>
 </section>
@@ -874,7 +909,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 </section>
 
 <!-- ============ FAMILY OFFICE ============ -->
-<section class="page" id="p-familyoffice" data-route="/family-office" data-img="familyoffice" data-next="/clients" data-next-label="Who we serve"
+<section class="page" id="p-familyoffice" data-route="/family-office" data-img="familyoffice" data-next="/experience" data-next-label="Case studies"
   data-title="Wealth Management Oversight &amp; Merchant Banking for Family Offices | Paratum"
   data-desc="Family office services from Paratum: oversight of the advisers and managers who invest a family's capital, merchant banking for family office transactions, and family office setup.">
   <header class="banner"><div class="banner-media" data-img="familyoffice"></div><div class="wrap"><h1>Family office</h1></div></header>
@@ -888,43 +923,6 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <h2>Family office setup</h2>
       <p>For families forming a single-family office, Paratum coordinates the entity structure, governance, staffing and the outside providers it relies on.</p>
       <p class="fine">Paratum is not a registered investment adviser or broker-dealer. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ CLIENTS ============ -->
-<section class="page" id="p-clients" data-route="/clients" data-img="clients" data-next="/experience" data-next-label="Case studies"
-  data-title="Who We Serve: Business Owners, Families &amp; Family Offices | Paratum"
-  data-desc="Paratum serves business owners, high-income professionals, real estate owners, multi-generational families, family offices and the advisers who refer them.">
-  <header class="banner"><div class="banner-media" data-img="clients"></div><div class="wrap"><h1>Who we serve</h1></div></header>
-  <div class="band band-dark">
-    <div class="wrap">
-      <h2 class="h-rule light">Where others see walls, we see doors.</h2>
-      <p class="lead light">The situations Paratum is built for are the ones where the standard answer is a dead end.</p>
-      <ul class="situations">
-        <li><a href="/ma-advisory"><span>A business sale or large capital gain ahead</span></a></li>
-        <li><a href="/tax-strategy"><span>A high-income year with few deductions</span></a></li>
-        <li><a href="/ma-advisory"><span>A company carrying losses or credits it cannot use</span></a></li>
-        <li><a href="/asset-protection/pre-litigation"><span>Wealth exposed to litigation</span></a></li>
-        <li><a href="/asset-protection/succession"><span>A business or estate passing to the next generation</span></a></li>
-        <li><a href="/family-office"><span>A family office that needs a capital partner</span></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="band band-light">
-    <div class="wrap narrow prose">
-      <h2>Business owners</h2>
-      <p>Before or after the sale of a company, a recapitalization or a public offering. Planning a sale <a href="/ma-advisory">two years ahead</a>, deferring the gain, and protecting the proceeds.</p>
-      <h2>High-income professionals and executives</h2>
-      <p>Physicians, attorneys, executives and others with large ordinary income and few deductions, often with litigation exposure as well. <a href="/tax-strategy">Tax strategy</a> and <a href="/asset-protection/pre-litigation">pre-litigation planning</a>.</p>
-      <h2>Real estate owners</h2>
-      <p>Investors and developers with appreciated property, depreciation to capture and gains to defer, and assets that need separating. <a href="/tax-strategy/real-estate">Real estate</a> and <a href="/asset-protection/structures">protection structures</a>.</p>
-      <h2>Multi-generational families</h2>
-      <p>Families planning how wealth, and a business, pass to the next generation. <a href="/asset-protection/succession">Succession</a> and <a href="/asset-protection/trusts-and-fiduciary">trusts and fiduciary</a>.</p>
-      <h2>Family offices</h2>
-      <p>Single-family offices that need a structuring and capital partner, oversight of their managers, or help with direct investments. <a href="/family-office">Family office</a>.</p>
-      <h2>Advisers</h2>
-      <p>Attorneys, CPAs and wealth managers who refer complex matters. Paratum works alongside a client's existing advisers and keeps them informed.</p>
     </div>
   </div>
 </section>
@@ -1096,7 +1094,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <div class="contact"><a href="tel:+13107809936">310.780.9936</a> &nbsp;·&nbsp; 369 South Doheny Drive, Suite 411, Beverly Hills</div>
     </div>
     <nav class="links" aria-label="Footer">
-      <a href="/approach">How we work</a><a href="/solutions">Solutions</a><a href="/tax-strategy">Tax strategy</a><a href="/ma-advisory">M&amp;A advisory</a><a href="/asset-protection">Asset protection</a><a href="/family-office">Family office</a><a href="/clients">Who we serve</a><a href="/experience">Case studies</a><a href="/firm">The Firm</a><a href="/insights">Insights</a><a href="/contact">Contact</a><a href="/legal">Legal</a>
+      <a href="/approach">How we work</a><a href="/solutions">Solutions</a><a href="/tax-strategy">Tax strategy</a><a href="/ma-advisory">M&amp;A advisory</a><a href="/asset-protection">Asset protection</a><a href="/family-office">Family office</a><a href="/experience">Case studies</a><a href="/firm">The Firm</a><a href="/insights">Insights</a><a href="/contact">Contact</a><a href="/legal">Legal</a>
     </nav>
     <p class="disc">Paratum, Inc. is not a law firm, accounting firm, registered investment adviser, broker-dealer or insurance agency, and does not provide legal, tax, accounting, investment or insurance advice. Those services are provided by independent licensed professionals engaged by the client. Nothing on this site is an offer to buy or sell any security or insurance product, or a tax opinion. <a href="/legal" data-sec="disclosures">Disclosures</a></p>
     <p class="copy">© <span class="yr">2026</span> Paratum, Inc. · Site by <a href="https://orellestudio.com" target="_blank" rel="noopener">Orélle</a></p>
@@ -1293,7 +1291,7 @@ const INSIGHTS = [
   }
 
   /* ---- router ---- */
-  const ALIASES = { '/disclosures': ['/legal', 'disclosures'], '/privacy': ['/legal', 'privacy'], '/terms': ['/legal', 'terms'], '/faq': ['/insights', 'faq'] };
+  const ALIASES = { '/disclosures': ['/legal', 'disclosures'], '/privacy': ['/legal', 'privacy'], '/terms': ['/legal', 'terms'], '/faq': ['/insights', 'faq'], '/clients': ['/approach', 'who-we-serve'] };
   let pendingSec = null;
   function toSec(id) { const el = id && current && $(`[data-sec-id="${id}"]`, current); if (el) { el.classList.add('in'); scrollTo({ top: el.getBoundingClientRect().top + scrollY - header.offsetHeight - 24, behavior: 'instant' }); } }
   const norm = p => { p = p.replace(/\/index\.html$/, '').replace(/\/+$/, ''); return p || '/'; };
