@@ -82,8 +82,8 @@ header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{d
 @media (max-width:959.98px){.nav{display:none}.menu-btn{display:block}:root{--navh:64px}header.site .brand img{height:24px}}
 
 /* drawer */
-.drawer{position:fixed;top:var(--navh);right:0;bottom:0;left:0;z-index:115;border-top:1px solid var(--rule);background:var(--paper);color:var(--ink);transform:translateX(100%);transition:transform .38s cubic-bezier(.16,.84,.3,1);overflow-y:auto;overscroll-behavior:contain;padding:28px var(--pad) 40px;visibility:hidden}
-.drawer.open{transform:none;visibility:visible}
+.drawer{position:fixed;top:var(--navh);right:0;bottom:0;left:0;z-index:115;border-top:1px solid var(--rule);background:var(--paper);color:var(--ink);transform:translateX(100%);transition:transform .38s cubic-bezier(.16,.84,.3,1),visibility 0s linear .38s;overflow-y:auto;overscroll-behavior:contain;padding:28px var(--pad) 40px;visibility:hidden}
+.drawer.open{transform:none;visibility:visible;transition:transform .38s cubic-bezier(.16,.84,.3,1),visibility 0s}
 .drawer .contact-mini{font-size:.95rem;color:var(--grey);margin-bottom:26px}
 .drawer .contact-mini a{text-decoration:none}
 .drawer nav a{display:block;font-family:var(--serif);font-size:1.7rem;line-height:1.2;padding:9px 0;text-decoration:none;border-bottom:1px solid var(--rule);opacity:0;transform:translateX(14px);transition:opacity .3s,transform .3s}
@@ -122,11 +122,14 @@ main{min-height:60vh}
 .hero-content{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:max(var(--vh),520px);padding-top:calc(var(--navh) + 40px);padding-bottom:clamp(64px,11vh,120px)}
 .hero-h1{font-size:clamp(2.6rem,5.4vw,5rem);color:#fff;max-width:17ch;text-wrap:balance;font-weight:500;line-height:1.02}
 .hero-sub{font-size:clamp(1.05rem,1.4vw,1.3rem);max-width:34rem;margin:20px 0 34px;color:rgba(255,255,255,.88)}
-.scroll-cue{position:absolute;left:50%;bottom:26px;width:1px;height:54px;transform:translateX(-50%);overflow:hidden;background:rgba(255,255,255,.28);transition:opacity .4s}
-.scroll-cue span{position:absolute;left:0;top:-40%;width:1px;height:40%;background:#fff;animation:cue 2.4s var(--ease) infinite}
+.scroll-cue{position:absolute;right:max(var(--pad),calc((100vw - 1366px)/2 + var(--pad)));bottom:38px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:11px;padding:8px 0;color:rgba(255,255,255,.66);transition:color .25s,opacity .45s}
+.scroll-cue:hover,.scroll-cue:focus-visible{color:#fff}
+.scroll-cue .lbl{font-family:var(--label);font-weight:500;font-size:.5625rem;letter-spacing:.3em;text-indent:.3em;text-transform:uppercase;line-height:1}
+.scroll-cue .ln{position:relative;width:1px;height:56px;background:rgba(255,255,255,.24);overflow:hidden}
+.scroll-cue .ln::after{content:"";position:absolute;left:0;top:-20px;width:1px;height:20px;background:linear-gradient(180deg,rgba(181,154,106,0),var(--brass));animation:cueFall 2.6s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes cueFall{0%{top:-20px}62%,100%{top:56px}}
 .scroll-cue.hide{opacity:0;pointer-events:none}
-@keyframes cue{to{top:100%}}
-@media (max-width:959.98px){.scroll-cue{display:none}}
+@media (max-width:959.98px){.scroll-cue{bottom:26px;gap:9px}.scroll-cue .ln{height:40px}}
 
 /* banner */
 .banner{position:relative;height:clamp(300px,52vh,520px);background:var(--ink);overflow:hidden;color:#fff}
@@ -321,7 +324,7 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 
 .jump{display:flex;flex-wrap:wrap;gap:10px 28px;padding-bottom:22px;margin-bottom:8px;border-bottom:1px solid var(--rule)}
 .jump a{font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none!important;color:var(--brass-deep)!important}
-.legal .sec-h{font-size:2.2rem;margin:64px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.legal .legal-h{font-size:2.2rem;margin:64px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
 .legal h3{font-size:1.35rem;margin:30px 0 8px}
 .art-list{display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule);margin-bottom:64px}
 .art{display:grid;gap:8px;padding:26px 0;border-bottom:1px solid var(--rule);text-decoration:none}
@@ -429,6 +432,12 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 @media (max-width:959.98px){.menu-btn{margin-right:-8px}}
 @media (max-width:959.98px){.hero-btns{align-self:flex-start;width:auto}.hero-btns .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
 @media (max-width:959.98px){.drawer .btn-row{width:fit-content}.drawer .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
+footer.site .contact{display:flex;flex-wrap:wrap;align-items:center;gap:8px 0}
+footer.site .li{display:inline-flex;align-items:center;gap:8px;margin-left:22px;padding:6px 12px;border:1px solid rgba(255,255,255,.35);font-family:var(--label);font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;transition:border-color .2s,color .2s}
+footer.site .li:hover{border-color:var(--brass);color:var(--brass)}
+@media (max-width:959.98px){footer.site .li{margin-left:0;margin-top:10px}}
+footer.site .sep{margin:0 10px}
+@media (max-width:959.98px){footer.site .contact{flex-direction:column;align-items:flex-start;gap:6px}footer.site .sep{display:none}}
 
 </style>
 </head>
@@ -499,7 +508,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
         <a class="btn btn-solid" href="/contact">Request a private consultation</a>
       </div>
     </div>
-    <button class="scroll-cue" type="button" aria-label="Scroll to content"><span></span></button>
+    <button class="scroll-cue" type="button" aria-label="Scroll to content"><span class="lbl">Scroll</span><span class="ln" aria-hidden="true"></span></button>
   </div>
 
   <div class="band band-light">
@@ -1030,7 +1039,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
   <div class="band band-light">
     <div class="wrap narrow prose legal">
       <nav class="jump" aria-label="On this page"><a href="/legal" data-sec="disclosures">Disclosures</a><a href="/legal" data-sec="privacy">Privacy</a><a href="/legal" data-sec="terms">Terms</a></nav>
-      <div class="legal-sec" data-sec-id="disclosures"><h2 class="sec-h">Disclosures</h2>
+      <div class="legal-sec" data-sec-id="disclosures"><h2 class="legal-h">Disclosures</h2>
       <p class="lede">Paratum, Inc. provides consulting, strategy design and coordination services. It identifies and coordinates independent professionals; it does not perform their work.</p>
       <h3>No legal, tax or accounting advice</h3>
       <p>Paratum is not a law firm or an accounting firm and does not provide legal, tax or accounting advice. No attorney-client or accountant-client relationship is formed with Paratum. Clients should rely only on their own licensed attorney and certified public accountant, who review every structure before it is put in place. Any discussion of tax matters on this site is general in nature, is not intended or written to be used, and cannot be used, to avoid penalties, and is not a tax opinion.</p>
@@ -1049,7 +1058,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <h3>Informational content</h3>
       <p>Content on this site is general information, current as of its date, and is not advice for any particular situation. Paratum may update or remove it without notice.</p>
     </div>
-      <div class="legal-sec" data-sec-id="privacy"><h2 class="sec-h">Privacy policy</h2>
+      <div class="legal-sec" data-sec-id="privacy"><h2 class="legal-h">Privacy policy</h2>
       <p class="lede">This policy covers information collected through paratum.com.</p>
       <h3>Information collected</h3>
       <p>Information you provide through the contact form: name, email, phone, area of interest, referral source and message. The site does not set advertising or analytics cookies. The hosting provider may log technical data such as IP address and browser type for security and operation.</p>
@@ -1066,7 +1075,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <h3>Changes</h3>
       <p>This policy may be updated; the date below shows the latest version. Last updated <span class="updated"></span>.</p>
     </div>
-      <div class="legal-sec" data-sec-id="terms"><h2 class="sec-h">Terms of use</h2>
+      <div class="legal-sec" data-sec-id="terms"><h2 class="legal-h">Terms of use</h2>
       <p class="lede">By using this site you accept these terms.</p>
       <h3>Informational purposes</h3>
       <p>The site is provided for general information. It is not an offer, solicitation or advice of any kind, and creates no client, advisory or fiduciary relationship. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
@@ -1105,7 +1114,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
   <div class="wrap">
     <div class="row1">
       <a class="fbrand" href="/" aria-label="Paratum home"><img src="/paratum/logo-on-dark.png" alt="Paratum" width="900" height="137"></a>
-      <div class="contact"><a href="tel:+13107809936">310.780.9936</a> &nbsp;·&nbsp; 369 South Doheny Drive, Suite 411, Beverly Hills</div>
+      <div class="contact"><a href="tel:+13107809936">310.780.9936</a><span class="sep" aria-hidden="true">·</span><span>369 South Doheny Drive, Suite 411, Beverly Hills</span><a class="li" id="footer-li" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Paratum on LinkedIn"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5.001A2.5 2.5 0 014.98 3.5zM3 8.98h4v12.02H3V8.98zM9.5 8.98h3.83v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.33c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.81V21h-4V8.98z"/></svg>LinkedIn</a></div>
     </div>
     <nav class="links" aria-label="Footer">
       <a href="/approach">How we work</a><a href="/solutions">Solutions</a><a href="/tax-strategy">Tax strategy</a><a href="/ma-advisory">M&amp;A advisory</a><a href="/asset-protection">Asset protection</a><a href="/family-office">Family office</a><a href="/experience">Case studies</a><a href="/firm">The Firm</a><a href="/insights">Insights</a><a href="/contact">Contact</a><a href="/legal">Legal</a>
@@ -1126,7 +1135,7 @@ const SITE = {
   email: '',                 // e.g. 'info@paratum.com' (shown and used by the form once filled in)
   FORM_ENDPOINT: '',         // e.g. a Formspree URL; turns the contact form into a real POST
   address: ['369 South Doheny Drive, Suite 411', 'Beverly Hills, California 90211'],
-  LINKEDIN: ''
+  LINKEDIN: 'https://www.linkedin.com/' // replace with Paratum's company page
 };
 
 // Photography: Unsplash photo ids (unsplash.com/license). pos = focal point.
@@ -1286,6 +1295,7 @@ const INSIGHTS = [
       $('#articles').innerHTML = cats.map(c => `<h2 class="h-rule">${esc(c)}</h2><div class="art-list">` + LIVE_ARTICLES.filter(a => a.category === c).map(a => `<a class="art" href="/insights/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.summary)}</p><span class="more">Read</span></a>`).join('') + '</div>').join('');
     }
   }
+  { const li = $('#footer-li'); if (li && SITE.LINKEDIN) li.href = SITE.LINKEDIN; else if (li) li.remove(); }
   if (SITE.email) { const ce = $('#contact-email'); if (ce) ce.innerHTML = `<br><a href="mailto:${SITE.email}">${SITE.email}</a>`; }
   $$('.updated').forEach(el => el.textContent = 'November 2026');
 
