@@ -60,13 +60,13 @@ header.site{position:fixed;inset:0 0 auto 0;z-index:120;height:var(--navh);color
 header.site::before{content:"";position:absolute;inset:0;background:rgba(14,24,34,0);transition:background .35s var(--ease),box-shadow .35s var(--ease)}
 header.site.solid{color:var(--ink)}
 header.site.solid::before{background:rgba(255,255,255,.97);box-shadow:0 1px 2px rgba(0,0,0,.10),0 6px 18px rgba(0,0,0,.14)}
-header.site .bar{position:relative;height:100%;display:flex;align-items:center;justify-content:space-between;gap:40px}
+header.site .bar{position:relative;height:100%;display:flex;align-items:center;justify-content:space-between;gap:28px}
 header.site .brand{position:relative;z-index:125;display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
 header.site .brand img{height:30px;width:auto}
 header.site .brand .lg-light{display:none}
 header.site.solid .brand .lg-dark,body.menu-open header.site .brand .lg-dark{display:none}
 header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{display:block}
-.nav{display:flex;align-items:center;gap:30px}
+.nav{display:flex;align-items:center;gap:24px}
 .nav a{font-family:var(--label);font-weight:500;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;white-space:nowrap;position:relative;padding:6px 0}
 .nav a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .nav a.nl:hover::after,.nav a.nl.cur::after{transform:scaleX(1)}
@@ -75,7 +75,9 @@ header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{d
 .icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
 .menu-btn{display:none;position:relative;z-index:125;font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:10px 0}
 .hdr-right{display:flex;align-items:center;gap:10px;position:relative;z-index:125}
-@media (min-width:960px) and (max-width:1149.98px){.nav{gap:20px}.nav a{font-size:.66rem;letter-spacing:.12em}header.site .bar{gap:24px}}
+@media (min-width:960px) and (max-width:1319.98px){.nav{gap:16px}.nav a{font-size:.62rem;letter-spacing:.1em}header.site .bar{gap:18px}header.site .brand img{height:26px}.nav .btn{padding:0 14px}}
+@media (min-width:960px) and (max-width:1099.98px){.nav{gap:11px}.nav a{font-size:.58rem;letter-spacing:.08em}header.site .bar{gap:14px}header.site .brand img{height:22px}.nav .btn{padding:0 10px;min-height:36px}.hdr-right .icon-btn{width:28px}}
+@media (min-width:1320px){header.site .bar{gap:24px}}
 @media (max-width:959.98px){.nav{display:none}.menu-btn{display:block}:root{--navh:64px}header.site .brand img{height:24px}}
 
 /* drawer */
@@ -316,6 +318,16 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .hub-list span{display:block;font-size:.98rem}}
 .hero-btns{margin-top:36px}
 
+.jump{display:flex;flex-wrap:wrap;gap:10px 28px;padding-bottom:22px;margin-bottom:8px;border-bottom:1px solid var(--rule)}
+.jump a{font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;text-decoration:none!important;color:var(--brass-deep)!important}
+.legal .sec-h{font-size:2.2rem;margin:64px 0 18px;padding-bottom:14px;border-bottom:2px solid var(--ink)}
+.legal h3{font-size:1.35rem;margin:30px 0 8px}
+.art-list{display:grid;grid-template-columns:1fr;border-top:1px solid var(--rule);margin-bottom:64px}
+.art{display:grid;gap:8px;padding:26px 0;border-bottom:1px solid var(--rule);text-decoration:none}
+@media (min-width:960px){.art{grid-template-columns:minmax(0,1fr) minmax(0,1.4fr) 120px;gap:40px;align-items:baseline}.art .more{justify-self:end}}
+.art h3{font-size:1.5rem}.art:hover h3{color:var(--brass-deep)}
+.art-meta{font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:28px}
+
 </style>
 </head>
 <body>
@@ -335,6 +347,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <a class="nl" href="/asset-protection">Protection</a>
       <a class="nl" href="/family-office">Family office</a>
       <a class="nl" href="/firm">The Firm</a>
+      <a class="nl" href="/insights">Insights</a>
       <a class="btn" href="/contact">Contact</a>
     </nav>
     <div class="hdr-right">
@@ -353,7 +366,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <a href="/family-office">Family office</a>
       <a href="/clients">Who we serve</a>
       <a href="/firm">The Firm</a>
-      <a href="/faq">FAQ</a>
+      <a href="/insights">Insights</a>
     </nav>
     <div class="btn-row"><a class="btn btn-solid dark" href="/contact">Request a private consultation</a></div>
   </div>
@@ -477,7 +490,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Charitable remainder trusts, which convert an appreciated asset into an income stream and a charitable deduction; installment sales, which spread a gain over the years in which payment is received; the qualified small business stock exclusion, which can exclude much of the gain on founder shares in a qualifying company; and qualified opportunity funds, which defer gain reinvested in designated communities. For business sales and companies with unused losses or credits, see <a href="/ma-advisory">M&amp;A advisory</a>.</p>
       <h2>Tailored, and reviewed by counsel</h2>
       <p>No structure is sold off the shelf. Each is designed around the client's circumstances and reviewed by the client's own tax counsel before it is put in place, and implemented by licensed professionals. Paratum stays involved afterward, because a structure that is not maintained can lose the treatment it was built for.</p>
-      <p class="fine">Paratum does not provide tax or legal advice. Results depend on each client's facts and current law. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Paratum does not provide tax or legal advice. Results depend on each client's facts and current law. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -512,7 +525,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
         <details><summary>How much of the investment is deductible in the first year?</summary><p>It depends on the program's mix of intangible and tangible costs and the timing of drilling. Many programs target a majority of the investment as deductible in the first year; the client's tax counsel confirms the figure for a specific program.</p></details>
         <details><summary>Is this the same as an oil and gas fund?</summary><p>Not necessarily. Many funds hold royalty or non-operated interests that do not pass through the drilling deduction. The structure determines the tax result.</p></details>
       </div>
-      <p class="fine">Illustrative information only, not tax advice or an offer of any investment. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Illustrative information only, not tax advice or an offer of any investment. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -540,7 +553,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>The policy must meet the tax code's definition of life insurance and its diversification requirements, and the policyholder may not direct the specific investments, a limit known as the investor control doctrine. A policy funded too quickly can become a modified endowment contract, which changes how withdrawals and loans are taxed. These rules are why design and ongoing administration matter.</p>
       <h2>Who Paratum brings in</h2>
       <p>Insurance carriers that offer private placement policies, licensed agents, insurance-dedicated fund managers, trust counsel and the client's CPA. Policies are placed only by licensed professionals.</p>
-      <p class="fine">Paratum is not an insurance agency and does not sell insurance. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Paratum is not an insurance agency and does not sell insurance. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -566,7 +579,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>The tax law ignores shifts that lack substance: income from services is taxed to the person who performs them, children's investment income can be taxed at their parents' rates, and states pursue trusts they consider resident. Control, ownership and economics must actually change. Paratum's work is to design a structure that will hold up, with counsel who will defend it.</p>
       <h2>Who Paratum brings in</h2>
       <p>Tax and trust counsel, the client's CPA, independent trustees and valuation firms.</p>
-      <p class="fine">Not tax advice. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Not tax advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -589,7 +602,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Capital gains from any source can be reinvested in a qualified opportunity fund, deferring the original gain, and appreciation on the new investment held long enough can be excluded from tax.</p>
       <h2>Who Paratum brings in</h2>
       <p>Cost segregation engineers, qualified intermediaries for exchanges, DST and fund sponsors, real estate tax counsel and lenders.</p>
-      <p class="fine">Not tax advice or an offer of any security. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Not tax advice or an offer of any security. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -618,7 +631,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
         <details><summary>Can a company's NOLs be sold on their own?</summary><p>Not directly. Losses belong to the company, so they are realized through a merger, acquisition or restructuring that lets a profitable business use them, within the Section 382 limits.</p></details>
         <details><summary>When should a business owner start planning a sale?</summary><p>Ideally one to two years ahead. Many of the most effective steps, such as gifts to trusts or changes in entity, must be taken before a buyer is in view.</p></details>
       </div>
-      <p class="fine">Paratum is not a broker-dealer or investment bank and does not offer securities. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Paratum is not a broker-dealer or investment bank and does not offer securities. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -646,7 +659,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
     <div class="wrap narrow prose">
       <h2>How Paratum works here</h2>
       <p>Paratum maps what a family owns, how it is held and where it is exposed, then designs the combination of structures that fits. Asset protection counsel drafts the documents, independent trustees and trust companies hold the assets, and Paratum coordinates them and keeps the structure maintained, because protection that is not respected in practice does not hold.</p>
-      <p class="fine">Paratum does not provide legal advice. Structures are established by licensed counsel. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Paratum does not provide legal advice. Structures are established by licensed counsel. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -671,7 +684,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Ownership structures that keep a family's name off public records do not by themselves protect assets, but they reduce the chance of being targeted in the first place.</p>
       <h2>Who Paratum brings in</h2>
       <p>Domestic and offshore asset protection counsel, independent trustees and trust companies, lenders, and the client's CPA for the reporting that follows.</p>
-      <p class="fine">Not legal advice. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Not legal advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -694,7 +707,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>For larger families, a private trust company owned by the family can act as trustee for all of its trusts, keeping decisions in family hands under a formal governance structure.</p>
       <h2>Ongoing oversight</h2>
       <p>Paratum reviews trustee performance, fees, investment results and compliance with the trust's terms, and coordinates changes when the family's circumstances or the law move.</p>
-      <p class="fine">Paratum is not a trustee or trust company. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Paratum is not a trustee or trust company. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -717,7 +730,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Passing an operating business means deciding who will own it, who will run it, and how those who do not take part are treated fairly. Paratum coordinates the legal, tax and valuation work and the agreements that make the transition stable.</p>
       <h2>Family governance</h2>
       <p>Family constitutions, councils and education for heirs give a family a way to make decisions together and prepare the next generation for responsibility, which often matters more than any document.</p>
-      <p class="fine">Not legal or tax advice. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Not legal or tax advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -741,7 +754,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       </ol>
       <h2>The legal limits</h2>
       <p>Moving assets after a claim arises, or when one is foreseeable, can be reversed as a fraudulent transfer and can expose the people involved to liability. Paratum's work is preventive and is done with counsel who will stand behind it. If a dispute is already underway, the right first call is to litigation counsel.</p>
-      <p class="fine">Not legal advice. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Not legal advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -760,7 +773,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Family offices increasingly invest directly in real estate, operating companies and energy. Paratum helps source and structure those transactions, arranges debt and equity alongside the family's own capital with lenders and registered firms, and brings in co-investors where a deal is larger than one family should take alone.</p>
       <h2>Family office setup</h2>
       <p>For families forming a single-family office, Paratum coordinates the entity structure, governance, staffing and the outside providers it relies on.</p>
-      <p class="fine">Paratum is not a registered investment adviser or broker-dealer. See <a href="/disclosures">Disclosures</a>.</p>
+      <p class="fine">Paratum is not a registered investment adviser or broker-dealer. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
 </section>
@@ -816,7 +829,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 </section>
 
 <!-- ============ FIRM ============ -->
-<section class="page on" id="p-firm" data-route="/firm" data-img="firm" data-next="/faq" data-next-label="FAQ"
+<section class="page on" id="p-firm" data-route="/firm" data-img="firm" data-next="/insights" data-next-label="Insights"
   data-title="About Paratum | Four Decades of Stewardship | Beverly Hills"
   data-desc="Paratum is a Beverly Hills boutique management and advisory firm with four decades of experience in tax, asset protection, succession and family office work.">
   <header class="banner"><div class="banner-media" data-img="firm"></div><div class="wrap"><h1>The Firm</h1></div></header>
@@ -841,28 +854,27 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 </section>
 
 <!-- ============ INSIGHTS ============ -->
-<section class="page" id="p-insights" data-route="/insights" data-img="insights" data-next="/faq" data-next-label="FAQ"
-  data-title="Insights | Paratum"
-  data-desc="Articles from Paratum on tax strategy, asset protection, succession and tax-efficient M&amp;A.">
+<section class="page" id="p-insights" data-route="/insights" data-img="insights" data-next="/contact" data-next-label="Contact"
+  data-title="Insights: Asset Protection, Tax Strategy &amp; Estate Planning Articles | Paratum"
+  data-desc="Articles and answers on asset protection, trusts, offshore planning, tax strategy, retirement accounts and tax-efficient M&amp;A, from Paratum.">
   <header class="banner"><div class="banner-media" data-img="insights"></div><div class="wrap"><h1>Insights</h1></div></header>
-  <div class="band band-light"><div class="wrap"><div class="insight-grid" id="insights-list"></div></div></div>
+  <div class="band band-light">
+    <div class="wrap narrow"><p class="lede">Articles and answers on asset protection, trusts, offshore planning, tax strategy and tax-efficient transactions.</p></div>
+    <div class="wrap" id="articles-wrap"><div id="articles"></div></div>
+    <div class="wrap narrow prose" data-sec-id="faq">
+      <h2 class="h-rule">Frequently asked questions</h2>
+      <div id="faq-list"></div>
+    </div>
+  </div>
 </section>
 
 <section class="page" id="p-article" data-route="/insights/*" data-img="insights" data-next="/insights" data-next-label="All insights" data-title="" data-desc="">
   <header class="banner"><div class="banner-media" data-img="insights"></div><div class="wrap"><h1 id="article-title"></h1></div></header>
-  <div class="band band-light"><div class="wrap narrow prose" id="article-body"></div></div>
-</section>
-
-<!-- ============ FAQ ============ -->
-<section class="page" id="p-faq" data-route="/faq" data-img="faq" data-next="/contact" data-next-label="Contact"
-  data-title="Frequently Asked Questions | Paratum"
-  data-desc="Answers about Paratum, how it works and is paid, and the strategies it designs: PPLI, oil and gas, asset protection trusts, equity stripping, tax attributes and more.">
-  <header class="banner"><div class="banner-media" data-img="faq"></div><div class="wrap"><h1>FAQ</h1></div></header>
-  <div class="band band-light"><div class="wrap narrow prose" id="faq-list"></div></div>
+  <div class="band band-light"><div class="wrap narrow prose"><p class="art-meta" id="article-meta"></p><div id="article-body"></div><p class="fine">General information, not legal, tax or investment advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p></div></div>
 </section>
 
 <!-- ============ CONTACT ============ -->
-<section class="page" id="p-contact" data-route="/contact" data-img="contact" data-next="/" data-next-label="Home"
+<section class="page" id="p-contact" data-route="/contact" data-img="contact" data-next="/legal" data-next-label="Legal"
   data-title="Contact Paratum | Beverly Hills"
   data-desc="Arrange a private conversation with Paratum. 369 South Doheny Drive, Suite 411, Beverly Hills, California.">
   <header class="banner"><div class="banner-media" data-img="contact"></div><div class="wrap"><h1>Contact</h1></div></header>
@@ -892,82 +904,69 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
   </div>
 </section>
 
-<!-- ============ DISCLOSURES ============ -->
-<section class="page" id="p-disclosures" data-route="/disclosures" data-img="legal" data-next="/privacy" data-next-label="Privacy"
-  data-title="Disclosures | Paratum"
-  data-desc="Important disclosures about the nature of Paratum's services.">
-  <header class="banner"><div class="banner-media" data-img="legal"></div><div class="wrap"><h1>Disclosures</h1></div></header>
+<!-- ============ LEGAL ============ -->
+<section class="page" id="p-legal" data-route="/legal" data-img="legal" data-next="/" data-next-label="Home"
+  data-title="Legal: Disclosures, Privacy &amp; Terms | Paratum"
+  data-desc="Disclosures about the nature of Paratum's services, the privacy policy and the terms of use for paratum.com.">
+  <header class="banner"><div class="banner-media" data-img="legal"></div><div class="wrap"><h1>Legal</h1></div></header>
   <div class="band band-light">
     <div class="wrap narrow prose legal">
+      <nav class="jump" aria-label="On this page"><a href="/legal" data-sec="disclosures">Disclosures</a><a href="/legal" data-sec="privacy">Privacy</a><a href="/legal" data-sec="terms">Terms</a></nav>
+      <div class="legal-sec" data-sec-id="disclosures"><h2 class="sec-h">Disclosures</h2>
       <p class="lede">Paratum, Inc. provides consulting, strategy design and coordination services. It identifies and coordinates independent professionals; it does not perform their work.</p>
-      <h2>No legal, tax or accounting advice</h2>
+      <h3>No legal, tax or accounting advice</h3>
       <p>Paratum is not a law firm or an accounting firm and does not provide legal, tax or accounting advice. No attorney-client or accountant-client relationship is formed with Paratum. Clients should rely only on their own licensed attorney and certified public accountant, who review every structure before it is put in place. Any discussion of tax matters on this site is general in nature, is not intended or written to be used, and cannot be used, to avoid penalties, and is not a tax opinion.</p>
-      <h2>No investment or securities services</h2>
+      <h3>No investment or securities services</h3>
       <p>Paratum is not a registered investment adviser or broker-dealer, does not manage client assets, and does not offer, sell or solicit any security. Nothing on this site is an offer to buy or sell any security or an investment recommendation. Any investment management or securities transaction is carried out by registered firms that the client engages directly.</p>
-      <h2>No insurance services</h2>
+      <h3>No insurance services</h3>
       <p>Paratum is not a licensed insurance agency or producer and does not sell insurance. Insurance products, including private placement life insurance, are offered only by licensed agents and carriers, and only to qualified purchasers.</p>
-      <h2>Not a trustee or fiduciary</h2>
+      <h3>Not a trustee or fiduciary</h3>
       <p>Paratum does not act as trustee and, unless a written agreement expressly provides otherwise, owes no fiduciary duty to any person. Trustees and other fiduciaries are engaged directly by the client.</p>
-      <h2>Third-party professionals</h2>
+      <h3>Third-party professionals</h3>
       <p>Professionals introduced or coordinated by Paratum are independent. They are engaged and paid directly by the client and are solely responsible for their own advice and work. Paratum's own fees are set out in the client's engagement agreement.</p>
-      <h2>Tax strategies and results</h2>
+      <h3>Tax strategies and results</h3>
       <p>Results depend on each client's facts and on current law, which can change, including retroactively. Tax authorities may challenge any position, and no result is guaranteed. Case studies and examples are illustrative, have been changed to protect confidentiality, and do not predict future results. Figures such as assets under advisement are approximate.</p>
-      <h2>No relationship through this site</h2>
+      <h3>No relationship through this site</h3>
       <p>Using this site or its contact form does not create a client or advisory relationship. Please do not send confidential information until an engagement is in place.</p>
-      <h2>Informational content</h2>
+      <h3>Informational content</h3>
       <p>Content on this site is general information, current as of its date, and is not advice for any particular situation. Paratum may update or remove it without notice.</p>
     </div>
-  </div>
-</section>
-
-<!-- ============ PRIVACY ============ -->
-<section class="page" id="p-privacy" data-route="/privacy" data-img="legal" data-next="/terms" data-next-label="Terms"
-  data-title="Privacy Policy | Paratum" data-desc="How Paratum collects, uses and protects information submitted through this site.">
-  <header class="banner"><div class="banner-media" data-img="legal"></div><div class="wrap"><h1>Privacy</h1></div></header>
-  <div class="band band-light">
-    <div class="wrap narrow prose legal">
+      <div class="legal-sec" data-sec-id="privacy"><h2 class="sec-h">Privacy policy</h2>
       <p class="lede">This policy covers information collected through paratum.com.</p>
-      <h2>Information collected</h2>
+      <h3>Information collected</h3>
       <p>Information you provide through the contact form: name, email, phone, area of interest, referral source and message. The site does not set advertising or analytics cookies. The hosting provider may log technical data such as IP address and browser type for security and operation.</p>
-      <h2>Use</h2>
+      <h3>Use</h3>
       <p>To respond to your inquiry and, if an engagement follows, to provide services. Paratum does not sell or rent personal information.</p>
-      <h2>Sharing</h2>
+      <h3>Sharing</h3>
       <p>With service providers who operate the site and email on Paratum's behalf, and with professionals only where an engagement requires it and you have agreed. Where the law requires disclosure, Paratum will comply.</p>
-      <h2>Retention and security</h2>
+      <h3>Retention and security</h3>
       <p>Information is kept only as long as needed for the purpose collected or as the law requires, and protected with reasonable administrative and technical safeguards.</p>
-      <h2>Your rights</h2>
+      <h3>Your rights</h3>
       <p>California residents and residents of other states with privacy laws may request access to, correction of or deletion of their personal information, and may not be discriminated against for doing so. Requests may be made by calling 310.780.9936.</p>
-      <h2>Children</h2>
+      <h3>Children</h3>
       <p>The site is not directed to children under 16 and does not knowingly collect their information.</p>
-      <h2>Changes</h2>
+      <h3>Changes</h3>
       <p>This policy may be updated; the date below shows the latest version. Last updated <span class="updated"></span>.</p>
     </div>
-  </div>
-</section>
-
-<!-- ============ TERMS ============ -->
-<section class="page" id="p-terms" data-route="/terms" data-img="legal" data-next="/" data-next-label="Home"
-  data-title="Terms of Use | Paratum" data-desc="Terms governing the use of paratum.com.">
-  <header class="banner"><div class="banner-media" data-img="legal"></div><div class="wrap"><h1>Terms</h1></div></header>
-  <div class="band band-light">
-    <div class="wrap narrow prose legal">
+      <div class="legal-sec" data-sec-id="terms"><h2 class="sec-h">Terms of use</h2>
       <p class="lede">By using this site you accept these terms.</p>
-      <h2>Informational purposes</h2>
-      <p>The site is provided for general information. It is not an offer, solicitation or advice of any kind, and creates no client, advisory or fiduciary relationship. See <a href="/disclosures">Disclosures</a>.</p>
-      <h2>No warranty</h2>
+      <h3>Informational purposes</h3>
+      <p>The site is provided for general information. It is not an offer, solicitation or advice of any kind, and creates no client, advisory or fiduciary relationship. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
+      <h3>No warranty</h3>
       <p>Content is provided as is, without warranty of accuracy, completeness or fitness for any purpose.</p>
-      <h2>Limitation of liability</h2>
+      <h3>Limitation of liability</h3>
       <p>To the fullest extent permitted by law, Paratum is not liable for any indirect, incidental, consequential, special or punitive damages, or for lost profits or opportunity, arising from use of the site or reliance on its content.</p>
-      <h2>Indemnification</h2>
+      <h3>Indemnification</h3>
       <p>You agree to indemnify Paratum against claims arising from your misuse of the site or breach of these terms, including reasonable defense costs, advanced as incurred.</p>
-      <h2>Third-party content</h2>
+      <h3>Third-party content</h3>
       <p>Links to other sites are provided for convenience; Paratum is not responsible for their content. Photographs are used under the Unsplash license.</p>
-      <h2>Intellectual property</h2>
+      <h3>Intellectual property</h3>
       <p>Site content is owned by Paratum, Inc. and may not be reproduced without permission.</p>
-      <h2>Governing law</h2>
+      <h3>Governing law</h3>
       <p>These terms are governed by the laws of [to be confirmed by counsel], and disputes are resolved in [to be confirmed by counsel].</p>
-      <h2>General</h2>
+      <h3>General</h3>
       <p>If any provision is unenforceable, the rest remains in effect. Provisions that by their nature should survive termination of your use of the site do so.</p>
+    </div>
     </div>
   </div>
 </section>
@@ -987,9 +986,9 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <div class="contact"><a href="tel:+13107809936">310.780.9936</a> &nbsp;·&nbsp; 369 South Doheny Drive, Suite 411, Beverly Hills</div>
     </div>
     <nav class="links" aria-label="Footer">
-      <a href="/approach">How we work</a><a href="/tax-strategy">Tax strategy</a><a href="/ma-advisory">M&amp;A advisory</a><a href="/asset-protection">Asset protection</a><a href="/family-office">Family office</a><a href="/clients">Who we serve</a><a href="/experience">Case studies</a><a href="/firm">The Firm</a><a href="/faq">FAQ</a><a href="/contact">Contact</a><a href="/disclosures">Disclosures</a><a href="/privacy">Privacy</a><a href="/terms">Terms</a>
+      <a href="/approach">How we work</a><a href="/tax-strategy">Tax strategy</a><a href="/ma-advisory">M&amp;A advisory</a><a href="/asset-protection">Asset protection</a><a href="/family-office">Family office</a><a href="/clients">Who we serve</a><a href="/experience">Case studies</a><a href="/firm">The Firm</a><a href="/insights">Insights</a><a href="/contact">Contact</a><a href="/legal">Legal</a>
     </nav>
-    <p class="disc">Paratum, Inc. is not a law firm, accounting firm, registered investment adviser, broker-dealer or insurance agency, and does not provide legal, tax, accounting, investment or insurance advice. Those services are provided by independent licensed professionals engaged by the client. Nothing on this site is an offer to buy or sell any security or insurance product, or a tax opinion. <a href="/disclosures">Disclosures</a></p>
+    <p class="disc">Paratum, Inc. is not a law firm, accounting firm, registered investment adviser, broker-dealer or insurance agency, and does not provide legal, tax, accounting, investment or insurance advice. Those services are provided by independent licensed professionals engaged by the client. Nothing on this site is an offer to buy or sell any security or insurance product, or a tax opinion. <a href="/legal" data-sec="disclosures">Disclosures</a></p>
     <p class="copy">© <span class="yr">2026</span> Paratum, Inc. · Site by <a href="https://orellestudio.com" target="_blank" rel="noopener">Orélle</a></p>
   </div>
 </footer>
@@ -1083,8 +1082,19 @@ const FAQ = [
   ]]
 ];
 
-// Articles: add { slug, title, date, summary, body (HTML) } to publish. Insights links stay hidden while this is empty.
-const INSIGHTS = [];
+// Articles for the Insights page. Set draft: false and fill in body (HTML) to publish one.
+// Published articles get their own page at /insights/<slug>, are listed by category, and go in the sitemap.
+const INSIGHTS = [
+  { slug: 'revocable-vs-irrevocable-trusts', category: 'Trusts and estate planning', title: 'Revocable vs. irrevocable trusts', summary: 'What each kind of trust does, what it protects, how it is taxed, and when to use one or both.', link: '/asset-protection/trusts-and-fiduciary', date: '', draft: true, body: '' },
+  { slug: 'private-placement-life-insurance', category: 'Tax strategy', title: 'Private placement life insurance: how it works and who it benefits', summary: 'How PPLI shelters investment growth, the rules that govern it, its costs, and who it suits.', link: '/tax-strategy/ppli', date: '', draft: true, body: '' },
+  { slug: 'oil-and-gas-tax-strategy', category: 'Tax strategy', title: 'Oil and gas investments: tax benefits, pros and cons', summary: 'The intangible drilling cost deduction, depletion, and the risks that come with them.', link: '/tax-strategy/oil-and-gas', date: '', draft: true, body: '' },
+  { slug: 'solo-401k-vs-ira', category: 'Retirement accounts', title: 'Solo 401(k) vs. IRA for business owners', summary: 'Contribution limits, loans, creditor protection and which account fits a one-person business.', link: '/tax-strategy', date: '', draft: true, body: '' },
+  { slug: 'roth-vs-traditional', category: 'Retirement accounts', title: 'Roth vs. traditional accounts: pros and cons', summary: 'Paying tax now or later, conversions, and how each passes to heirs.', link: '/tax-strategy', date: '', draft: true, body: '' },
+  { slug: 'equity-stripping', category: 'Asset protection', title: 'Equity stripping: how it works and where it fails', summary: 'Using legitimate debt to reduce exposed equity, and the mistakes that let a court disregard it.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
+  { slug: 'offshore-estate-planning', category: 'Offshore planning', title: 'Offshore estate planning for U.S. families', summary: 'When offshore trusts and entities make sense, how they are taxed and reported, and what they cost.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
+  { slug: 'cook-islands-vs-nevis-vs-gibraltar', category: 'Offshore planning', title: 'Cook Islands vs. Nevis vs. Gibraltar trusts', summary: 'How the leading offshore jurisdictions compare on protection, cost, reputation and reporting.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
+  { slug: 'monetizing-nols', category: 'M&A and transactions', title: 'Monetizing NOLs: turning tax losses into value', summary: 'How net operating losses are realized through transactions, and how Section 382 limits them.', link: '/ma-advisory', date: '', draft: true, body: '' }
+];
 
 /* ===================================================================== */
 (function () {
@@ -1129,10 +1139,15 @@ const INSIGHTS = [];
   }
   const fq = $('#faq-list');
   if (fq) fq.innerHTML = FAQ.map(g => `<p class="faq-group">${esc(g[0])}</p>` + g[1].map(q => `<details><summary>${esc(q[0])}</summary><p>${esc(q[1])}</p></details>`).join('')).join('');
-  const hasInsights = INSIGHTS.length > 0;
-  $$('[data-if="insights"]').forEach(el => { if (!hasInsights) el.remove(); });
-  const card = a => `<a class="card" href="/insights/${a.slug}"><div class="card-body"><h3>${esc(a.title)}</h3><p>${esc(a.summary || '')}</p><span class="more">Read</span></div></a>`;
-  if (hasInsights) { const l = $('#insights-list'); if (l) l.innerHTML = INSIGHTS.map(card).join(''); const h = $('#home-insights'); if (h) h.innerHTML = INSIGHTS.slice(0, 3).map(card).join(''); }
+  const LIVE_ARTICLES = INSIGHTS.filter(a => !a.draft && a.body);
+  const aw = $('#articles-wrap');
+  if (aw) {
+    if (!LIVE_ARTICLES.length) aw.remove();
+    else {
+      const cats = [...new Set(LIVE_ARTICLES.map(a => a.category))];
+      $('#articles').innerHTML = cats.map(c => `<h2 class="h-rule">${esc(c)}</h2><div class="art-list">` + LIVE_ARTICLES.filter(a => a.category === c).map(a => `<a class="art" href="/insights/${a.slug}"><h3>${esc(a.title)}</h3><p>${esc(a.summary)}</p><span class="more">Read</span></a>`).join('') + '</div>').join('');
+    }
+  }
   if (SITE.email) { const ce = $('#contact-email'); if (ce) ce.innerHTML = `<br><a href="mailto:${SITE.email}">${SITE.email}</a>`; }
   $$('.updated').forEach(el => el.textContent = 'November 2026');
 
@@ -1152,18 +1167,22 @@ const INSIGHTS = [];
   }
 
   /* ---- router ---- */
+  const ALIASES = { '/disclosures': ['/legal', 'disclosures'], '/privacy': ['/legal', 'privacy'], '/terms': ['/legal', 'terms'], '/faq': ['/insights', 'faq'] };
+  let pendingSec = null;
+  function toSec(id) { const el = id && current && $(`[data-sec-id="${id}"]`, current); if (el) { el.classList.add('in'); scrollTo({ top: el.getBoundingClientRect().top + scrollY - header.offsetHeight - 24, behavior: 'instant' }); } }
   const norm = p => { p = p.replace(/\/index\.html$/, '').replace(/\/+$/, ''); return p || '/'; };
   function find(path) {
     path = norm(path);
-    let pg = pages.find(p => p.dataset.route === path && !(path === '/insights' && !INSIGHTS.length));
-    if (!pg && path.startsWith('/insights/')) { const a = INSIGHTS.find(x => '/insights/' + x.slug === path); if (a) { pg = $('#p-article'); $('#article-title').textContent = a.title; $('#article-body').innerHTML = a.body; pg._title = a.title + ' | Paratum'; } }
+    if (ALIASES[path]) { pendingSec = ALIASES[path][1]; path = ALIASES[path][0]; }
+    let pg = pages.find(p => p.dataset.route === path);
+    if (!pg && path.startsWith('/insights/')) { const a = LIVE_ARTICLES.find(x => '/insights/' + x.slug === path); if (a) { pg = $('#p-article'); $('#article-title').textContent = a.title; $('#article-meta').textContent = [a.category, a.date].filter(Boolean).join(' \u00b7 '); $('#article-body').innerHTML = a.body + (a.link ? `<p><a class="link-arrow" href="${a.link}">Related service</a></p>` : ''); pg._title = a.title + ' | Paratum Insights'; pg.dataset.desc = a.summary; } }
     return pg;
   }
   let current = null;
   function show(path, opts = {}) {
     let pg = find(path);
     if (!pg) pg = LIVE ? $('#p-404') : $('#p-home');
-    if (pg === current && !opts.force) { window.scrollTo({ top: 0, behavior: 'instant' }); return; }
+    if (pg === current && !opts.force) { if (pendingSec) { toSec(pendingSec); pendingSec = null; } else window.scrollTo({ top: 0, behavior: 'instant' }); return; }
     closeMenu();
     pages.forEach(p => p.classList.remove('on', 'arrive'));
     pg.classList.add('on');
@@ -1175,6 +1194,7 @@ const INSIGHTS = [];
     $$('.nav a.nl, .drawer nav a').forEach(a => { const r = a.getAttribute('href'); a.classList.toggle('cur', r !== '/' && (norm(path) === r || norm(path).startsWith(r + '/'))); });
     loadImages(pg); reveal(pg);
     if (!opts.first) window.scrollTo({ top: 0, behavior: 'instant' });
+    if (pendingSec) { const id = pendingSec; pendingSec = null; requestAnimationFrame(() => { toSec(id); onScroll(); }); }
     onScroll();
   }
   document.addEventListener('click', e => {
@@ -1185,6 +1205,7 @@ const INSIGHTS = [];
     e.preventDefault();
     if (LIVE) history.pushState({}, '', BASE + href);
     closeSearch();
+    if (a.dataset.sec) pendingSec = a.dataset.sec;
     show(href);
   });
   addEventListener('popstate', () => show(strip(location.pathname)));
