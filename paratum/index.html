@@ -68,7 +68,7 @@ header.site.solid .brand .lg-dark,body.menu-open header.site .brand .lg-dark{dis
 header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{display:block}
 .nav{display:flex;align-items:center;gap:34px}
 .nav a{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-decoration:none;white-space:nowrap;position:relative;padding:6px 0;line-height:1.1}
-.nav a.btn{font-family:var(--label);font-weight:600;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase}
+.nav a.btn{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-transform:none;min-height:42px;padding:0 22px}
 .nav a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .nav a.nl:hover::after,.nav a.nl.cur::after{transform:scaleX(1)}
 .nav .btn{min-height:40px;padding:0 20px;font-size:.7rem}
@@ -76,7 +76,7 @@ header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{d
 .icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
 .menu-btn{display:none;position:relative;z-index:125;font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;padding:10px 0}
 .hdr-right{display:flex;align-items:center;gap:10px;position:relative;z-index:125}
-@media (min-width:960px) and (max-width:1099.98px){.nav{gap:15px}.nav a{font-size:1.02rem}.nav a.btn{padding:0 14px}header.site .bar{gap:16px}header.site .brand img{height:26px}}
+@media (min-width:960px) and (max-width:1099.98px){.nav{gap:15px}.nav a,.nav a.btn{font-size:1.02rem}.nav a.btn{padding:0 14px}header.site .bar{gap:16px}header.site .brand img{height:26px}}
 @media (min-width:1100px) and (max-width:1199.98px){.nav{gap:24px}}
 @media (max-width:959.98px){.nav{display:none}.menu-btn{display:block}:root{--navh:64px}header.site .brand img{height:24px}}
 
@@ -427,6 +427,7 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .drawer .m-sub a{transition:none}
 @media (max-width:959.98px){.menu-btn{margin-right:-8px}}
 @media (max-width:959.98px){.hero-btns{align-self:flex-start;width:auto}.hero-btns .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
+@media (max-width:959.98px){.drawer .btn-row{width:fit-content}.drawer .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
 
 </style>
 </head>
