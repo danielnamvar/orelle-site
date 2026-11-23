@@ -123,14 +123,15 @@ main{min-height:60vh}
 .hero-content{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:max(var(--vh),520px);padding-top:calc(var(--navh) + 40px);padding-bottom:clamp(64px,11vh,120px)}
 .hero-h1{font-size:clamp(2.6rem,5.4vw,5rem);color:#fff;max-width:17ch;text-wrap:balance;font-weight:500;line-height:1.02}
 .hero-sub{font-size:clamp(1.05rem,1.4vw,1.3rem);max-width:34rem;margin:20px 0 34px;color:rgba(255,255,255,.88)}
-.scroll-cue{position:absolute;right:max(var(--pad),calc((100vw - 1366px)/2 + var(--pad)));bottom:38px;z-index:3;display:flex;flex-direction:column;align-items:center;gap:11px;padding:8px 0;color:rgba(255,255,255,.66);transition:color .25s,opacity .45s}
+.hero-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:36px}
+.hero-foot .hero-btns{margin-top:0}
+.scroll-cue{display:flex;flex-direction:row;align-items:center;gap:14px;height:48px;padding:0;color:rgba(255,255,255,.66);transition:color .25s,opacity .45s;flex:none}
 .scroll-cue:hover,.scroll-cue:focus-visible{color:#fff}
-.scroll-cue .lbl{font-family:var(--label);font-weight:500;font-size:.5625rem;letter-spacing:.3em;text-indent:.3em;text-transform:uppercase;line-height:1}
-.scroll-cue .ln{position:relative;width:1px;height:56px;background:rgba(255,255,255,.24);overflow:hidden}
-.scroll-cue .ln::after{content:"";position:absolute;left:0;top:-20px;width:1px;height:20px;background:linear-gradient(180deg,rgba(181,154,106,0),var(--brass));animation:cueFall 2.6s cubic-bezier(.45,0,.55,1) infinite}
-@keyframes cueFall{0%{top:-20px}62%,100%{top:56px}}
+.scroll-cue .lbl{font-family:var(--label);font-weight:500;font-size:.5625rem;letter-spacing:.3em;text-transform:uppercase;line-height:1}
+.scroll-cue .ln{position:relative;width:1px;height:48px;background:rgba(255,255,255,.24);overflow:hidden}
+.scroll-cue .ln::after{content:"";position:absolute;left:0;top:-18px;width:1px;height:18px;background:linear-gradient(180deg,rgba(181,154,106,0),var(--brass));animation:cueFall 2.6s cubic-bezier(.45,0,.55,1) infinite}
+@keyframes cueFall{0%{top:-18px}62%,100%{top:48px}}
 .scroll-cue.hide{opacity:0;pointer-events:none}
-@media (max-width:959.98px){.scroll-cue{bottom:26px;gap:9px}.scroll-cue .ln{height:40px}}
 
 /* banner */
 .banner{position:relative;height:clamp(300px,52vh,520px);background:var(--ink);overflow:hidden;color:#fff}
@@ -431,7 +432,7 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .menu-btn.is-open .bars i:nth-child(3){top:7.25px;transform:rotate(-45deg)}
 .drawer .m-sub a{transition:none}
 @media (max-width:959.98px){.menu-btn{margin-right:-8px}}
-@media (max-width:959.98px){.hero-btns{align-self:flex-start;width:auto}.hero-btns .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
+@media (max-width:959.98px){.hero-btns{width:auto}.scroll-cue{gap:10px}.hero-btns .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
 @media (max-width:959.98px){.drawer .btn-row{width:fit-content}.drawer .btn{padding:0 20px;font-size:.66rem;letter-spacing:.09em;white-space:nowrap}}
 footer.site .contact{display:flex;flex-wrap:wrap;align-items:center;gap:8px 0}
 footer.site .li{display:inline-flex;align-items:center;gap:8px;margin-left:22px;padding:6px 12px;border:1px solid rgba(255,255,255,.35);font-family:var(--label);font-size:.66rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#fff;transition:border-color .2s,color .2s}
@@ -439,6 +440,8 @@ footer.site .li:hover{border-color:var(--brass);color:var(--brass)}
 @media (max-width:959.98px){footer.site .li{margin-left:0;margin-top:10px}}
 footer.site .sep{margin:0 10px}
 @media (max-width:959.98px){footer.site .contact{flex-direction:column;align-items:flex-start;gap:6px}footer.site .sep{display:none}}
+@media (max-width:959.98px){.hero-foot{gap:14px}.hero-btns .btn{padding:0 16px}.scroll-cue{flex-direction:column;gap:7px;justify-content:flex-end}.scroll-cue .ln{height:30px}.scroll-cue .ln::after{animation-name:cueFallS}}
+@keyframes cueFallS{0%{top:-18px}62%,100%{top:30px}}
 
 </style>
 </head>
@@ -505,11 +508,13 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
     <div class="hero-media" data-img="home" style="background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1800&q=72&auto=format&fit=crop');background-position:50% 62%"></div>
     <div class="hero-content wrap">
       <h1 class="hero-h1">Celebrating 33 years as stewards of your net&nbsp;worth.</h1>
-      <div class="btn-row hero-btns">
-        <a class="btn btn-solid" href="/contact">Request a private consultation</a>
+      <div class="hero-foot">
+        <div class="btn-row hero-btns">
+          <a class="btn btn-solid" href="/contact">Request a private consultation</a>
+        </div>
+        <button class="scroll-cue" type="button" aria-label="Scroll to content"><span class="lbl">Scroll</span><span class="ln" aria-hidden="true"></span></button>
       </div>
     </div>
-    <button class="scroll-cue" type="button" aria-label="Scroll to content"><span class="lbl">Scroll</span><span class="ln" aria-hidden="true"></span></button>
   </div>
 
   <div class="band band-light">
