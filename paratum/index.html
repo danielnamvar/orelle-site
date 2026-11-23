@@ -59,7 +59,8 @@ header.site{position:fixed;inset:0 0 auto 0;z-index:120;height:var(--navh);color
 header.site::before{content:"";position:absolute;inset:0;background:rgba(14,24,34,0);transition:background .35s var(--ease),box-shadow .35s var(--ease)}
 header.site.solid{color:var(--ink)}
 header.site.solid::before{background:rgba(255,255,255,.97);box-shadow:0 1px 2px rgba(0,0,0,.10),0 6px 18px rgba(0,0,0,.14)}
-header.site .bar{position:relative;height:100%;display:flex;align-items:center;justify-content:space-between;gap:28px}
+header.site .bar{position:relative;height:100%;display:flex;align-items:center;justify-content:flex-start;gap:28px}
+.nav{margin-left:auto}
 header.site .brand{position:relative;z-index:125;display:flex;align-items:center;text-decoration:none;flex:0 0 auto}
 header.site .brand img{height:30px;width:auto}
 header.site .brand .lg-light{display:none}
@@ -296,13 +297,13 @@ footer.site .copy a:hover{color:var(--brass)}
 html.rv-on .rv{opacity:0;transform:translateY(12px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
 html.rv-on .rv.in{opacity:1;transform:none}
 /* intro */
-body.boot-seq header.site .brand,body.boot-seq .hero-h1,body.boot-seq .hero-sub,body.boot-seq .hero-btns .btn,body.boot-seq .nav a,body.boot-seq .hdr-right .icon-btn,body.boot-seq .menu-btn,body.boot-seq .scroll-cue{opacity:0}
+body.boot-seq header.site .brand,body.boot-seq .hero-h1,body.boot-seq .hero-sub,body.boot-seq .hero-btns .btn,body.boot-seq .nav>a,body.boot-seq .nav>.dd>a,body.boot-seq .hdr-right .icon-btn,body.boot-seq .menu-btn,body.boot-seq .scroll-cue{opacity:0}
 body.boot-seq.go header.site .brand{animation:fadein .8s var(--ease) .1s both}
 body.boot-seq.go .hero-h1{animation:rise18 .9s var(--ease) .35s both}
 body.boot-seq.go .hero-sub{animation:rise18 .9s var(--ease) .55s both}
 body.boot-seq.go .hero-btns .btn:nth-child(1){animation:rise18 .8s var(--ease) .85s both}
 body.boot-seq.go .hero-btns .btn:nth-child(2){animation:rise18 .8s var(--ease) .97s both}
-body.boot-seq.go .nav a,body.boot-seq.go .hdr-right .icon-btn,body.boot-seq.go .menu-btn{animation:fadein .6s var(--ease) both;animation-delay:calc(1.25s + var(--i,0)*70ms)}
+body.boot-seq.go .nav>a,body.boot-seq.go .nav>.dd>a,body.boot-seq.go .hdr-right .icon-btn,body.boot-seq.go .menu-btn{animation:fadein .6s var(--ease) both;animation-delay:calc(1.25s + var(--i,0)*70ms)}
 body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 @keyframes rise18{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.has-img{transform:none!important}html.rv-on .rv{opacity:1;transform:none}.card:hover .card-media-in{transform:none}}
@@ -348,11 +349,45 @@ body.boot-seq.go .scroll-cue{animation:fadein .8s var(--ease) 1.9s both}
 .bio-modal{position:fixed;inset:0;z-index:200;background:rgba(14,24,34,.6);display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;transition:opacity .25s}
 .bio-modal.open{opacity:1}
 .bio-modal[hidden]{display:none}
-.bio-card{position:relative;background:#fff;max-width:640px;width:100%;max-height:88vh;overflow:auto;padding:48px 44px 44px}
+.bio-card{position:relative;background:#fff;max-width:780px;width:100%;max-height:88vh;overflow:auto;padding:48px 44px 44px}
 .bio-card h2{font-size:2.2rem;margin-bottom:6px;padding-right:60px}
 .bio-role{font-family:var(--label);font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--brass-deep);margin-bottom:22px}
 .bio-close{position:absolute;top:18px;right:20px;font-family:var(--label);font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);padding:8px}
 @media (max-width:959.98px){.bio-card{max-height:94vh;padding:40px 24px 28px}.bio-card h2{font-size:1.7rem}}
+
+/* dropdown */
+.dd{position:relative;display:flex;align-items:center;height:var(--navh)}
+.dd-panel{position:absolute;top:100%;left:50%;transform:translate(-50%,8px);display:grid;grid-template-columns:repeat(3,minmax(190px,auto));gap:34px;padding:30px 34px 32px;background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08),0 14px 34px rgba(14,24,34,.16);border-top:2px solid var(--brass);opacity:0;visibility:hidden;transition:opacity .2s,transform .2s,visibility .2s;z-index:130}
+.dd:hover .dd-panel,.dd:focus-within .dd-panel{opacity:1;visibility:visible;transform:translate(-50%,0)}
+.dd.shut .dd-panel{opacity:0;visibility:hidden}
+.dd-col{display:flex;flex-direction:column;gap:2px}
+.nav .dd-panel a{font-family:var(--sans);font-size:.98rem;color:var(--text);padding:5px 0;white-space:nowrap}
+.nav .dd-panel a.dd-h{font-family:var(--serif);font-size:1.2rem;color:var(--ink);padding-bottom:6px}
+.nav .dd-panel a:hover{color:var(--brass-deep)}
+.dd-col a.dd-h~a.dd-h{margin-top:0}
+/* mobile sub menu */
+.drawer .m-group{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--rule)}
+.drawer .m-group a{border-bottom:0;flex:1}
+.m-toggle{font-size:1.6rem;line-height:1;width:44px;height:44px;color:var(--ink)}
+.m-sub{display:none;padding:6px 0 10px 16px;border-bottom:1px solid var(--rule)}
+.m-sub.open{display:block}
+.drawer .m-sub a{font-size:1.2rem;padding:6px 0;border-bottom:0;opacity:1;transform:none}
+.drawer .m-sub a.m-sub2{font-family:var(--sans);font-size:1rem;padding:4px 0 4px 16px;color:var(--grey)}
+/* firm intro */
+.firm-intro{font-size:1.2rem;line-height:1.7;margin:18px 0 8px;max-width:44rem}
+/* portraits */
+.person{padding:0;min-height:0;flex-direction:row;gap:0;align-items:stretch}
+.person .pic{flex:0 0 38%}
+.pinfo{display:flex;flex-direction:column;gap:8px;padding:22px 20px;flex:1;min-width:0}
+.pic{position:relative;display:block;aspect-ratio:4/5;background:var(--ivory);overflow:hidden}
+.pic img{width:100%;height:100%;object-fit:cover}
+.ph{position:absolute;inset:0;display:block}
+.ph svg{position:absolute;left:12%;right:12%;bottom:0;width:76%;fill:#E6DFD1}
+.ph i{position:absolute;left:12px;top:10px;font-style:normal;font-family:var(--label);font-size:.62rem;font-weight:600;letter-spacing:.14em;color:var(--brass-deep)}
+.bio-grid{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start}
+@media (max-width:959.98px){.person{flex-direction:column}.person .pic{flex:none;width:100%}.pinfo{padding:14px 14px 16px}.bio-grid{grid-template-columns:110px 1fr;gap:18px}}
+@media (max-width:959.98px){.dd-panel{display:none}}
+@media (max-width:959.98px){.hdr-right{margin-left:auto}}
 
 </style>
 </head>
@@ -368,7 +403,14 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
     <a class="brand" href="/" aria-label="Paratum home"><img class="lg-dark" src="/paratum/logo-on-dark.png" alt="Paratum" width="900" height="137"><img class="lg-light" src="/paratum/logo-on-light.png" alt="" width="900" height="137"></a>
     <nav class="nav" aria-label="Main">
       <a class="nl" href="/approach">How we work</a>
-      <a class="nl" href="/solutions" data-group="solutions">Solutions</a>
+      <div class="dd">
+        <a class="nl" href="/solutions" data-group="solutions" aria-haspopup="true">Solutions</a>
+        <div class="dd-panel" role="menu">
+          <div class="dd-col"><a class="dd-h" href="/tax-strategy">Tax strategy</a><a href="/tax-strategy/oil-and-gas">Oil and gas</a><a href="/tax-strategy/ppli">PPLI</a><a href="/tax-strategy/income-shifting">Income shifting</a><a href="/tax-strategy/real-estate">Real estate</a></div>
+          <div class="dd-col"><a class="dd-h" href="/asset-protection">Asset protection</a><a href="/asset-protection/structures">Protection structures</a><a href="/asset-protection/trusts-and-fiduciary">Trusts and fiduciary</a><a href="/asset-protection/succession">Succession</a><a href="/asset-protection/pre-litigation">Pre-litigation planning</a></div>
+          <div class="dd-col"><a class="dd-h" href="/ma-advisory">M&amp;A advisory</a><a class="dd-h" href="/family-office">Family office</a><a class="dd-h" href="/clients">Who we serve</a><a class="dd-h" href="/experience">Case studies</a></div>
+        </div>
+      </div>
       <a class="nl" href="/firm">The Firm</a>
       <a class="nl" href="/insights">Insights</a>
       <a class="btn" href="/contact">Contact</a>
@@ -383,8 +425,12 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
     <nav aria-label="Mobile">
       <a href="/">Home</a>
       <a href="/approach">How we work</a>
-      <a href="/solutions" data-group="solutions">Solutions</a>
-      <a href="/clients">Who we serve</a>
+      <div class="m-group"><a href="/solutions" data-group="solutions">Solutions</a><button class="m-toggle" type="button" aria-expanded="false" aria-label="Show solutions">+</button></div>
+      <div class="m-sub">
+        <a href="/tax-strategy">Tax strategy</a><a class="m-sub2" href="/tax-strategy/oil-and-gas">Oil and gas</a><a class="m-sub2" href="/tax-strategy/ppli">PPLI</a><a class="m-sub2" href="/tax-strategy/income-shifting">Income shifting</a><a class="m-sub2" href="/tax-strategy/real-estate">Real estate</a>
+        <a href="/asset-protection">Asset protection</a><a class="m-sub2" href="/asset-protection/structures">Protection structures</a><a class="m-sub2" href="/asset-protection/trusts-and-fiduciary">Trusts and fiduciary</a><a class="m-sub2" href="/asset-protection/succession">Succession</a><a class="m-sub2" href="/asset-protection/pre-litigation">Pre-litigation planning</a>
+        <a href="/ma-advisory">M&amp;A advisory</a><a href="/family-office">Family office</a><a href="/clients">Who we serve</a><a href="/experience">Case studies</a>
+      </div>
       <a href="/firm">The Firm</a>
       <a href="/insights">Insights</a>
     </nav>
@@ -880,28 +926,16 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 <!-- ============ FIRM ============ -->
 <section class="page" id="p-firm" data-route="/firm" data-img="firm" data-next="/insights" data-next-label="Insights"
   data-title="About Paratum | Stewardship Since 1994 | Beverly Hills"
-  data-desc="Paratum is a Beverly Hills wealth management and advisory firm whose leadership has served clients in tax, asset protection, succession and family office matters since 1994.">
+  data-desc="Paratum is Latin for prepared. Its team of advisors in tax, law, banking, asset management and insurance keeps clients ready for the sale, the claim and the next generation.">
   <header class="banner"><div class="banner-media" data-img="firm"></div><div class="wrap"><h1>The Firm</h1></div></header>
   <div class="band band-light">
-    <div class="wrap narrow prose">
-      <p class="lede">Since 1994, Paratum&rsquo;s leadership has acted as steward of its clients' net worth: independent, discreet, and built for the assets and situations that do not fit.</p>
-      <h2>The name</h2>
-      <p><em>Paratum</em> is Latin for &ldquo;prepared,&rdquo; from <em>parare</em>, to make ready. It describes the work. The structures that matter most are the ones put in place before they are needed: before the sale, before the claim, before the next generation takes over.</p>
-      <h2>The firm</h2>
-      <p>Paratum began with tax structuring and grew, at its clients' request, into the coordinating role it holds today: designing strategy across tax, protection and succession, and managing the specialists who carry it out. It has no products to sell. Its clients are unnamed by design, and most arrive by referral.</p>
-    </div>
-    <div class="wrap"><div class="figures" id="figures"></div></div>
-    <div class="wrap narrow prose">
-      <h2>Principles</h2>
-      <p><strong>Integrity.</strong> Advice follows the client's interest, never a product or a provider. <strong>Wisdom.</strong> Three decades of seeing which structures last and which do not. <strong>Ingenuity.</strong> Finding the door where others see a wall. <strong>Experience.</strong> Matters across structured capital, cross-border holdings and stewardship at scale.</p>
+    <div class="wrap narrow">
+      <p class="statement"><em>Paratum</em> is Latin for &ldquo;prepared.&rdquo;</p>
+      <p class="firm-intro">The firm is built on a simple idea: the best outcomes belong to those who are ready before the moment arrives. Its advisors in tax, law, banking, asset management and insurance work as one team, so that every client is ready for the sale, ready for the claim and ready for the next generation.</p>
     </div>
     <div class="wrap">
       <h2 class="h-rule">Team</h2>
       <div class="team" id="people"></div>
-    </div>
-    <div class="wrap narrow prose">
-      <h2>One office. Four continents.</h2>
-      <p>Paratum works from Beverly Hills with clients and counterparties across the United States, Europe, Asia, South America and the Middle East.</p>
     </div>
   </div>
 </section>
@@ -1033,7 +1067,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 </main>
 
 <div class="bio-modal" id="bio-modal" role="dialog" aria-modal="true" aria-labelledby="bio-name" hidden>
-  <div class="bio-card"><button class="bio-close" type="button">Close</button><h2 id="bio-name"></h2><p class="bio-role" id="bio-role"></p><p id="bio-text"></p></div>
+  <div class="bio-card"><button class="bio-close" type="button">Close</button><div class="bio-grid"><div class="pic" id="bio-pic"></div><div><h2 id="bio-name"></h2><p class="bio-role" id="bio-role"></p><p id="bio-text"></p></div></div></div>
 </div>
 
 <footer class="site">
@@ -1097,14 +1131,14 @@ const FIGURES = [
   ['Four', 'Continents served from one office']
 ];
 
-// Team: shown as blocks on The Firm; a block opens its bio. Leave bio empty until it is approved.
+// Team: shown as blocks on The Firm; a block opens its bio. photo = image path (4:5 portrait); empty shows a placeholder.
 const PEOPLE = [
-  { name: 'Aaron Sokol', cred: 'JD, MBA', role: 'Principal and Founder', bio: 'Aaron Sokol is the Principal and Founder of Paratum. He was previously a Managing Director at Euram Structured Products and at Bear, Stearns & Co. in Los Angeles, with earlier roles at Deutsche Bank Alex. Brown and Scudder Kemper Investments. He holds a J.D. from Boston University, an M.B.A. from the University of Southern California and a B.S. from Yeshiva University.' },
-  { name: 'Doug Stein', cred: 'Esq.', role: 'Tax Counsel', bio: '' },
-  { name: 'Vijay Chandran', cred: '', role: 'Advisor, C&I Banking', bio: '' },
-  { name: 'Velios Kodomichalos', cred: '', role: 'Advisor, Asset Management', bio: '' },
-  { name: 'Jordan Frenkel', cred: 'CPA', role: 'Advisor, PPLI', bio: '' },
-  { name: 'Michael Malc', cred: 'CPA', role: 'Tax Accounting', bio: '' }
+  { photo: '', name: 'Aaron Sokol', cred: 'JD, MBA', role: 'Principal and Founder', bio: 'Aaron Sokol is the Principal and Founder of Paratum. He was previously a Managing Director at Euram Structured Products and at Bear, Stearns & Co. in Los Angeles, with earlier roles at Deutsche Bank Alex. Brown and Scudder Kemper Investments. He holds a J.D. from Boston University, an M.B.A. from the University of Southern California and a B.S. from Yeshiva University.' },
+  { photo: '', name: 'Doug Stein', cred: 'Esq.', role: 'Tax Counsel', bio: '' },
+  { photo: '', name: 'Vijay Chandran', cred: '', role: 'Advisor, C&I Banking', bio: '' },
+  { photo: '', name: 'Velios Kodomichalos', cred: '', role: 'Advisor, Asset Management', bio: '' },
+  { photo: '', name: 'Jordan Frenkel', cred: 'CPA', role: 'Advisor, PPLI', bio: '' },
+  { photo: '', name: 'Michael Malc', cred: 'CPA', role: 'Tax Accounting', bio: '' }
 ];
 
 const CASES_ARE_SAMPLES = true; // illustrative placeholders: replace with approved case studies before launch
@@ -1196,9 +1230,11 @@ const INSIGHTS = [
   const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;');
   const fig = $('#figures'); if (fig) fig.innerHTML = FIGURES.map(f => `<div class="fig"><b>${esc(f[0])}</b><span>${esc(f[1])}</span></div>`).join('');
   const ppl = $('#people');
-  if (ppl) ppl.innerHTML = PEOPLE.map((p, i) => `<button class="person" type="button" data-i="${i}"><b>${esc(p.name)}${p.cred ? `<span>, ${esc(p.cred)}</span>` : ''}</b><em>${esc(p.role)}</em><span class="more">Biography</span></button>`).join('');
+  const initials = n => n.split(' ').map(w => w[0]).slice(0, 2).join('');
+  const portrait = p => p.photo ? `<img src="${p.photo}" alt="${esc(p.name)}" loading="lazy">` : `<span class="ph" aria-hidden="true"><svg viewBox="0 0 80 100"><circle cx="40" cy="38" r="17"/><path d="M8 100c3-22 16-34 32-34s29 12 32 34z"/></svg><i>${esc(initials(p.name))}</i></span>`;
+  if (ppl) ppl.innerHTML = PEOPLE.map((p, i) => `<button class="person" type="button" data-i="${i}"><span class="pic">${portrait(p)}</span><span class="pinfo"><b>${esc(p.name)}${p.cred ? `<span>, ${esc(p.cred)}</span>` : ''}</b><em>${esc(p.role)}</em><span class="more">Biography</span></span></button>`).join('');
   const modal = $('#bio-modal'); let lastFocus = null;
-  function openBio(i) { const p = PEOPLE[i]; lastFocus = document.activeElement; $('#bio-name').innerHTML = esc(p.name) + (p.cred ? `<span>, ${esc(p.cred)}</span>` : ''); $('#bio-role').textContent = p.role; $('#bio-text').textContent = p.bio || 'Biography to follow.'; modal.hidden = false; requestAnimationFrame(() => modal.classList.add('open')); body.style.overflow = 'hidden'; $('.bio-close', modal).focus(); }
+  function openBio(i) { const p = PEOPLE[i]; lastFocus = document.activeElement; $('#bio-pic').innerHTML = portrait(p); $('#bio-name').innerHTML = esc(p.name) + (p.cred ? `<span>, ${esc(p.cred)}</span>` : ''); $('#bio-role').textContent = p.role; $('#bio-text').textContent = p.bio || 'Biography to follow.'; modal.hidden = false; requestAnimationFrame(() => modal.classList.add('open')); body.style.overflow = 'hidden'; $('.bio-close', modal).focus(); }
   function closeBio() { if (modal.hidden) return; modal.classList.remove('open'); body.style.overflow = ''; setTimeout(() => { modal.hidden = true; }, 250); if (lastFocus) lastFocus.focus(); }
   if (ppl) ppl.addEventListener('click', e => { const b = e.target.closest('.person'); if (b) openBio(+b.dataset.i); });
   if (modal) { modal.addEventListener('click', e => { if (e.target === modal || e.target.closest('.bio-close')) closeBio(); }); addEventListener('keydown', e => { if (e.key === 'Escape') closeBio(); }); }
@@ -1316,6 +1352,13 @@ const INSIGHTS = [
   }
   menuBtn.addEventListener('click', () => drawer.classList.contains('open') ? closeMenu() : openMenu());
 
+  /* ---- solutions dropdown ---- */
+  $$('.dd').forEach(dd => {
+    dd.addEventListener('click', e => { if (e.target.closest('.dd-panel a')) { dd.classList.add('shut'); document.activeElement && document.activeElement.blur(); } });
+    dd.addEventListener('mouseleave', () => dd.classList.remove('shut'));
+  });
+  $$('.m-toggle').forEach(t => t.addEventListener('click', () => { const sub = t.parentElement.nextElementSibling; const open = sub.classList.toggle('open'); t.setAttribute('aria-expanded', open); t.textContent = open ? '\u2212' : '+'; }));
+
   /* ---- search ---- */
   const sbox = $('.search'), sin = $('.search input'), sres = $('.search ul');
   const index = pages.filter(p => !['p-404', 'p-article'].includes(p.id)).map(p => ({ route: p.dataset.route, title: (p.dataset.title || '').split('|')[0].trim(), text: p.textContent.replace(/\s+/g, ' ').toLowerCase(), desc: p.dataset.desc || '' }));
@@ -1348,7 +1391,7 @@ const INSIGHTS = [
   });
 
   /* ---- intro + boot ---- */
-  $$('.nav a, .hdr-right .icon-btn, .menu-btn').forEach((a, i) => a.style.setProperty('--i', i));
+  $$('.nav > a, .nav > .dd > a, .hdr-right .icon-btn, .menu-btn').forEach((a, i) => a.style.setProperty('--i', i));
   setNavH();
   let start = strip(location.pathname);
   if (location.hash && location.hash.length > 1) { const h = '/' + location.hash.slice(1).replace(/^\//, ''); if (find(h)) { start = h; if (LIVE) history.replaceState({}, '', BASE + h); } }
