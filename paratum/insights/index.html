@@ -463,6 +463,11 @@ footer.site .sep{margin:0 10px}
 .drawer nav>a,.drawer nav>.m-group>a{text-transform:uppercase;letter-spacing:.07em;font-size:1.35rem}
 .nav>a.btn{font-size:.98rem;letter-spacing:.09em;text-transform:uppercase}
 @media (min-width:960px) and (max-width:1099.98px){.nav>a.btn{font-size:.84rem}}
+/* nav hover/current: slight enlarge + bold + shadow */
+.nav a.nl{transition:color .2s,transform .25s var(--ease),text-shadow .25s;transform-origin:center}
+.nav a.nl:hover,.nav a.nl.cur{transform:scale(1.07)}
+header.site:not(.solid) .nav a.nl:hover,header.site:not(.solid) .nav a.nl.cur{text-shadow:0 2px 12px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.5)}
+header.site.solid .nav a.nl:hover,header.site.solid .nav a.nl.cur{text-shadow:0 2px 6px rgba(14,24,34,.22)}
 
 </style>
 </head>
