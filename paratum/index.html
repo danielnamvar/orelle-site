@@ -68,7 +68,7 @@ header.site.solid .brand .lg-dark,body.menu-open header.site .brand .lg-dark{dis
 header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{display:block}
 .nav{display:flex;align-items:center;gap:34px}
 .nav a{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-decoration:none;white-space:nowrap;position:relative;padding:6px 0;line-height:1.1}
-.nav a.btn{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-transform:none;min-height:42px;padding:0 22px}
+.nav a.btn{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-transform:none;min-height:42px;padding:0 22px;border-color:var(--brass)}
 .nav a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .nav a.nl:hover::after,.nav a.nl.cur::after{transform:scaleX(1)}
 .nav .btn{min-height:40px;padding:0 20px;font-size:.7rem}
@@ -100,8 +100,9 @@ body.menu-open header.site::before{background:var(--paper);box-shadow:none}
 .btn-ghost-light{color:#fff;border-color:rgba(255,255,255,.7)}
 .btn-ghost-light:hover{background:rgba(255,255,255,.1);border-color:#fff}
 .btn-ghost{color:var(--ink);border-color:var(--ink)}
-header.site:not(.solid) .nav .btn{background:transparent;color:#fff;border-color:rgba(255,255,255,.75)}
-header.site.solid .nav .btn{background:var(--ink);color:#fff;border-color:var(--ink)}
+header.site:not(.solid) .nav .btn{background:transparent;color:#fff;border-color:var(--brass)}
+header.site.solid .nav .btn{background:transparent;color:var(--ink);border-color:var(--brass)}
+header.site .nav .btn:hover{background:var(--brass);color:var(--ink);border-color:var(--brass)}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px}
 @media (max-width:959.98px){.btn-row{flex-direction:column;width:fit-content;align-items:stretch}}
 
@@ -525,7 +526,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 
   <div class="band band-light">
     <div class="wrap narrow">
-      <p class="statement">Paratum is a wealth management and advisory firm specialized in designing tax mitigation, asset protection and succession strategies for institutions, high-net-worth families and business owners in complex, high-stakes situations.</p>
+      <p class="statement">Paratum Inc. (&ldquo;Paratum&rdquo;) is a Beverly Hills-based boutique wealth management and advisory firm specialized in designing tax mitigation, asset protection and succession strategies for institutions, high-net-worth families and business owners in complex, high-stakes situations.</p>
       <p class="statement">Since 1994, Paratum&rsquo;s leadership has delivered resilient, future-proof solutions that protect wealth, shield privacy and preserve the legacy of its clients.</p>
     </div>
   </div>
