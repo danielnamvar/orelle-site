@@ -69,8 +69,10 @@ header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{d
 .nav{display:flex;align-items:center;gap:34px}
 .nav a{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-decoration:none;white-space:nowrap;position:relative;padding:6px 0;line-height:1.1}
 .nav a.btn{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-transform:none;min-height:42px;padding:0 22px;border-color:var(--brass)}
-.nav a.nl::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
-.nav a.nl:hover::after,.nav a.nl.cur::after{transform:scaleX(1)}
+.nav a.nl{display:inline-flex;flex-direction:column;align-items:center;transition:color .2s}
+.nav a.nl::after{content:attr(data-t);font-weight:600;height:0;overflow:hidden;visibility:hidden;pointer-events:none}
+.nav a.nl:hover,.nav a.nl.cur{font-weight:600;color:var(--brass)}
+header.site.solid .nav a.nl:hover,header.site.solid .nav a.nl.cur,body.menu-open header.site .nav a.nl:hover{color:var(--brass-deep)}
 .nav .btn{min-height:40px;padding:0 20px;font-size:.7rem}
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px}
 .icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
@@ -100,9 +102,8 @@ body.menu-open header.site::before{background:var(--paper);box-shadow:none}
 .btn-ghost-light{color:#fff;border-color:rgba(255,255,255,.7)}
 .btn-ghost-light:hover{background:rgba(255,255,255,.1);border-color:#fff}
 .btn-ghost{color:var(--ink);border-color:var(--ink)}
-header.site:not(.solid) .nav .btn{background:transparent;color:#fff;border-color:var(--brass)}
-header.site.solid .nav .btn{background:transparent;color:var(--ink);border-color:var(--brass)}
-header.site .nav .btn:hover{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+header.site .nav .btn{background:var(--brass);color:var(--ink);border-color:var(--brass)}
+header.site .nav .btn:hover{background:#c8ae80;border-color:#c8ae80;color:var(--ink)}
 .btn-row{display:flex;flex-wrap:wrap;gap:14px}
 @media (max-width:959.98px){.btn-row{flex-direction:column;width:fit-content;align-items:stretch}}
 
@@ -464,18 +465,18 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
   <div class="wrap bar">
     <a class="brand" href="/" aria-label="Paratum home"><img class="lg-dark" src="/paratum/logo-on-dark.png" alt="Paratum" width="900" height="137"><img class="lg-light" src="/paratum/logo-on-light.png" alt="" width="900" height="137"></a>
     <nav class="nav" aria-label="Main">
-      <a class="nl" href="/approach">How we work</a>
+      <a class="nl" href="/approach" data-t="How we work">How we work</a>
       <div class="dd">
-        <a class="nl" href="/solutions" data-group="solutions" aria-haspopup="true">Solutions</a>
+        <a class="nl" href="/solutions" data-group="solutions" aria-haspopup="true" data-t="Solutions">Solutions</a>
         <div class="dd-panel" role="menu">
           <div class="dd-col"><a class="dd-h" href="/tax-strategy">Tax strategy</a><a href="/tax-strategy/oil-and-gas">Oil and gas</a><a href="/tax-strategy/ppli">PPLI</a><a href="/tax-strategy/income-shifting">Income shifting</a><a href="/tax-strategy/real-estate">Real estate</a></div>
           <div class="dd-col"><a class="dd-h" href="/asset-protection">Asset protection</a><a href="/asset-protection/structures">Protection structures</a><a href="/asset-protection/trusts-and-fiduciary">Trusts and fiduciary</a><a href="/asset-protection/succession">Succession</a><a href="/asset-protection/pre-litigation">Pre-litigation planning</a></div>
           <div class="dd-col"><a class="dd-h" href="/ma-advisory">M&amp;A advisory</a><a href="/ma-advisory">Sell-side and buy-side</a><a href="/ma-advisory">Tax attribute monetization</a><a class="dd-h dd-gap" href="/family-office">Family office</a><a href="/family-office">Wealth management oversight</a><a href="/family-office">Merchant banking</a></div>
         </div>
       </div>
-      <a class="nl" href="/experience">Case studies</a>
-      <a class="nl" href="/firm">The Firm</a>
-      <a class="nl" href="/insights">Insights</a>
+      <a class="nl" href="/experience" data-t="Case studies">Case studies</a>
+      <a class="nl" href="/firm" data-t="The Firm">The Firm</a>
+      <a class="nl" href="/insights" data-t="Insights">Insights</a>
       <a class="btn" href="/contact">Contact</a>
     </nav>
     <div class="hdr-right">
