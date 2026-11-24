@@ -517,6 +517,7 @@ header.site.solid .dd-panel{background:var(--ivory)}
 .article .faq-mini{margin-top:8px}
 .banner-article .wrap{flex-direction:column;align-items:flex-start;justify-content:flex-end}
 @media (max-width:959.98px){.short p:last-child{font-size:1.14rem}.short{padding:20px 20px}}
+.art-flag{display:block;font-family:var(--label);font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a4a2f;margin:0 0 10px}
 
 </style>
 </head>
@@ -605,7 +606,6 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
 
 <!-- ============ FIRM ============ -->
 <!-- ============ KNOWLEDGE ============ -->
-<!-- ============ EDITORIAL STANDARDS ============ -->
 <!-- ============ CONTACT ============ -->
 <!-- ============ LEGAL ============ -->
 <!-- ============ 404 ============ -->
@@ -622,7 +622,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <div class="contact"><a href="tel:+13107809936">310.780.9936</a><span class="sep" aria-hidden="true">·</span><span>369 South Doheny Drive, Suite 411, Beverly Hills</span><a class="li" id="footer-li" href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="Paratum on LinkedIn"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5.001A2.5 2.5 0 014.98 3.5zM3 8.98h4v12.02H3V8.98zM9.5 8.98h3.83v1.64h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.33c0-1.27-.02-2.9-1.77-2.9-1.77 0-2.04 1.38-2.04 2.81V21h-4V8.98z"/></svg>LinkedIn</a></div>
     </div>
     <nav class="links" aria-label="Footer">
-      <a href="/paratum/approach">Approach</a><a href="/paratum/solutions">Solutions</a><a href="/paratum/tax-strategy">Tax strategy</a><a href="/paratum/ma-advisory">M&amp;A advisory</a><a href="/paratum/asset-protection">Asset protection</a><a href="/paratum/family-office">Family office</a><a href="/paratum/people">People</a><a href="/paratum/experience">Case studies</a><a href="/paratum/knowledge">Knowledge</a><a href="/paratum/contact">Contact</a><a href="/paratum/editorial-standards">Editorial standards</a><a href="/paratum/legal">Legal</a>
+      <a href="/paratum/approach">Approach</a><a href="/paratum/solutions">Solutions</a><a href="/paratum/tax-strategy">Tax strategy</a><a href="/paratum/ma-advisory">M&amp;A advisory</a><a href="/paratum/asset-protection">Asset protection</a><a href="/paratum/family-office">Family office</a><a href="/paratum/people">People</a><a href="/paratum/experience">Case studies</a><a href="/paratum/knowledge">Knowledge</a><a href="/paratum/contact">Contact</a><a href="/paratum/legal">Legal</a>
     </nav>
     <p class="disc">Paratum, Inc. is not a law firm, accounting firm, registered investment adviser, broker-dealer or insurance agency, and does not provide legal, tax, accounting, investment or insurance advice. Those services are provided by independent licensed professionals engaged by the client. Nothing on this site is an offer to buy or sell any security or insurance product, or a tax opinion. <a href="/paratum/legal" data-sec="disclosures">Disclosures</a></p>
     <p class="copy">© <span class="yr">2026</span> Paratum, Inc. · Site by <a href="https://orellestudio.com" target="_blank" rel="noopener">Orélle</a></p>
@@ -906,7 +906,7 @@ const INSIGHTS = [
   }
 
   /* ---- router ---- */
-  const ALIASES = { '/disclosures': ['/legal', 'disclosures'], '/privacy': ['/legal', 'privacy'], '/terms': ['/legal', 'terms'], '/faq': ['/knowledge', 'faq'], '/insights': ['/knowledge'], '/clients': ['/approach', 'who-we-serve'], '/firm': ['/people'] };
+  const ALIASES = { '/disclosures': ['/legal', 'disclosures'], '/privacy': ['/legal', 'privacy'], '/terms': ['/legal', 'terms'], '/faq': ['/knowledge', 'faq'], '/insights': ['/knowledge'], '/clients': ['/approach', 'who-we-serve'], '/firm': ['/people'], '/editorial-standards': ['/legal', 'editorial'] };
   let pendingSec = null;
   function toSec(id) { const el = id && current && $(`[data-sec-id="${id}"]`, current); if (el) { el.classList.add('in'); scrollTo({ top: el.getBoundingClientRect().top + scrollY - header.offsetHeight - 24, behavior: 'instant' }); } }
   const norm = p => { p = p.replace(/\/index\.html$/, '').replace(/\/+$/, ''); return p || '/'; };
