@@ -71,8 +71,10 @@ header.site.solid .brand .lg-light,body.menu-open header.site .brand .lg-light{d
 .nav a.btn{font-family:var(--serif);font-weight:500;font-size:1.22rem;letter-spacing:0;text-transform:none;min-height:42px;padding:0 22px;border-color:var(--brass)}
 .nav a.nl{display:inline-flex;flex-direction:column;align-items:center;transition:color .2s}
 .nav a.nl::after{content:attr(data-t);font-weight:600;height:0;overflow:hidden;visibility:hidden;pointer-events:none}
-.nav a.nl:hover,.nav a.nl.cur{font-weight:600;color:var(--brass)}
-header.site.solid .nav a.nl:hover,header.site.solid .nav a.nl.cur,body.menu-open header.site .nav a.nl:hover{color:var(--brass-deep)}
+.nav a.nl:hover,.nav a.nl.cur{font-weight:600}
+header.site:not(.solid) .nav a.nl{color:rgba(255,255,255,.8);text-shadow:0 1px 10px rgba(0,0,0,.35)}
+header.site:not(.solid) .nav a.nl:hover,header.site:not(.solid) .nav a.nl.cur{color:#fff}
+header.site.solid .nav a.nl:hover,header.site.solid .nav a.nl.cur{color:var(--brass-deep)}
 .nav .btn{min-height:40px;padding:0 20px;font-size:.7rem}
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px}
 .icon-btn svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.4}
@@ -451,6 +453,14 @@ footer.site .sep{margin:0 10px}
 .hero-sub+.hero-foot{margin-top:28px}
 
 .about-copy{max-width:820px}
+
+/* menu items in caps */
+.nav>a,.nav>.dd>a{text-transform:uppercase;letter-spacing:.09em;font-size:1rem}
+@media (min-width:960px) and (max-width:1099.98px){.nav>a,.nav>.dd>a{font-size:.86rem;letter-spacing:.07em}}
+@media (min-width:1100px) and (max-width:1199.98px){.nav>a,.nav>.dd>a{font-size:.92rem}}
+.drawer nav>a,.drawer nav>.m-group>a{text-transform:uppercase;letter-spacing:.07em;font-size:1.35rem}
+.nav>a.btn{font-size:.98rem;letter-spacing:.09em;text-transform:uppercase}
+@media (min-width:960px) and (max-width:1099.98px){.nav>a.btn{font-size:.84rem}}
 
 </style>
 </head>
