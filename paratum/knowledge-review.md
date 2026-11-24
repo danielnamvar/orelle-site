@@ -10,7 +10,7 @@ Review request: check every statement of law, figure, threshold, date and exampl
 2. [Solo 401(k) vs. self-directed IRA, and when Roth makes sense](#2)
 3. [Revocable vs. irrevocable trusts](#3)
 4. [Five commonly considered asset protection trust states compared](#4)
-5. [Offshore asset protection trusts: Cook Islands, Nevis, Belize, Cayman, Gibraltar and others compared](#5)
+5. [Offshore asset protection trusts: the Cook Islands, Nevis and other jurisdictions compared](#5)
 6. [Equity stripping: how it works and where it fails](#6)
 7. [Charitable giving strategies compared: from donor-advised funds to NIMCRUTs](#7)
 8. [Oil and gas investments as a tax strategy: how they work, and their limits](#8)
@@ -31,7 +31,7 @@ Review request: check every statement of law, figure, threshold, date and exampl
 
 ### The short answer
 
-Not on their own. A net operating loss (NOL) is a tax attribute of the taxpayer that incurred it and cannot be sold or assigned separately. Its value is realized when the loss offsets the taxpayer’s own future taxable income, whether from ordinary profitable operations or through a transaction, most often by bringing a profitable business or income-producing assets into the loss company, or by acquiring the loss company. Every such transaction is subject to the limits of Sections 172, 269, 382, 383 and 384 of the Internal Revenue Code and to the economic substance doctrine, and must make sense apart from its tax benefits.
+Not on their own. A net operating loss (NOL) is a tax attribute of the taxpayer that incurred it and cannot be sold or assigned separately. Its value is realized when the loss offsets the taxpayer’s own future taxable income, whether from ordinary profitable operations or through a transaction, most often by bringing a profitable business or income-producing assets into the loss company, or by acquiring the loss company. Such transactions are subject to the limits of Sections 172, 269, 382, 383 and 384 of the Internal Revenue Code and, where it is relevant, the economic substance doctrine, and should make sense apart from their tax benefits.
 
 ### What is a net operating loss?
 
@@ -44,7 +44,7 @@ A net operating loss arises when a taxpayer’s allowable deductions exceed its 
 
 A company holding losses from both before and after 2018 deducts the older losses first; the 80 percent limit for the newer losses is then generally calculated on the taxable income remaining after those older deductions. The usable amount in any year therefore depends on the mix.
 
-An NOL is a tax attribute: a right to reduce future taxable income, but only if the company that holds it earns that income. In financial statements under ASC 740, an NOL carryforward generally gives rise to a deferred tax asset, which is then reduced by a valuation allowance to the extent realization is not more likely than not. The gross asset and its net carrying value can therefore differ substantially.
+An NOL is a tax attribute: a right to reduce future taxable income of the taxpayer that holds it, or of a successor that inherits it by statute, such as an acquiring corporation under Section 381, or of an affiliated group under the consolidated return rules, in each case subject to the applicable limits. In financial statements under ASC 740, an NOL carryforward generally gives rise to a deferred tax asset, which is then reduced by a valuation allowance to the extent realization is not more likely than not. The gross asset and its net carrying value can therefore differ substantially.
 
 Holding an NOL is not itself a problem to be solved: a company that returns to profitability realizes the value simply by using the loss against its own income. The transactions discussed below are alternatives for companies that cannot expect to do so on their own.
 
@@ -94,9 +94,10 @@ Illustrative and simplified. Rates change monthly, and the example ignores state
 
 ### Limitations and risks
 
-- **Section 269.** The IRS can disallow a deduction or credit where the principal purpose of an acquisition of control, or of property with a carryover basis, was the evasion or avoidance of federal income tax by securing a benefit the acquirer would not otherwise enjoy. A tax motive alone does not trigger the rule, but it must not be the principal purpose, and avoiding a Section 382 ownership change does not protect a transaction from it.
+- **Section 269.** The IRS can disallow a deduction or credit where the principal purpose of an acquisition of control, or of property with a carryover basis, was the evasion or avoidance of federal income tax by securing a benefit the acquirer would not otherwise enjoy. The rule applies only to acquisitions and benefits within its scope; a tax motive alone does not trigger it, but within that scope the acquisition cannot have tax avoidance as its principal purpose, and avoiding a Section 382 ownership change does not protect a transaction from it.
 - **Economic substance.** Where the economic substance doctrine is relevant to a transaction, Section 7701(o) generally requires that it meaningfully change the taxpayer’s economic position apart from federal income tax effects and have a substantial non-federal-income-tax purpose. A transaction that exists only to use a loss can be disregarded, and penalties can apply.
 - **Section 384.** When one corporation acquires control of another, or its assets in a reorganization, and either has a net unrealized built-in gain, preacquisition losses of the other generally cannot offset that gain when it is recognized during the five-year recognition period. The rule reaches recognized built-in gains, not ordinary post-acquisition operating income, and its application depends on definitions and exceptions in the statute.
+- **Cancellation of debt.** When a distressed company excludes cancellation-of-debt income from tax, for example in bankruptcy or while insolvent, Section 108(b) generally requires it to reduce its tax attributes, starting with NOLs, by the amount excluded. A restructuring can therefore shrink or eliminate the losses it was meant to preserve.
 - **Business continuity.** Failing to continue the loss company’s business enterprise for two years after an ownership change generally reduces the Section 382 limit to zero.
 - **Measurement.** Whether an ownership change has occurred depends on a detailed study of shareholder history, options and prior transactions. Errors are common and costly.
 - **State law.** States set their own NOL rules, and conformity varies. California has suspended NOL deductions for tax years 2024 through 2026 for corporations with \$1 million or more of income subject to California tax and for individuals with \$1 million or more of net business income or modified adjusted gross income. Disaster loss carryovers are not affected, and the carryover period for suspended losses is extended by up to three years. Other states have imposed their own caps or suspensions from time to time.
@@ -137,6 +138,7 @@ Its nominal value is the loss multiplied by the tax rate, which is an upper boun
 - [26 U.S.C. § 384: Limitation on use of preacquisition losses to offset built-in gains](https://www.law.cornell.edu/uscode/text/26/384)
 - [26 U.S.C. §§ 1211–1212: Capital losses and carryovers](https://www.law.cornell.edu/uscode/text/26/1212)
 - [26 U.S.C. § 7701(o): Clarification of economic substance doctrine](https://www.law.cornell.edu/uscode/text/26/7701)
+- [26 U.S.C. § 108(b): Reduction of tax attributes](https://www.law.cornell.edu/uscode/text/26/108)
 - [IRS Revenue Ruling 2026-21: Rates under Section 382 for November 2026](https://www.irs.gov/pub/irs-drop/rr-26-21.pdf)
 - [IRS Publication 536: Net Operating Losses for Individuals, Estates, and Trusts](https://www.irs.gov/publications/p536)
 - [California Franchise Tax Board: Net operating loss (2024–2026 suspension)](https://www.ftb.ca.gov/file/business/deductions/net-operating-loss.html)
@@ -169,7 +171,7 @@ A solo 401(k), also called a one-participant 401(k), is an ordinary 401(k) plan 
 
 The owner contributes in two capacities:
 
-- **As employee**, the owner can defer up to \$24,500 of compensation in 2026, plus an \$8,000 catch-up at age 50 or over, or \$11,250 at ages 60 through 63. The deferral limit applies per person across all plans the individual participates in, not per business.
+- **As employee**, the owner can defer up to \$24,500 of compensation in 2026, plus an \$8,000 catch-up at age 50 or over, or \$11,250 at ages 60 through 63. The deferral limit applies per person across all 401(k), 403(b) and similar plans subject to the shared limit of Section 402(g), not per business; governmental 457(b) plans generally have a separate limit.
 - **As employer**, the business can add a profit-sharing contribution of up to 25 percent of W-2 compensation. For a sole proprietor or partner, the equivalent is roughly 20 percent of net earnings from self-employment after deducting half of self-employment tax. S corporation distributions are not compensation for this purpose; only W-2 wages count.
 
 Total contributions are capped at \$72,000 for 2026, before catch-up contributions, and cannot exceed the owner’s compensation.
@@ -180,20 +182,21 @@ Total contributions are capped at \$72,000 for 2026, before catch-up contributio
 
 A self-directed IRA is a traditional or Roth IRA held with a custodian that permits investments beyond publicly traded securities, such as real estate, private loans, private company shares and LLC interests. The tax rules are the same as for any IRA; what differs is the custodian, which allows the investment and holds title on the account’s behalf.
 
-Contributions are limited to \$7,500 for 2026, plus a \$1,100 catch-up at age 50 or over, and require eligible compensation, although a spouse without compensation can contribute based on a working spouse’s income on a joint return. A deduction for a traditional IRA contribution phases out at higher incomes for people covered by a workplace plan. Direct Roth IRA contributions phase out between \$153,000 and \$168,000 of modified adjusted gross income for single filers and between \$242,000 and \$252,000 for married couples filing jointly.
+Contributions are limited to \$7,500 for 2026, plus a \$1,100 catch-up at age 50 or over, in total across all of a person’s traditional and Roth IRAs, and require eligible compensation, although a spouse without compensation can contribute based on a working spouse’s income on a joint return. A deduction for a traditional IRA contribution phases out at higher incomes for people covered by a workplace plan. Direct Roth IRA contributions phase out between \$153,000 and \$168,000 of modified adjusted gross income for single filers and between \$242,000 and \$252,000 for married couples filing jointly.
 
 ### How do they compare?
 
-|                               | Solo 401(k)                                                                       | Self-directed IRA                                                                                                         |
-|-------------------------------|-----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Who can use it                | Businesses with no employees the plan must cover other than owners and spouses    | Anyone with eligible compensation, or a spouse of someone who has it                                                      |
-| 2026 contribution limit       | Up to \$72,000 combined, plus catch-up, limited to compensation                   | \$7,500, plus \$1,100 catch-up at 50+                                                                                     |
-| Roth option                   | Yes, if the plan allows, with no income limit                                     | Yes, subject to income limits for direct contributions                                                                    |
-| Loans                         | Only if the plan document allows, within the Section 72(p) limits                 | Not permitted                                                                                                             |
-| Debt-financed real estate     | May qualify for the Section 514(c)(9) exception, subject to its conditions        | Generally taxable as unrelated debt-financed income                                                                       |
-| Annual filing                 | Form 5500-EZ once plan assets exceed \$250,000, and for the final plan year       | None by the owner; the custodian reports                                                                                  |
-| Federal bankruptcy exemption  | Generally exempt without a dollar cap                                             | Exempt up to \$1,711,975 (April 2025 to March 2028 adjustment period); qualified-plan rollovers are excluded from the cap |
-| Protection outside bankruptcy | Depends on state law; owner-only plans are generally not covered by ERISA Title I | Depends on state law                                                                                                      |
+|                               | Solo 401(k)                                                                                                                                              | Self-directed IRA                                                                                                                                                                                                                  |
+|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Who can use it                | Businesses with no employees the plan must cover other than owners and spouses                                                                           | Anyone with eligible compensation, or a spouse of someone who has it                                                                                                                                                               |
+| 2026 contribution limit       | Up to \$72,000 combined, plus catch-up, limited to compensation                                                                                          | \$7,500, plus \$1,100 catch-up at 50+                                                                                                                                                                                              |
+| Roth option                   | Yes, if the plan allows, with no income limit                                                                                                            | Yes, subject to income limits for direct contributions                                                                                                                                                                             |
+| Loans                         | Only if the plan document allows, within the Section 72(p) limits                                                                                        | Not permitted                                                                                                                                                                                                                      |
+| Debt-financed real estate     | May qualify for the Section 514(c)(9) exception, subject to its conditions                                                                               | Generally taxable as unrelated debt-financed income                                                                                                                                                                                |
+| Annual filing                 | Form 5500-EZ once the combined assets of the employer’s one-participant plans exceed \$250,000, and for the final plan year                              | Custodian reports contributions and values; Form 990-T is filed for the IRA if it has unrelated business or debt-financed income; the owner may need Form 8606 for nondeductible contributions, conversions and Roth distributions |
+| Federal bankruptcy exemption  | Generally exempt without a dollar cap                                                                                                                    | Exempt up to \$1,711,975 (April 2025 to March 2028 adjustment period); qualified-plan rollovers are excluded from the cap                                                                                                          |
+| Protection outside bankruptcy | Depends on state law; owner-only plans are generally not covered by ERISA Title I                                                                        | Depends on state law                                                                                                                                                                                                               |
+| Inherited accounts            | Inherited IRAs are not protected by the federal bankruptcy exemption for retirement funds (*Clark v. Rameker*); some states protect them under state law |                                                                                                                                                                                                                                    |
 
 ### Pros and cons of each
 
@@ -209,18 +212,18 @@ Contributions are limited to \$7,500 for 2026, plus a \$1,100 catch-up at age 50
 
 ### Prohibited transactions
 
-Both accounts are subject to the prohibited transaction rules of Section 4975. Directing the account’s investments is permitted. What is prohibited is dealing between the account and a *disqualified person*, a category that includes the owner and other fiduciaries, the owner’s spouse, ancestors, lineal descendants and their spouses, and entities in which those persons hold a significant interest. Common problems include:
+Both accounts are subject to the prohibited transaction rules of Section 4975, which also contain statutory and administrative exemptions for certain transactions. Directing the account’s investments is permitted. What is prohibited is dealing between the account and a *disqualified person*, a category that includes the owner and other fiduciaries, the owner’s spouse, ancestors, lineal descendants and their spouses, and entities in which those persons hold a significant interest. Common problems include:
 
 - selling or leasing property between the account and a disqualified person, or lending money in either direction;
-- a disqualified person providing services to the account’s property, or being compensated by it;
+- a disqualified person providing services to the account or its property, or being compensated by it, unless an exemption applies;
 - personal use of an account asset, such as living in or vacationing at a property the account owns; and
 - personally guaranteeing a loan to the account.
 
-The consequences differ by account. If an IRA owner engages in a prohibited transaction, the account generally ceases to be an IRA under Section 408(e)(2) and is treated as distributed at its fair market value on the first day of that year; the amount above any after-tax basis is taxable, and an early-distribution penalty may apply. In a qualified plan such as a solo 401(k), the result is instead generally an excise tax under Section 4975 on the disqualified person (15 percent, rising to 100 percent if not corrected), with correction required and possible consequences for the plan’s qualified status.
+The consequences differ by account. If an IRA owner engages in a prohibited transaction, the account generally ceases to be an IRA under Section 408(e)(2) and is treated as distributed at its fair market value on the first day of that year; the amount above any after-tax basis is taxable, and an early-distribution penalty may apply. For a Roth IRA, the deemed distribution follows the Roth ordering rules (regular contributions first, then conversions, then earnings), so only earnings in a nonqualified distribution are generally taxable, although penalties can apply to earnings and to recently converted amounts. In a qualified plan such as a solo 401(k), the result is instead generally an excise tax under Section 4975 on the disqualified person (15 percent, rising to 100 percent if not corrected), with correction required and possible consequences for the plan’s qualified status.
 
 ### Roth or traditional?
 
-A traditional contribution may be deductible (for an IRA, depending on income and workplace plan coverage), and distributions are taxed except to the extent they represent after-tax basis. A Roth contribution is made after tax, and *qualified* distributions, including earnings, are tax-free. A Roth distribution is generally qualified only after a five-year holding period and once the owner reaches 59½, dies or becomes disabled.
+A traditional contribution may be deductible (for an IRA, depending on income and workplace plan coverage), and distributions are taxed except to the extent they represent after-tax basis. A Roth contribution is made after tax, and *qualified* distributions, including earnings, are tax-free. A Roth distribution is generally qualified only after a five-year holding period and once the owner reaches 59½, dies or becomes disabled, or, for a Roth IRA, for a first-time home purchase up to a \$10,000 lifetime limit.
 
 #### Pros of Roth
 
@@ -293,7 +296,7 @@ Paratum coordinates the plan providers, custodians, CPAs and benefits counsel wh
 
 ### The short answer
 
-A revocable trust can be changed or cancelled at any time, so the person who creates it keeps full control. It can avoid probate for assets titled in it and provides for incapacity, but it offers no protection from the creator’s creditors and no estate tax savings. An irrevocable trust generally cannot be changed once funded. Giving up control is necessary, but not sufficient, for its benefits: an irrevocable trust may remove assets and future growth from the taxable estate, and may protect them from creditors, only when its terms, its funding and the powers and interests the creator keeps satisfy the applicable tax and state-law requirements.
+A revocable trust can be changed or cancelled at any time, so the person who creates it keeps full control. It can avoid probate for assets titled in it and provides for incapacity, but it offers no protection from the creator’s creditors and no estate tax savings. An irrevocable trust generally cannot be changed once funded. Irrevocability alone does not produce its benefits: an irrevocable trust may remove assets and future growth from the taxable estate, and may protect them from creditors, depending on the particular interests and powers the creator retains and on applicable tax and state law. Some administrative and investment powers can be retained without defeating the intended treatment; others cannot.
 
 ### What is a revocable trust?
 
@@ -305,9 +308,9 @@ For tax purposes a revocable trust is a grantor trust: income is reported on the
 
 An irrevocable trust is one the creator cannot simply amend or revoke. The creator transfers assets to a trustee, who manages them for the beneficiaries under the trust’s terms.
 
-Irrevocability is the starting point, not the result. Whether the assets are outside the creator’s estate depends on what the creator keeps: a retained right to income or use, certain powers over the trust and some powers of appointment can cause inclusion under Sections 2036, 2038 and 2041. Whether the assets are protected from the creator’s creditors depends on whether the creator is also a beneficiary and on state law.
+Irrevocability is the starting point, not the result. Whether the assets are outside the creator’s estate depends on the specific interests and powers the creator keeps, some of which are compatible with exclusion and some of which are not: a retained right to income or use, certain powers over the trust and some powers of appointment can cause inclusion under Sections 2036, 2038 and 2041. Whether the assets are protected from the creator’s creditors depends on whether the creator is also a beneficiary and on state law.
 
-For income tax, an irrevocable trust may be a grantor trust (with income reported by the creator), partly a grantor trust, or a separate taxpayer. A separate (non-grantor) trust deducts income it distributes, which beneficiaries then report under the distributable net income rules, and pays tax on what it retains at compressed rates.
+For income tax, an irrevocable trust may be a grantor trust (with income reported by the creator), partly a grantor trust, or a separate taxpayer. A separate (non-grantor) trust generally deducts distributions to the extent of its distributable net income, which beneficiaries then report according to its character; income retained by the trust is taxed to the trust at compressed rates. Not every distribution is taxable to the beneficiary: amounts in excess of distributable net income and certain specific gifts generally are not.
 
 “Irrevocable” is less rigid than it sounds. Trust protectors, decanting, nonjudicial settlement agreements and powers of appointment can allow terms to adapt, within limits, without returning control to the creator.
 
@@ -345,8 +348,8 @@ Trust assets are also not automatically beyond the reach of a beneficiary’s di
 
 ### Common types of irrevocable trust
 
-- **Irrevocable life insurance trust (ILIT).** Owns life insurance so the death benefit can be excluded from the insured’s estate, provided the insured holds no incidents of ownership under Section 2042. If an existing policy is transferred to the trust, the proceeds are included if the insured dies within three years under Section 2035.
-- **Spousal lifetime access trust (SLAT).** An irrevocable trust created and funded by one spouse for the benefit of the other spouse and possibly other beneficiaries. The donor spouse may benefit indirectly through the beneficiary spouse, which ends on divorce or the beneficiary spouse’s death. Spouses who create similar trusts for each other risk having them disregarded under the reciprocal trust doctrine.
+- **Irrevocable life insurance trust (ILIT).** Owns life insurance so the death benefit can be excluded from the insured’s estate, provided the insured holds no incidents of ownership under Section 2042. If the insured transfers an existing policy to the trust, the proceeds are generally included if the insured dies within three years under Section 2035, subject to its conditions and exceptions, including transfers for full consideration in a bona fide sale. Having the trust buy a new policy avoids the issue.
+- **Spousal lifetime access trust (SLAT).** An irrevocable trust created and funded by one spouse for the benefit of the other spouse and possibly other beneficiaries. The donor spouse may benefit indirectly through the beneficiary spouse; what happens to that indirect benefit on divorce or the beneficiary spouse’s death depends on the trust instrument and applicable law. Spouses who create similar trusts for each other risk having them disregarded under the reciprocal trust doctrine.
 - **Intentionally defective grantor trust (IDGT).** Designed to be outside the estate for estate tax purposes but a grantor trust for income tax purposes, often used for estate freezes.
 - **Dynasty trust.** Holds assets for multiple generations. Whether it avoids estate and generation-skipping transfer tax at each generation depends on allocating GST exemption, the beneficiaries’ powers and the state’s perpetuities rules.
 - **Domestic asset protection trust (DAPT).** A self-settled trust under a state statute, of which the creator can remain a discretionary beneficiary.
@@ -354,7 +357,7 @@ Trust assets are also not automatically beyond the reach of a beneficiary’s di
 
 ### Why the estate tax exemption matters
 
-For 2026 the federal estate and gift tax exemption is \$15 million per person, adjusted for inflation in later years. A married couple can shelter up to \$30 million by using both spouses’ exemptions, including through portability, which generally requires a timely estate tax return election at the first death. The generation-skipping transfer tax exemption is not portable. Families below these levels often rely mainly on revocable trusts and value the basis adjustment at death; families above them, or with fast-appreciating assets or significant liability exposure, typically add irrevocable trusts. Several states impose their own estate taxes at much lower thresholds.
+For 2026 the federal estate and gift tax exemption is \$15 million per person, adjusted for inflation in later years and reduced by taxable gifts the person has already made. A married couple can shelter up to \$30 million by using both spouses’ exemptions, including through portability, which generally requires a timely estate tax return election at the first death. The generation-skipping transfer tax exemption is not portable. Families below these levels often rely mainly on revocable trusts and value the basis adjustment at death; families above them, or with fast-appreciating assets or significant liability exposure, typically add irrevocable trusts. Several states impose their own estate taxes at much lower thresholds.
 
 ### Using both
 
@@ -376,7 +379,7 @@ Often, within limits. Depending on the trust terms and state law, a trust protec
 
 **Q: Do assets in an irrevocable trust get a basis adjustment at death?**
 
-Generally not, unless the trust is designed so the assets are included in the creator’s estate. Some trusts give an independent party a power to cause inclusion when the basis adjustment would be worth more than the estate tax cost.
+Generally not, unless the assets are included in the creator’s estate. Some trusts give an independent party a power, for example to grant the creator a testamentary general power of appointment, that can cause inclusion when the basis adjustment would be worth more than the estate tax cost. Such powers have their own estate, gift and generation-skipping tax consequences and must be drafted and exercised carefully.
 
 ### Primary sources
 
@@ -408,104 +411,106 @@ Paratum coordinates estate and trust counsel, independent trustees and tax advis
 - **Production URL (planned):** https://paratum.com/knowledge/best-domestic-asset-protection-trust-states
 - **Category:** Asset protection (Asset protection · Trust jurisdictions)
 - **Date:** 2026-11-23 · **Author:** Paratum · **Reviewer:** Aaron Sokol, JD, MBA (review pending)
-- **Summary:** Nevada, South Dakota, Delaware, Alaska and Wyoming compared on limitation periods, exception creditors, taxes, trust duration and privacy, with the limits every domestic asset protection trust shares.
+- **Summary:** Nevada, South Dakota, Delaware, Alaska and Wyoming compared on limitation periods for existing and future creditors, exception creditors, state income tax and trust duration, with the limits every domestic asset protection trust shares.
 
 ### The short answer
 
-A domestic asset protection trust (DAPT) is an irrevocable trust that the creator can benefit from while shielding its assets from the creator’s future creditors. About twenty states allow them, and five are most commonly considered. Nevada and South Dakota are frequently described by practitioners as the strongest, with two-year limitation periods for most future creditors and no state income tax; Nevada’s statute names no exception creditors, although fraudulent transfer claims within the limitation period remain available. Delaware and Alaska are long-established but use longer limitation periods and allow certain claimants to reach the trust. Wyoming is often chosen for cost and its entity law. No DAPT protects against existing or foreseeable claims, and protection for residents of non-DAPT states is uncertain.
+A domestic asset protection trust (DAPT) is an irrevocable trust, permitted by statute in about twenty states, that the creator can benefit from while limiting the creator’s creditors’ access to its assets after a statutory limitation period. Nevada, South Dakota, Delaware, Alaska and Wyoming are among the states most commonly considered. Nevada, South Dakota and Wyoming use two-year periods for many claims, while Delaware and Alaska use four; each state treats existing and future creditors differently, and each except Nevada names categories of exception creditors who can reach the trust. Many practitioners regard Nevada and South Dakota as the strongest, but that is a professional assessment rather than a legal conclusion. Transfers made when a claim exists or is foreseeable carry heightened risk, and protection for residents of states without a DAPT statute is uncertain.
 
 ### What is a domestic asset protection trust?
 
 Traditionally, a person could not create a trust for their own benefit and keep it away from their own creditors. In 1997 Alaska changed that rule, and Delaware followed the same year. Today roughly twenty states permit a self-settled spendthrift trust, commonly called a domestic asset protection trust or DAPT.
 
-The creator transfers assets to an irrevocable trust administered by a trustee in the DAPT state and remains eligible for discretionary distributions. Once the statute’s limitation period for challenging a transfer has run, creditors generally cannot reach the trust, except for any categories of “exception creditors” the state allows. Within that period, a creditor can still bring a fraudulent (voidable) transfer claim under the state’s rules.
+The creator transfers assets to an irrevocable trust with at least one qualified trustee in the DAPT state and remains eligible for discretionary distributions. Each statute sets limitation periods within which a creditor can challenge a transfer as fraudulent (voidable); those periods are generally different for creditors whose claims existed at the time of the transfer and for later creditors. Once the applicable period has run, creditors generally cannot reach the trust property, except for any categories of “exception creditors” the state allows.
 
 ### What to compare
 
-- **Limitation period.** How long after a transfer, or after discovering it, a creditor can still challenge it.
-- **Exception creditors.** Claimants, such as divorcing spouses, child support creditors or preexisting tort claimants, who can reach the trust regardless.
-- **Burden of proof.** Whether a creditor must show fraudulent intent by clear and convincing evidence.
-- **State income tax** on trust income, **trust duration**, **privacy** of court records and the depth of the local trustee market.
+- **Limitation periods** for existing and for future creditors, including any period that runs from the creditor’s discovery of the transfer.
+- **Exception creditors:** claimants, such as certain support or marital claimants or preexisting tort claimants, who can reach the trust regardless.
+- **State income tax** on trust income, which depends on the residence of the creator, trustees and beneficiaries, where the trust is administered and the source of its income.
+- **Trust duration** and **privacy** of court proceedings.
 
 ### Five commonly considered states at a glance
 
-|              | Statute                   | Limitation period (general)                                  | Exception creditors                                                    | State income tax on trust                     | Notable feature                                                |
-|--------------|---------------------------|--------------------------------------------------------------|------------------------------------------------------------------------|-----------------------------------------------|----------------------------------------------------------------|
-| Nevada       | NRS 166.040, 166.170      | 2 years (or 6 months after discovery for existing creditors) | None named in the statute                                              | None                                          | Absence of exception creditors applied in *Klabacka v. Nelson* |
-| South Dakota | SDCL 55-16                | 2 years                                                      | Limited: child support, alimony and certain preexisting marital claims | None                                          | Perpetual trusts and sealed trust litigation records           |
-| Delaware     | 12 Del. C. §§ 3570–3576   | 4 years (or 1 year after discovery)                          | Divorcing spouses, child support, preexisting tort claimants           | Generally none for non-resident beneficiaries | Established trust company market and Court of Chancery         |
-| Alaska       | AS 34.40.110              | 4 years (or 1 year after discovery)                          | Limited, including certain child support claims                        | None                                          | The first DAPT statute (1997)                                  |
-| Wyoming      | W.S. 4-10-510 to 4-10-523 | Varies by creditor type; generally longer than Nevada’s      | Child support and certain other claims                                 | None                                          | Often lower cost; strong LLC charging order law                |
+|              | Statute                  | Existing creditors: limitation period                                                                                       | Future creditors: limitation period | Exception creditors                                                                                             | Trust duration                                                |
+|--------------|--------------------------|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------|
+| Nevada       | NRS 166.170              | 2 years after the transfer or, if later, 6 months after the creditor discovered or reasonably should have discovered it     | 2 years after the transfer          | None named in the statute (applied in *Klabacka v. Nelson*)                                                     | Up to 365 years                                               |
+| South Dakota | SDCL 55-16-10, 55-16-15  | 2 years after the transfer or, if later, 6 months after discovery                                                           | 2 years after the transfer          | Certain child support, alimony and marital property claims, under statutory conditions                          | No rule against perpetuities                                  |
+| Delaware     | 12 Del. C. §§ 3572, 3573 | 4 years after the transfer or, if later, 1 year after discovery                                                             | 4 years after the transfer          | Certain alimony, child support and marital property claims, and certain tort claims arising before the transfer | Long-duration trusts permitted, with limits for real property |
+| Alaska       | AS 34.40.110             | 4 years after the transfer or, if later, 1 year after discovery                                                             | 4 years after the transfer          | Certain child support and marital claims, under statutory conditions                                            | Long-duration trusts permitted                                |
+| Wyoming      | W.S. 4-10-514, 4-10-517  | For actual-intent claims, 2 years after the transfer or, if later, 6 months after discovery; other periods for other claims | 2 years after the transfer          | Certain child support claims and other categories in the statute                                                | Up to 1,000 years                                             |
 
-Simplified summary. Limitation periods differ for existing and future creditors and may run from discovery; exception-creditor categories carry conditions. Every cell should be confirmed against the current statute by counsel in that state before reliance.
+Summary of statutory provisions, which are amended from time to time and carry conditions not shown here. Each entry should be confirmed against the current statute, and its application to particular facts, by counsel in that state before reliance.
 
 ### Nevada
 
-**Pros.** One of the shortest limitation periods; a statute that names no exception creditors, which the Nevada Supreme Court applied to spousal and child support claims in *Klabacka v. Nelson* (2017), although transfers can still be challenged as fraudulent within the limitation period; no state income tax; trusts can last 365 years; and strong charging order protection for LLCs.
+**Features.** Two-year periods for many claims; a statute that names no exception creditors, which the Nevada Supreme Court applied to spousal and child support claims in *Klabacka v. Nelson* (2017), although transfers can still be challenged within the limitation periods; no state personal income tax; trusts lasting up to 365 years; and charging order protection for LLCs.
 
-**Cons.** Courts in other states may be less willing to honor Nevada law for a non-resident creator, and the absence of exception creditors draws scrutiny in divorce cases.
+**Considerations.** Courts in other states may be less willing to apply Nevada law for a non-resident creator, and the absence of exception creditors may draw scrutiny in family law matters.
 
 ### South Dakota
 
-**Pros.** Two-year limitation period for most future creditors; perpetual trusts; no state income tax; a statute that seals trust litigation records, offering unusual privacy; well-developed directed trust and trust protector law; and a large professional trustee industry.
+**Features.** Two-year periods for many claims; no rule against perpetuities; no state personal income tax; statutory sealing of certain trust court proceedings; and developed directed trust and trust protector law.
 
-**Cons.** Limited exception creditors for child support, alimony and certain claims by a spouse married before the transfer.
+**Considerations.** Exception creditors for certain support and marital claims.
 
 ### Delaware
 
-**Pros.** A long-established trust industry, a specialized Court of Chancery, flexible directed trust law and generally no Delaware income tax on trust income accumulated for non-resident beneficiaries.
+**Features.** A long-established trust statute, the Court of Chancery, flexible directed trust law, and generally no Delaware income tax on trust income accumulated for beneficiaries who are not Delaware residents.
 
-**Cons.** A longer limitation period and a broader exception-creditor list, including divorcing spouses and preexisting tort claimants, make it weaker for pure creditor protection than Nevada or South Dakota.
+**Considerations.** Four-year periods and exception creditors that include certain marital and preexisting tort claims.
 
 ### Alaska
 
-**Pros.** The longest history of any DAPT state, no state income tax, perpetual trusts and a narrow set of exception creditors.
+**Features.** The first DAPT statute (1997), no state personal income tax and long-duration trusts.
 
-**Cons.** A longer limitation period, and *Toni 1 Trust v. Wacker* (2018), in which the Alaska Supreme Court held that Alaska cannot force other states’ courts to leave fraudulent transfer claims to Alaska courts alone.
+**Considerations.** Four-year periods, and *Toni 1 Trust v. Wacker* (2018), in which the Alaska Supreme Court held that Alaska’s statute cannot prevent other states’ courts from hearing fraudulent transfer claims involving Alaska trusts.
 
 ### Wyoming
 
-**Pros.** Often lower formation and trustee costs, no state income tax, trusts lasting up to 1,000 years, and some of the strongest LLC and charging order statutes in the country, which pair well with a trust.
+**Features.** Two-year periods for many claims following a 2021 amendment; no state personal income tax; trusts lasting up to 1,000 years; and LLC charging order statutes that are often used alongside a trust.
 
-**Cons.** A longer limitation period than Nevada or South Dakota for many creditors and fewer decided cases testing its trust statute.
+**Considerations.** Fewer decided cases testing its trust statute.
 
 ### Limits every DAPT shares
 
-- **Residence of the creator.** A creator who lives in a state without a DAPT statute, such as California, faces the risk that a home-state court applies its own law. In *In re Huber* (2013), a Washington resident’s Alaska trust was set aside.
-- **Bankruptcy.** Section 548(e) of the Bankruptcy Code permits a bankruptcy trustee to avoid transfers to a self-settled trust made within ten years before the filing if they were made with actual intent to hinder, delay or defraud creditors. Avoidance is not automatic; the trustee must prove that intent.
+- **Residence of the creator.** A creator who lives in a state without a DAPT statute, such as California, faces the risk that a home-state court applies its own law. In *In re Huber* (2013), a bankruptcy court set aside transfers by a Washington resident to an Alaska trust.
+- **Bankruptcy.** Section 548(e) of the Bankruptcy Code permits a bankruptcy trustee to avoid a transfer of the debtor’s property, made within ten years before the filing to a self-settled trust or similar device of which the debtor is a beneficiary, if the debtor made it with actual intent to hinder, delay or defraud a present or future creditor. Avoidance is not automatic; each element must be proved.
 - **Interstate enforcement.** A money judgment from one state can generally be enforced in another, and courts disagree about whether a creditor’s home-state fraudulent transfer law can be applied to a DAPT. Assets located in the creator’s home state are the most exposed.
-- **Timing.** No DAPT protects against a claim that exists or is foreseeable when the trust is funded.
+- **Timing.** Transfers made when a claim exists or is reasonably foreseeable carry heightened risk: existing creditors generally have longer, discovery-based periods; fraudulent transfer remedies and bankruptcy avoidance remain available; and courts may use their equitable and contempt powers.
+- **Estate tax.** A DAPT can be designed as a completed gift, but completed-gift status does not by itself keep the assets out of the creator’s estate; retained interests, implied understandings about distributions, and the creditor-access rules of the governing state all bear on estate inclusion.
 
-For residents of non-DAPT states, an offshore trust or a hybrid design is often considered. See [offshore asset protection jurisdictions compared](/knowledge/offshore-asset-protection-trust-jurisdictions).
+For residents of states without a DAPT statute, an offshore trust or a hybrid design is sometimes considered. See [offshore asset protection jurisdictions compared](/knowledge/offshore-asset-protection-trust-jurisdictions).
 
 ### Frequently asked questions
 
 **Q: Do I have to live in Nevada or South Dakota to use its DAPT?**
 
-No. Non-residents can create one by using a trustee in that state and keeping some administration there, but protection is strongest when the creator, the trustee and the assets all have ties to the DAPT state.
+No. Non-residents can create one by using a qualified trustee in that state and keeping some administration there, but protection is generally strongest when the creator, the trustee and the assets all have ties to the DAPT state.
 
 **Q: Can I be the trustee of my own DAPT?**
 
-No. The statutes require at least one trustee in the state, typically a trust company or resident individual. The creator can often keep investment authority or a veto through a directed trust structure.
+Not as the required qualified trustee. The statutes require at least one trustee in the state, such as a trust company or resident individual, and limit the powers the creator may hold. Depending on the state, the creator may be able to retain an investment role, a veto over distributions or the power to replace trustees, but not unrestricted control.
 
 **Q: Is a DAPT a grantor trust for income tax?**
 
-Usually yes, so the creator reports the income. It can also be designed as a completed gift that removes assets from the estate, or as an incomplete gift that keeps them in.
+Usually yes, so the creator reports the income. For gift and estate tax it can be designed as a completed or incomplete gift, with different consequences; a completed gift does not automatically exclude the assets from the estate.
 
 **Q: Which state is best?**
 
-Practitioners most often favor Nevada or South Dakota when creditor protection is the priority. The right answer depends on residence, the assets involved, family circumstances and whether estate tax planning is also a goal.
+Many practitioners favor Nevada or South Dakota when creditor protection is the priority, but the answer depends on residence, the assets involved, family circumstances, tax considerations and whether estate planning is also a goal.
 
 ### Primary sources
 
-- [Nevada Revised Statutes Chapter 166 (spendthrift trusts)](https://www.leg.state.nv.us/nrs/nrs-166.html)
-- [South Dakota Codified Laws Chapter 55-16 (qualified dispositions in trust)](https://sdlegislature.gov/Statutes/55-16)
-- [Delaware Code Title 12, Chapter 35, Subchapter VI (qualified dispositions in trust)](https://delcode.delaware.gov/title12/c035/sc06/)
+- [Nevada Revised Statutes Chapter 166 (including NRS 166.170)](https://www.leg.state.nv.us/nrs/nrs-166.html)
+- [South Dakota Codified Laws Chapter 55-16 (including SDCL 55-16-10)](https://sdlegislature.gov/Statutes/55-16)
+- [Delaware Code Title 12, §§ 3570–3576 (qualified dispositions in trust)](https://delcode.delaware.gov/title12/c035/sc06/)
 - [Alaska Statutes § 34.40.110](https://www.akleg.gov/basis/statutes.asp#34.40.110)
-- [Wyoming Statutes § 4-10-510 et seq. (qualified spendthrift trusts)](https://wyoleg.gov/statutes/compress/title04.pdf)
-- [11 U.S.C. § 548(e): Ten-year look-back for self-settled trusts in bankruptcy](https://www.law.cornell.edu/uscode/text/11/548)
+- [Wyoming Statutes §§ 4-10-510 to 4-10-523 and § 4-10-514](https://law.justia.com/codes/wyoming/title-4/chapter-10/article-5/)
+- [11 U.S.C. § 548(e): Transfers to self-settled trusts in bankruptcy](https://www.law.cornell.edu/uscode/text/11/548)
 - [Klabacka v. Nelson, 394 P.3d 940 (Nev. 2017)](https://law.justia.com/cases/nevada/supreme-court/2017/68346.html)
 - [Toni 1 Trust v. Wacker, 413 P.3d 1199 (Alaska 2018)](https://law.justia.com/cases/alaska/supreme-court/2018/s-16491.html)
+- [In re Huber, 493 B.R. 798 (Bankr. W.D. Wash. 2013)](https://www.courtlistener.com/?q=%22In+re+Huber%22+%22493+B.R.+798%22)
 
 ### How Paratum can help
 
@@ -517,127 +522,94 @@ Paratum coordinates asset protection counsel, independent trustees and trust com
 
 <a id="5"></a>
 
-## 5. Offshore asset protection trusts: Cook Islands, Nevis, Belize, Cayman, Gibraltar and others compared
+## 5. Offshore asset protection trusts: the Cook Islands, Nevis and other jurisdictions compared
 
 - **Staging URL:** https://orellestudio.com/paratum/knowledge/offshore-asset-protection-trust-jurisdictions/
 - **Production URL (planned):** https://paratum.com/knowledge/offshore-asset-protection-trust-jurisdictions
 - **Category:** Offshore planning (Asset protection · Offshore jurisdictions)
 - **Date:** 2026-11-23 · **Author:** Paratum · **Reviewer:** Aaron Sokol, JD, MBA (review pending)
-- **Summary:** How the jurisdictions most often discussed for offshore trusts compare on limitation periods, burden of proof, treatment of foreign judgments, cost and track record, with the limits U.S. courts impose and the U.S. reporting every offshore trust requires.
+- **Summary:** How the Cook Islands and Nevis trust statutes treat creditor challenges, how other jurisdictions differ, the limits U.S. courts impose on offshore structures, and the U.S. reporting that applies to U.S. persons involved with foreign trusts.
 
 ### The short answer
 
-The Cook Islands and Nevis are the jurisdictions most often used by U.S. families for offshore asset protection trusts. Their trust statutes generally do not give effect to foreign judgments against trust property, so a creditor typically must bring a new claim locally, within a short limitation period, and prove fraudulent intent beyond a reasonable doubt; Nevis also requires a creditor to post a bond of about US\$100,000 before suing. These protections apply to the trust’s property, not to the settlor personally: U.S. courts retain jurisdiction over U.S. persons and U.S.-located assets and have held settlors in contempt. Other financial centers such as the Cayman Islands, Gibraltar and the Bahamas are strong for other purposes but less suited to self-settled creditor protection. Every offshore trust remains fully reportable to the IRS, and effectiveness depends on the jurisdiction, the timing of funding and the facts.
+Offshore trusts are recognized legal structures used for estate planning and wealth management, and some jurisdictions, notably the Cook Islands and Nevis, have trust statutes designed to limit creditor challenges. Under those statutes a creditor generally must bring a claim in the local court within short limitation periods and prove fraudulent intent beyond a reasonable doubt, and the statutes limit the effect of foreign judgments on trust property; Nevis also requires a creditor to post a bond before suing. These features concern the trust’s property, not the settlor personally: U.S. courts retain jurisdiction over U.S. persons and assets located in the United States, and settlors have been held in contempt. U.S. persons who create, fund or receive distributions from a foreign trust generally have federal tax reporting obligations that depend on the facts.
 
-Primary statutes for the jurisdictions below other than the Cook Islands are identified by name and should be verified, in their current consolidated form, by counsel admitted in that jurisdiction before any reliance.
+The Cook Islands statute is linked below. The Nevis International Exempt Trust Ordinance and the other jurisdictions’ laws are described from secondary sources and should be verified, in their current consolidated form, by counsel admitted in each jurisdiction before any reliance.
 
 ### Why do families consider an offshore trust?
 
-A domestic asset protection trust depends on U.S. courts honoring another state’s law. An offshore trust instead places the trustee and the governing law outside the United States. In the jurisdictions most often used, the trust statute generally does not give effect to a foreign judgment against trust property, so a creditor who wants to reach that property usually must bring a new claim in the local court under local rules. For that reason offshore trusts are generally regarded as among the strongest forms of asset protection available to U.S. persons, particularly residents of states, such as California, that do not recognize self-settled trusts. Their effectiveness nonetheless depends on the jurisdiction, the timing of funding, where the assets are and the conduct of the settlor.
+A domestic asset protection trust depends on U.S. courts applying another state’s law. An offshore trust instead places the trustee and the governing law outside the United States. The Cook Islands and Nevis statutes require a creditor who wants to reach trust property to bring a new claim in the local court, under local rules, and limit the effect of foreign judgments against that property. For those reasons offshore trusts are often considered by U.S. families seeking long-term protection, including residents of states such as California that do not recognize self-settled trusts. Their effectiveness depends on the jurisdiction, the timing of funding, where the assets are located, the independence of the trustee and the conduct of the settlor.
 
 ### How are these trusts typically structured?
 
-- The settlor establishes an irrevocable trust with a licensed trustee in the chosen jurisdiction and is usually a discretionary beneficiary.
-- The trust often owns an LLC that holds investment accounts, which may be at U.S. institutions.
-- Trust instruments in these jurisdictions commonly include provisions that change who manages the trust or its LLC in defined circumstances, and that direct the trustee not to act on instructions given under compulsion. A trust protector, often independent, may be able to replace the trustee or change the governing law.
+The settlor establishes an irrevocable trust with a trustee licensed in the chosen jurisdiction and is usually one of several discretionary beneficiaries. The trust may own an entity that holds investments. The trustee’s independence is central: a trust whose assets the settlor can in practice direct offers little protection and, as discussed below, can expose the settlor to contempt. Trust instruments may include a protector with defined powers. None of these provisions relieves anyone of the obligation to comply with an enforceable order of a court with jurisdiction over them.
 
-Such provisions do not relieve a settlor of the obligation to comply with an enforceable U.S. court order. U.S. courts have treated settlors who retained control, or who arranged their own inability to comply, as responsible for that inability, and have held them in contempt.
+### The Cook Islands and Nevis compared
 
-### The jurisdictions at a glance
+|                              | Cook Islands                                                                                                                                                                                             | Nevis                                                                                                |
+|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Statute                      | International Trusts Act 1984                                                                                                                                                                            | Nevis International Exempt Trust Ordinance (1994, as amended)                                        |
+| What the creditor must prove | Beyond a reasonable doubt, that the transfer was made with principal intent to defraud that creditor and rendered the settlor insolvent or without property to satisfy the claim                         | Beyond a reasonable doubt, intent to defraud, on elements closely modeled on the Cook Islands Act    |
+| Time limits                  | A transfer made more than two years after the creditor’s cause of action accrued generally cannot be challenged; otherwise proceedings must be brought within short statutory periods after the transfer | Comparable short statutory periods                                                                   |
+| Foreign judgments            | The Act limits enforcement of foreign judgments against trust property in stated circumstances                                                                                                           | The Ordinance limits enforcement of foreign judgments against trust property in stated circumstances |
+| Creditor bond                | No statutory bond                                                                                                                                                                                        | A bond of EC\$270,000 (about US\$100,000) must be posted before an action against a trust            |
+| Experience                   | In force since 1984, with reported decisions                                                                                                                                                             | In force since 1994, with fewer reported decisions                                                   |
 
-|                | Principal statute                          | Window to challenge a transfer                                                                           | Creditor’s burden                                 | Foreign judgments against trust property               | Notable feature                                                  |
-|----------------|--------------------------------------------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------|--------------------------------------------------------|------------------------------------------------------------------|
-| Cook Islands   | International Trusts Act 1984              | Short: generally tied to two years from accrual of the claim, with a further deadline after the transfer | Beyond a reasonable doubt                         | Not given effect under the Act                         | Longest track record (since 1984)                                |
-| Nevis          | Nevis International Exempt Trust Ordinance | Short, comparable to the Cook Islands                                                                    | Beyond a reasonable doubt                         | Not given effect under the Ordinance                   | Creditor must post a bond of about US\$100,000                   |
-| Belize         | Trusts Act                                 | No specific period stated in the trust statute                                                           | Not specified in the trust statute                | Not given effect under the Act in stated circumstances | Less tested; smaller trustee market                              |
-| Cayman Islands | Trusts Act; Fraudulent Dispositions Act    | Six years                                                                                                | Intent to defraud and a transfer at an undervalue | Recognized in some circumstances                       | Major financial center; not designed for self-settled protection |
-| Bahamas        | Fraudulent Dispositions Act; Trustee Act   | Short statutory period                                                                                   | Intent to defraud                                 | Recognized in some circumstances                       | Large trust industry; self-settled protection less certain       |
-| Gibraltar      | Trusts and insolvency legislation          | Varies                                                                                                   | Intent to defraud                                 | Under English-based rules                              | Well regulated; narrower protection features                     |
-
-Simplified summary for comparison only. Limitation periods depend on when the claim arose relative to the transfer, and each jurisdiction has exceptions and procedural requirements.
-
-### Cook Islands
-
-The Cook Islands enacted its International Trusts Act in 1984, effectively creating the modern asset protection trust. A creditor generally must bring a claim in the Cook Islands High Court within short statutory deadlines and must prove beyond a reasonable doubt that the transfer was intended to defraud that particular creditor.
-
-**Pros.** Four decades of legislation and decided cases; the highest burden of proof; a regulated trustee industry; and a statute that does not give effect to foreign judgments against trust property.
-
-**Cons.** Higher setup and annual cost than most alternatives, and no protection against U.S. court orders directed at the settlor personally.
-
-### Nevis
-
-Nevis’s International Exempt Trust Ordinance, enacted in 1994, closely follows the Cook Islands model, with a beyond-reasonable-doubt standard and a short limitation period. It also requires a creditor to deposit a bond of EC\$270,000, about US\$100,000, before bringing an action against a Nevis trust.
-
-**Pros.** The bond requirement adds a practical barrier; Nevis LLCs are well regarded; and costs are generally below the Cook Islands.
-
-**Cons.** Fewer decided cases than the Cook Islands and a smaller trustee market.
-
-### Belize
-
-Belize’s Trusts Act does not state a specific period within which a creditor must challenge a transfer, and it limits the effect of foreign judgments in stated circumstances. Promoters sometimes describe this as “immediate protection”; that description overstates what has been tested, since Belize has comparatively little decided case law on contested asset protection trusts.
-
-**Pros.** Flexible trust law and lower cost. **Cons.** Limited litigation history, a smaller trustee industry and concerns about regulatory stability.
-
-### Cayman Islands
-
-The Cayman Islands is a leading financial center with sophisticated trust law, including STAR trusts for purpose and commercial use. Its Fraudulent Dispositions Act allows a transfer made at an undervalue with intent to defraud to be set aside within six years.
-
-**Pros.** Reputation, institutional depth and English-based courts; well suited to fund structures and multigenerational trusts. **Cons.** A six-year challenge window and no statute designed for self-settled asset protection make it a weaker choice when creditor protection is the primary goal.
-
-### Gibraltar
-
-Gibraltar, a British Overseas Territory, has a well-regulated financial sector and English-based trust law, and has offered asset protection features under its insolvency legislation.
-
-**Pros.** Strong regulation and reputation; suited to families with U.K. or European connections. **Cons.** Its protections are narrower and less tested for U.S. creditors than those of the Cook Islands or Nevis.
+Simplified summary. Each statute contains detailed elements, exceptions and procedures, and the application of its time limits depends on when the claim arose relative to the transfer.
 
 ### Other jurisdictions
 
-- **Bahamas.** A large trust and banking industry and a short fraudulent disposition period, with less certainty for self-settled protection.
-- **Jersey, Guernsey and the Isle of Man.** Premier trust centers chosen mainly for stability and administration of multigenerational wealth.
-- **Liechtenstein and Switzerland.** Foundations and trusts with strong privacy traditions, used primarily by European families.
+Several other financial centers have trust laws that are sometimes discussed in this context but that differ materially from the Cook Islands and Nevis model. They are noted here for orientation rather than compared in detail:
+
+- **Belize.** Its Trusts Act addresses foreign judgments and creditor claims in terms that promoters sometimes describe as “immediate protection”; that description overstates what has been tested in contested cases.
+- **Cayman Islands.** A major financial center with sophisticated trust law, including STAR trusts. Its Fraudulent Dispositions Act allows certain transfers made at an undervalue with intent to defraud to be set aside within six years, and its trust law is not designed around self-settled creditor protection.
+- **Bahamas, Gibraltar, Jersey, Guernsey and the Isle of Man.** Established trust jurisdictions used principally for multigenerational trusts, administration and family wealth structures; their creditor-challenge rules differ from the Cook Islands and Nevis model and should be reviewed with local counsel.
+- **Liechtenstein** has its own trust and foundation law. **Switzerland** has no domestic trust law; it recognizes foreign trusts under the Hague Trusts Convention, so Swiss trustees administer trusts governed by other jurisdictions’ laws.
 
 ### U.S. tax and reporting
 
-An offshore asset protection trust is not a tax shelter. A foreign trust with a U.S. settlor and U.S. beneficiaries is generally treated as a grantor trust under Section 679, so its income is reported on the settlor’s return. Information reporting depends on the facts, including transfers, distributions, ownership and account values, and commonly includes Form 3520 (transfers to and distributions from foreign trusts), Form 3520-A (the trust’s annual information return), the FBAR for foreign financial accounts and Form 8938 where its thresholds are met. Penalties for missed filings can be substantial.
+An offshore trust is not a tax shelter. A foreign trust with a U.S. settlor and U.S. beneficiaries is generally treated as a grantor trust under Section 679, so its income is taxed to the settlor. Reporting obligations depend on U.S. ownership, transfers, distributions and account values, and commonly include Form 3520 (transfers to and distributions from foreign trusts), Form 3520-A (the trust’s annual information return), the FBAR for foreign financial accounts and Form 8938 where its thresholds are met. Section 6677 imposes substantial penalties for failures to file foreign trust information, generally the greater of \$10,000 or a percentage of the amount involved.
 
 ### Limits and risks
 
-- **U.S. court authority.** U.S. courts retain jurisdiction over U.S. persons and assets located in the United States. In *FTC v. Affordable Media* (1999), settlors who said their trust prevented them from repatriating assets were held in contempt; courts have reached similar results in other cases where settlors retained control.
-- **U.S.-located assets.** Real estate and accounts in the United States remain subject to U.S. courts regardless of offshore ownership.
-- **Timing.** A transfer made when a claim exists or is foreseeable can be a voidable transfer under U.S. law, and in bankruptcy Section 548(e) permits avoidance of transfers to self-settled trusts made within ten years with actual intent to hinder, delay or defraud creditors.
-- **Cost.** Setup and annual trustee, legal and reporting costs are significant, so offshore trusts are generally considered only for substantial liquid wealth.
+- **U.S. court authority.** U.S. courts retain jurisdiction over U.S. persons and assets located in the United States, and can order a settlor to repatriate assets. In *FTC v. Affordable Media* (9th Cir. 1999) and *In re Lawrence* (11th Cir. 2002), courts rejected settlors’ claims that their trusts made compliance impossible and held them in civil contempt, treating an inability the settlor created as no defense.
+- **U.S.-located assets.** Real estate and accounts in the United States remain subject to U.S. courts regardless of the trust’s governing law.
+- **Timing.** A transfer made when a claim exists or is foreseeable can be avoided as a voidable transfer under U.S. law, and in bankruptcy Section 548(e) permits avoidance of certain transfers to self-settled trusts made within ten years with actual intent to hinder, delay or defraud creditors.
+- **Cost and administration.** Trustee, legal and reporting costs are significant and continuing.
 
 ### Frequently asked questions
 
-**Q: Is an offshore asset protection trust legal?**
+**Q: Are offshore trusts legal?**
 
-Yes, when it is funded with legitimately owned assets for legitimate reasons, before any claim exists or is foreseeable, and all U.S. tax and reporting obligations are met. It does not excuse compliance with court orders.
+Offshore trusts are recognized legal structures that may serve legitimate estate planning and wealth management purposes. Their formation, funding, administration and tax treatment must comply with applicable U.S. and foreign law. They do not eliminate existing legal obligations or the authority of courts with jurisdiction over relevant persons and assets.
 
 **Q: Do the assets have to leave the United States?**
 
-Not necessarily. Many trusts hold U.S. accounts through an LLC. Assets that remain in the United States, however, remain subject to U.S. courts.
+Not necessarily, but assets that remain in the United States remain subject to U.S. courts.
 
-**Q: Cook Islands or Nevis?**
+**Q: How do the Cook Islands and Nevis differ?**
 
-Both are commonly used. The Cook Islands has the longer track record; Nevis adds the creditor bond and is usually less expensive. The choice is best made with counsel in each jurisdiction.
+Their statutes are similar in design. The Cook Islands has the longer history and more reported decisions; Nevis adds a requirement that a creditor post a bond before suing. The choice should be made with counsel in each jurisdiction.
 
 **Q: Can an offshore trust protect U.S. real estate?**
 
-Generally not on its own. Real estate remains subject to the courts where it is located, so it is usually addressed through entities, financing and domestic planning. See [equity stripping](/knowledge/equity-stripping).
+Generally not on its own. Real estate remains subject to the courts where it is located. See [equity stripping](/knowledge/equity-stripping) for how financing affects the equity in real property.
 
 ### Primary sources
 
 - [Cook Islands International Trusts Act 1984 (PacLII)](http://www.paclii.org/ck/legis/num_act/ita1984242/)
 - [26 U.S.C. § 6048: Information with respect to certain foreign trusts (Forms 3520 and 3520-A)](https://www.law.cornell.edu/uscode/text/26/6048)
+- [26 U.S.C. § 6677: Penalty for failure to file information with respect to certain foreign trusts](https://www.law.cornell.edu/uscode/text/26/6677)
 - [26 U.S.C. § 679: Foreign trusts having one or more United States beneficiaries](https://www.law.cornell.edu/uscode/text/26/679)
 - [26 U.S.C. § 6038D: Information with respect to foreign financial assets (Form 8938)](https://www.law.cornell.edu/uscode/text/26/6038D)
 - [IRS: Report of Foreign Bank and Financial Accounts (FBAR)](https://www.irs.gov/businesses/small-businesses-self-employed/report-of-foreign-bank-and-financial-accounts-fbar)
 - [FTC v. Affordable Media, LLC, 179 F.3d 1228 (9th Cir. 1999)](https://law.justia.com/cases/federal/appellate-courts/F3/179/1228/592779/)
+- [In re Lawrence, 279 F.3d 1294 (11th Cir. 2002)](https://www.courtlistener.com/?q=%22In+re+Lawrence%22+%22279+F.3d+1294%22)
 - [11 U.S.C. § 548(e): Transfers to self-settled trusts in bankruptcy](https://www.law.cornell.edu/uscode/text/11/548)
 
 ### How Paratum can help
 
-Paratum coordinates U.S. and offshore counsel, licensed foreign trustees, U.S. custodians and the CPAs responsible for reporting, so that any offshore structure is lawful, fully reported and properly maintained.
+Paratum coordinates U.S. and offshore counsel, licensed foreign trustees, U.S. custodians and the CPAs responsible for reporting, so that any offshore structure is formed, funded, reported and administered in compliance with applicable law.
 
 *General information, not legal, tax or investment advice.*
 
@@ -665,10 +637,10 @@ A property worth \$2 million with no debt has \$2 million of equity. The same pr
 
 ### Common forms
 
-- **Financing from an unrelated lender.** A conventional mortgage, line of credit or business loan from an independent bank or private lender. Because the lender is plainly independent, this form is the least vulnerable to challenge.
+- **Financing from an unrelated lender.** A conventional mortgage, line of credit or business loan from an independent bank or private lender. Genuine third-party financing is generally less exposed to recharacterization than related-party lending, but it remains subject to the voidable transfer, preference and other avoidance rules described below.
 - **Affiliated or related-party lending.** A loan from an entity connected to the borrower or the borrower’s family. Commercial terms are necessary but do not by themselves protect such loans; courts examine whether value was actually exchanged, whether the debt is enforced, and the borrower’s intent and solvency, and may recharacterize or avoid the obligation.
-- **Cross-collateralization.** Several properties or entities pledge assets for one another’s genuine obligations.
-- **Business assets.** Receivables, equipment and intellectual property can be pledged under UCC Article 9, with a filed financing statement establishing the lender’s priority against later creditors.
+- **Cross-collateralization.** Several properties or entities pledge assets for one another’s genuine obligations. This also exposes each pledged asset to enforcement if any of the covered obligations defaults, increasing the owner’s overall financial risk.
+- **Business assets.** Receivables, equipment and intellectual property can be pledged under UCC Article 9. A security interest must first *attach* (value given, rights in the collateral and an authenticated security agreement), then be *perfected*, usually by filing a financing statement; priority among competing claims is then determined by Article 9’s rules. A filed financing statement alone does not create a security interest.
 
 ### Does a recorded lien always come first?
 
@@ -676,13 +648,15 @@ No. Priority depends on timing, recording and perfection, and on statutes that g
 
 ### What happens to the borrowed money?
 
-Borrowing converts equity in the property into cash or other assets, which remain the borrower’s property. Whether those assets can be reached by creditors depends on how and when they are held and on applicable exemption, trust and voidable transfer law, and moving them can itself be challenged. How the proceeds are used also determines whether the interest is deductible, because the tax rules generally trace interest to the use of the borrowed funds rather than to the property securing the loan. Any plan for the proceeds should be reviewed by counsel for creditor-law, tax and solvency consequences.
+Borrowing converts equity in the property into cash or other assets, which remain the borrower’s property. Whether those assets can be reached by creditors depends on how and when they are held and on applicable exemption, trust and voidable transfer law, and moving them can itself be challenged. Any plan for the proceeds should be reviewed by counsel for creditor-law, tax and solvency consequences.
+
+**Interest deductibility.** The use of the proceeds also determines the tax treatment of the interest. Under the tracing rules of Treasury Regulation 1.163-8T, interest is generally allocated according to how the borrowed funds are spent, not which property secures the loan: proceeds used in a trade or business generally produce business interest (subject to the Section 163(j) limitation), proceeds used to buy investments produce investment interest (deductible only up to net investment income), proceeds used for personal purposes produce generally nondeductible personal interest, and a loan secured by a residence produces deductible qualified residence interest only to the extent the funds acquire or substantially improve that residence, within the dollar limits of Section 163(h). Borrowing against property for asset protection reasons therefore does not by itself make the interest deductible.
 
 ### The legal limits
 
-- **Actual intent.** Under the Uniform Voidable Transactions Act, adopted in California (Civil Code section 3439.04(a)(1)) and most states, a transfer made or obligation incurred with actual intent to hinder, delay or defraud a creditor can be avoided, regardless of the value exchanged.
-- **Constructive fraud.** Even without such intent, a transfer or obligation can be avoided if the debtor did not receive reasonably equivalent value and was insolvent, became insolvent, or was left with unreasonably small capital (Civil Code sections 3439.04(a)(2) and 3439.05).
-- **Bankruptcy.** A bankruptcy trustee can avoid fraudulent transfers and obligations under Section 548, use state voidable transfer law through Section 544, and recover certain payments to creditors made shortly before bankruptcy as preferences under Section 547.
+- **Actual intent.** Under the Uniform Voidable Transactions Act, adopted in California (Civil Code section 3439.04(a)(1)) and most states, a transfer made or obligation incurred with actual intent to hinder, delay or defraud any creditor can be avoided. Receiving reasonably equivalent value does not by itself defeat such a claim, although a transferee or obligee who took in good faith and for reasonably equivalent value has defenses under Civil Code section 3439.08.
+- **Constructive fraud.** Without proof of intent, a transfer or obligation can still be avoided if the debtor did not receive reasonably equivalent value and either was left with unreasonably small assets for its business, intended or reasonably should have believed it would incur debts beyond its ability to pay (section 3439.04(a)(2), available to present and future creditors), or was insolvent or became insolvent as a result (section 3439.05, available to creditors whose claims arose before the transfer).
+- **Bankruptcy.** A bankruptcy trustee can avoid fraudulent transfers and obligations under Section 548, use state voidable transfer law through Section 544, and avoid as preferences under Section 547 certain transfers to existing creditors made shortly before bankruptcy, which can include payments and the grant of a security interest for an earlier debt.
 - **Sham debt.** An obligation with no funds advanced, no payments and no intention of enforcement can be disregarded, and recording one after a claim arises invites both avoidance and further liability.
 - **Timing.** Financing arranged after a claim has arisen or is reasonably foreseeable is the most vulnerable.
 
@@ -709,7 +683,7 @@ Illustrative only. The result depends on state law, lien priority, timing, solve
 
 **Q: Is equity stripping legal?**
 
-Genuine financing incurred for legitimate reasons while solvent and before any claim is lawful. Financing incurred with intent to hinder creditors, or without reasonably equivalent value while insolvent, can be avoided.
+Borrowing against one’s own property is ordinary and lawful. Whether a particular financing can be avoided or recharacterized depends on several factors, including the borrower’s intent, the value exchanged, the borrower’s financial condition, the timing relative to any claim, the relationship between the parties and the way the debt is documented and serviced. No single factor is decisive.
 
 **Q: Can I borrow from my own company or trust?**
 
@@ -732,6 +706,7 @@ The borrower remains liable for the debt. Any financing should leave a margin of
 - [11 U.S.C. § 547: Preferences](https://www.law.cornell.edu/uscode/text/11/547)
 - [11 U.S.C. § 548: Fraudulent transfers and obligations](https://www.law.cornell.edu/uscode/text/11/548)
 - [26 U.S.C. § 163(h) and Treas. Reg. § 1.163-8T: Interest deductions and tracing](https://www.law.cornell.edu/cfr/text/26/1.163-8T)
+- [California Civil Code § 3439.08 (defenses of good-faith transferees)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=3439.08)
 
 ### How Paratum can help
 
@@ -1033,7 +1008,11 @@ How much is reclassified varies widely with the property type, its construction,
 
 Many assets with a MACRS recovery period of 20 years or less qualify for bonus depreciation under Section 168(k), subject to its acquisition, original-use or used-property, placed-in-service and other requirements and exclusions. The 2025 tax law made 100 percent bonus depreciation permanent for qualifying property acquired and placed in service after January 19, 2025. Property acquired earlier, including under a written binding contract entered into on or before that date, remains subject to the earlier phase-down, and special rules apply to self-constructed property and components; the closing date alone does not determine eligibility. Qualifying components identified in a study can therefore often be deducted entirely in the year the property is placed in service, rather than over 5 to 15 years.
 
-Section 179 expensing offers a further, elective route for certain property, subject to annual dollar limits and a taxable income limitation.
+Section 179 expensing is a separate, elective route for certain property and is not interchangeable with bonus depreciation. For tax years beginning in 2026 the maximum deduction is \$2,560,000, reduced dollar for dollar once qualifying property placed in service exceeds \$4,090,000 (Revenue Procedure 2025-32). The deduction cannot exceed taxable income from the active conduct of a trade or business, and noncorporate lessors face additional restrictions.
+
+### The business interest election and ADS
+
+A real property trade or business can elect out of the business interest limitation of Section 163(j). The price of that election is that its nonresidential real property, residential rental property and qualified improvement property must be depreciated under the alternative depreciation system (ADS), over longer recovery periods, and property required to use ADS is not eligible for bonus depreciation. Personal property and land improvements identified in a study are generally unaffected, but the election changes the overall comparison and should be modeled before a study is relied on.
 
 ### Studies on property already owned
 
@@ -1056,13 +1035,13 @@ The deduction is only as valuable as the owner’s ability to use it. Several se
 Farms and ranches have their own recovery periods, and much of their value often sits in assets that cost segregation and bonus depreciation can accelerate:
 
 - **Land** is never depreciable, so allocating purchase price between land and improvements is the first and most important step.
-- **Single-purpose agricultural and horticultural structures,** such as purpose-built livestock facilities and greenhouses, are generally 10-year property, while general-purpose farm buildings are generally 20-year property.
-- **Land improvements,** such as drainage tile, irrigation systems, wells, ponds and roads, are often 15-year property; fences are generally 7-year farm property.
-- **Machinery and equipment** used in farming is generally 7-year property, or 5-year for new machinery and equipment placed in service after 2017 (excluding certain items such as grain bins and fences).
-- **Trees and vines** bearing fruits or nuts may be eligible for bonus depreciation in the year planted or grafted, by election.
-- **Qualified production property.** The 2025 law added Section 168(n), an elective 100 percent deduction for certain nonresidential real property used in qualified production activities, which include agricultural production, where construction begins after January 19, 2025 and before 2029 and the property is placed in service before 2031. It is subject to detailed requirements and recapture if the property’s use changes.
+- **Single-purpose agricultural and horticultural structures** are generally 10-year property, but only if the structure meets the statutory design and use requirements (Sections 168(i)(13) and 1245(a)(3)(D)); not every livestock building or greenhouse qualifies. General-purpose farm buildings are generally 20-year property.
+- **Land improvements.** Depreciable agricultural land improvements, including qualifying drainage, irrigation, fencing and access infrastructure, may receive shorter recovery periods than farm buildings. The appropriate classification depends on the specific asset, its function and the applicable guidance (Revenue Procedure 87-56, IRS Publications 225 and 946), and some permanent land improvements without a determinable useful life are not depreciable at all.
+- **Machinery and equipment** used in farming is generally 7-year property. New machinery and equipment whose original use begins with the taxpayer after 2017 is 5-year property, but that rule excludes grain bins, cotton ginning assets, fences and other land improvements, and used machinery keeps its ordinary classification.
+- **Trees and vines.** Orchards and vineyards involve several distinct situations. Buying an existing productive orchard means depreciating the purchased trees or vines under the ordinary rules. Planting new fruit- or nut-bearing trees or vines allows a special election under Section 168(k)(5) to take bonus depreciation in the year they are planted or grafted, rather than when they become productive. Expenditures during the preproductive period are generally capitalized under Section 263A, subject to exceptions and elections for certain farmers. Bare agricultural land is not depreciable.
+- **Qualified production property.** The 2025 law added Section 168(n), an elective deduction for qualifying nonresidential real property used by the taxpayer as an integral part of specified domestic production activities, potentially including qualifying agricultural production, generally where construction begins after January 19, 2025 and before 2029 and the property is placed in service before 2031. Eligibility depends on the property’s actual use, original use or acquisition history, placed-in-service date and other requirements. Office, administrative, lodging, parking and other non-production areas are excluded, property leased to others generally does not qualify, the deduction must be elected, and it can be recaptured after certain changes in use. Ordinary ownership or leasing of agricultural property does not automatically qualify; Treasury and IRS guidance should be checked.
 
-Because farm purchases often bundle land, buildings, improvements, equipment and sometimes plantings, a careful allocation and a study can move a meaningful share of the price into short recovery periods. Passive activity, material participation and excess business loss rules apply to farm owners as well, and landowners who lease to an operator are generally passive.
+Because farm purchases often bundle land, buildings, improvements, equipment and sometimes plantings, a careful allocation and a study can move a meaningful share of the price into short recovery periods. Passive activity, material participation and excess business loss rules apply to farm owners as well. A landowner who leases to an unrelated operator for cash rent is often passive, but crop-share and other lease structures, material participation, and self-rental rules where the owner also operates the farm can change the result.
 
 > A note from Paratum
 >
@@ -1070,16 +1049,24 @@ Because farm purchases often bundle land, buildings, improvements, equipment and
 
 ### Recapture and other costs
 
-- **Recapture on sale.** Depreciation on components classified as personal property is recaptured as ordinary income under Section 1245 when the property is sold at a gain. Depreciation on the building itself is generally taxed at up to 25 percent as unrecaptured Section 1250 gain. Cost segregation therefore converts some future capital gain into ordinary income, while providing the time value of earlier deductions.
-- **Exchanges and death.** A like-kind exchange can defer recapture if the replacement property contains enough property of the same character; property held until death generally receives a basis adjustment that eliminates the deferred recapture.
+- **Recapture on sale.** Accelerated depreciation may increase the ordinary-income recapture or other depreciation-related gain recognized on a later sale. Gain on Section 1245 property is generally ordinary income up to the depreciation taken, including bonus depreciation. Certain real property improvements are instead Section 1250 property, where ordinary recapture is generally limited to depreciation in excess of straight-line, and remaining gain attributable to depreciation (unrecaptured Section 1250 gain) is taxed to individuals at up to 25 percent. The result depends on each asset’s classification, adjusted basis, depreciation history and the sale price allocated to it.
+- **Like-kind exchanges.** Since 2018, Section 1031 applies only to real property. A qualifying exchange may defer certain gain, but cost segregation complicates the analysis: components treated as personal property for depreciation may or may not be real property for exchange purposes under Treasury Regulation 1.1031(a)-3, and Sections 1245(b)(4) and 1250(d)(4) govern recapture in exchanges. The classification of relinquished and replacement assets, the allocation of consideration and the recapture rules must each be evaluated.
+- **Basis adjustment at death.** Property that receives a basis adjustment under Section 1014 may avoid tax on previously deducted depreciation. The result depends on ownership and estate inclusion; for property held in a partnership, a basis adjustment to the inherited partnership interest does not by itself adjust the partnership’s basis in its assets unless a Section 754 election produces a Section 743(b) adjustment.
+- **California and other states.** Because California does not follow federal bonus depreciation, federal and California adjusted bases differ, producing different depreciation deductions each year and different gain on a sale.
 - **Study cost and audit risk.** Studies cost money and must withstand IRS review. Aggressive allocations without engineering support are a common audit issue.
-- **Dispositions.** Replaced components can sometimes be written off when removed, an additional benefit of having them separately identified.
+- **Partial dispositions.** When a component is replaced, the remaining basis of the old component may be deductible, but partial disposition treatment can require an election and a reasonable allocation of basis under Treasury Regulation 1.168(i)-8. Identification in a study does not by itself establish a deductible loss.
 
 ### Illustrative example
 
-An investor acquires a multifamily property in 2026 for \$5 million, of which \$1 million is allocated to land. A study reclassifies \$1 million of the \$4 million building basis into 5-, 7- and 15-year property. With 100 percent bonus depreciation, the investor can deduct about \$1 million for those components in the first year, plus first-year straight-line depreciation on the remaining \$3 million over 27.5 years, instead of roughly \$140,000 in total without a study. Whether that deduction reduces taxes now depends on the investor’s passive or real estate professional status and the excess business loss limit; on a later sale, the \$1 million is generally recaptured as ordinary income to the extent of gain.
+An investor acquires a multifamily rental property and places it in service in January 2026 for \$5 million, of which \$1 million is allocated to land. A study reclassifies \$1 million of the \$4 million building basis into 5-, 7- and 15-year property eligible for 100 percent bonus depreciation. Using the mid-month convention for the building:
 
-Illustrative only, using simplified mid-month conventions and no state tax. Results depend on the property, the study, the owner’s tax position and holding period.
+- **Without a study:** first-year depreciation of about \$139,394 (\$4 million over 27.5 years, for 11.5 months).
+- **With a study:** about \$1,104,545 (\$1 million of bonus depreciation plus \$104,545 on the remaining \$3 million).
+- **Incremental first-year depreciation:** about \$965,151.
+
+That is a difference in deductions, not in tax savings. Whether the deduction reduces taxes now depends on the investor’s basis, at-risk amount, passive or real estate professional status and the excess business loss limit. On a later sale, the depreciation taken on the reclassified components may be recaptured as ordinary income, depending on each component’s classification and the gain allocated to it.
+
+Illustrative only, federal tax only, using exact mid-month fractions rather than rounded IRS table percentages. Results depend on the property, the study, the owner’s tax position and holding period.
 
 ### Frequently asked questions
 
@@ -1094,6 +1081,14 @@ Often, yes. Where the accounting method change procedure is available, missed de
 **Q: Do the deductions offset my salary?**
 
 Only if the losses survive the basis and at-risk limits and are nonpassive, for example through real estate professional status with material participation in the rental, or a short-term rental in which the owner materially participates, and then only within the excess business loss limit and any personal-use limits.
+
+**Q: Is cost segregation permanent tax savings or tax deferral?**
+
+Generally deferral. It accelerates depreciation rather than increasing the total depreciable basis, so its economic benefit usually comes from receiving deductions earlier. Differences in tax rates over time, the way the property is eventually disposed of, and basis adjustments at death can change the ultimate outcome.
+
+**Q: Can buying farmland reduce my ordinary income taxes?**
+
+Land itself is not depreciable. Qualifying farm buildings, equipment, irrigation infrastructure and other improvements can generate depreciation, and certain production property and newly planted trees or vines may receive special treatment. Whether those deductions reduce other income depends on the owner’s participation, ownership structure and the applicable loss limits.
 
 **Q: Does cost segregation apply to farms?**
 
@@ -1113,6 +1108,15 @@ Yes. Farm buildings, land improvements, irrigation, fences and equipment have th
 - [26 U.S.C. § 280A: Business use of home and rental of vacation homes](https://www.law.cornell.edu/uscode/text/26/280A)
 - [26 U.S.C. § 465: At-risk limitations](https://www.law.cornell.edu/uscode/text/26/465)
 - [26 U.S.C. § 168(e)(6): Qualified improvement property](https://www.law.cornell.edu/uscode/text/26/168)
+- [26 U.S.C. § 263A: Capitalization of certain costs (preproductive period)](https://www.law.cornell.edu/uscode/text/26/263A)
+- [26 U.S.C. § 163(j): Limitation on business interest](https://www.law.cornell.edu/uscode/text/26/163)
+- [Treas. Reg. § 1.1031(a)-3: Definition of real property](https://www.law.cornell.edu/cfr/text/26/1.1031(a)-3)
+- [Treas. Reg. § 1.168(i)-8: Dispositions of MACRS property](https://www.law.cornell.edu/cfr/text/26/1.168(i)-8)
+- [26 U.S.C. §§ 743 and 754: Partnership basis adjustments](https://www.law.cornell.edu/uscode/text/26/754)
+- [IRS Publication 225: Farmer&rsquo;s Tax Guide](https://www.irs.gov/publications/p225)
+- [IRS Publication 946: How To Depreciate Property](https://www.irs.gov/publications/p946)
+- [IRS Revenue Procedure 87-56 (class lives and recovery periods)](https://www.irs.gov/pub/irs-drop/rp-87-56.pdf)
+- [IRS: Instructions for Form 3115, Application for Change in Accounting Method](https://www.irs.gov/instructions/i3115)
 - [26 U.S.C. §§ 1245 and 1250: Depreciation recapture](https://www.law.cornell.edu/uscode/text/26/1245)
 - [IRS: Treasury and IRS guidance on the additional first-year depreciation deduction (IR-2026-06)](https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill)
 
