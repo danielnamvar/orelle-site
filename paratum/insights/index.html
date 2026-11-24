@@ -468,6 +468,10 @@ footer.site .sep{margin:0 10px}
 .nav a.nl:hover,.nav a.nl.cur{transform:scale(1.07)}
 header.site:not(.solid) .nav a.nl:hover,header.site:not(.solid) .nav a.nl.cur{text-shadow:0 2px 12px rgba(0,0,0,.75),0 0 2px rgba(0,0,0,.5)}
 header.site.solid .nav a.nl:hover,header.site.solid .nav a.nl.cur{text-shadow:0 2px 6px rgba(14,24,34,.22)}
+/* cream nav + menu when the bar is not transparent */
+header.site.solid::before,body.menu-open header.site::before{background:rgba(245,241,233,.98)}
+.drawer{background:var(--ivory)}
+header.site.solid .dd-panel{background:var(--ivory)}
 
 </style>
 </head>
