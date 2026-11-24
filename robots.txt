@@ -1,4 +1,3 @@
 User-agent: *
 Disallow: /forsale/
 Disallow: /yadmenachem/
-Disallow: /paratum/
