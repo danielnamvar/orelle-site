@@ -519,6 +519,13 @@ header.site.solid .dd-panel{background:var(--ivory)}
 .banner-article .wrap{flex-direction:column;align-items:flex-start;justify-content:flex-end}
 @media (max-width:959.98px){.short p:last-child{font-size:1.14rem}.short{padding:20px 20px}}
 .art-flag{display:block;font-family:var(--label);font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#9a4a2f;margin:0 0 10px}
+/* comparison tables in articles */
+.prose table.cmp{width:100%;border-collapse:collapse;margin:8px 0 26px;font-size:.95rem;line-height:1.45}
+.cmp th,.cmp td{text-align:left;vertical-align:top;padding:12px 14px 12px 0;border-bottom:1px solid var(--rule)}
+.cmp thead th{font-family:var(--label);font-size:.66rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--brass-deep);border-bottom:1px solid var(--ink)}
+.cmp tbody th{font-family:var(--serif);font-weight:500;font-size:1.05rem;color:var(--ink);white-space:nowrap}
+@media (max-width:959.98px){.prose table.cmp{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch;font-size:.88rem}.cmp th,.cmp td{min-width:130px}.cmp tbody th{white-space:normal}}
+.prose h3{margin-top:26px}
 
 </style>
 </head>
@@ -766,91 +773,7 @@ const FAQ = [
 
 // Articles for the Insights page. Set draft: false and fill in body (HTML) to publish one.
 // Published articles get their own page at /insights/<slug>, are listed by category, and go in the sitemap.
-const INSIGHTS = [
-  { slug: 'revocable-vs-irrevocable-trusts', category: 'Trusts and estate planning', title: 'Revocable vs. irrevocable trusts', summary: 'What each kind of trust does, what it protects, how it is taxed, and when to use one or both.', link: '/asset-protection/trusts-and-fiduciary', date: '', draft: true, body: '' },
-  { slug: 'private-placement-life-insurance', category: 'Tax strategy', title: 'Private placement life insurance: how it works and who it benefits', summary: 'How PPLI shelters investment growth, the rules that govern it, its costs, and who it suits.', link: '/tax-strategy/ppli', date: '', draft: true, body: '' },
-  { slug: 'oil-and-gas-tax-strategy', category: 'Tax strategy', title: 'Oil and gas investments: tax benefits, pros and cons', summary: 'The intangible drilling cost deduction, depletion, and the risks that come with them.', link: '/tax-strategy/oil-and-gas', date: '', draft: true, body: '' },
-  { slug: 'solo-401k-vs-ira', category: 'Retirement accounts', title: 'Solo 401(k) vs. IRA for business owners', summary: 'Contribution limits, loans, creditor protection and which account fits a one-person business.', link: '/tax-strategy', date: '', draft: true, body: '' },
-  { slug: 'roth-vs-traditional', category: 'Retirement accounts', title: 'Roth vs. traditional accounts: pros and cons', summary: 'Paying tax now or later, conversions, and how each passes to heirs.', link: '/tax-strategy', date: '', draft: true, body: '' },
-  { slug: 'equity-stripping', category: 'Asset protection', title: 'Equity stripping: how it works and where it fails', summary: 'Using legitimate debt to reduce exposed equity, and the mistakes that let a court disregard it.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
-  { slug: 'offshore-estate-planning', category: 'Offshore planning', title: 'Offshore estate planning for U.S. families', summary: 'When offshore trusts and entities make sense, how they are taxed and reported, and what they cost.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
-  { slug: 'cook-islands-vs-nevis-vs-gibraltar', category: 'Offshore planning', title: 'Cook Islands vs. Nevis vs. Gibraltar trusts', summary: 'How the leading offshore jurisdictions compare on protection, cost, reputation and reporting.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
-  { slug: 'can-net-operating-losses-be-monetized', category: 'M&A and transactions', topics: 'Corporate taxation · Transactions',
-    title: 'Can net operating losses be monetized?',
-    summary: 'Net operating losses cannot be sold on their own, but transactions can let a profitable business use them, within the limits of Sections 382, 383, 384 and 269.',
-    link: '/ma-advisory', linkLabel: 'Explore tax attribute monetization',
-    date: '2026-11-23', reviewed: '', author: 'Paratum', reviewer: 'Aaron Sokol, JD, MBA', draft: true, preview: true,
-    short: 'Not on their own. A net operating loss (NOL) belongs to the company that incurred it and cannot be sold or assigned separately. Its value is realized through transactions that let profitable income be offset by the loss, most often by bringing a profitable business or income-producing assets into the loss company, or by acquiring the loss company, within the limits of Sections 382, 383, 384 and 269 of the Internal Revenue Code.',
-    perspective: '',
-    sources: [
-      ['26 U.S.C. § 172: Net operating loss deduction', 'https://www.law.cornell.edu/uscode/text/26/172'],
-      ['26 U.S.C. § 381: Carryovers in certain corporate acquisitions', 'https://www.law.cornell.edu/uscode/text/26/381'],
-      ['26 U.S.C. § 382: Limitation on net operating loss carryforwards following ownership change', 'https://www.law.cornell.edu/uscode/text/26/382'],
-      ['26 U.S.C. § 383: Special limitations on certain excess credits', 'https://www.law.cornell.edu/uscode/text/26/383'],
-      ['26 U.S.C. § 384: Limitation on use of preacquisition losses to offset built-in gains', 'https://www.law.cornell.edu/uscode/text/26/384'],
-      ['26 U.S.C. § 269: Acquisitions made to evade or avoid income tax', 'https://www.law.cornell.edu/uscode/text/26/269'],
-      ['26 U.S.C. § 1212: Capital loss carrybacks and carryovers', 'https://www.law.cornell.edu/uscode/text/26/1212']
-    ],
-    body: `
-<h2 id="what-is-an-nol">What is a net operating loss?</h2>
-<p>A net operating loss arises when a business&rsquo;s allowable deductions exceed its income for the year. Under Section 172, losses arising in tax years beginning after 2017 can be carried forward indefinitely but generally cannot be carried back, and in any later year they can offset no more than 80 percent of taxable income. Losses from earlier years follow the older rules: a 20-year carryforward with no 80 percent limit.</p>
-<p>An NOL is therefore a deferred tax asset: a right to pay less tax in the future, but only if the company that holds it earns taxable income to absorb it.</p>
-<h2 id="can-nols-be-sold">Can NOLs be sold on their own?</h2>
-<p>No. Tax attributes belong to the taxpayer that generated them. A corporation cannot sell or assign its NOLs to another company, and an individual&rsquo;s NOLs cannot be transferred at all; any unused amount remaining at death can be used only on the decedent&rsquo;s final return.</p>
-<p>What can change hands is the company that holds the losses, or the income that the losses can shelter. Every NOL transaction is built on one of those two ideas.</p>
-<h2 id="section-382">How does Section 382 limit NOLs after an acquisition?</h2>
-<p>Section 382 applies when a loss corporation undergoes an <em>ownership change</em>: an increase of more than 50 percentage points in the stock owned by one or more 5-percent shareholders over a rolling three-year testing period.</p>
-<p>After an ownership change, the NOLs that existed before the change can offset only a limited amount of income each year. The annual limit equals the value of the loss corporation&rsquo;s stock immediately before the change multiplied by the long-term tax-exempt rate, a rate the IRS publishes monthly. Any part of the limit not used in a year carries forward.</p>
-<p>Two further rules often decide the outcome. If the loss corporation does not continue its historic business, or use a significant portion of its historic assets in a business, for two years after the change, the annual limit generally falls to zero. And a company with built-in gains or losses in its assets at the time of the change may find the limit increased or decreased as those gains and losses are recognized. Section 383 applies parallel limits to tax credits and capital loss carryforwards.</p>
-<h2 id="transaction-structures">What transaction structures may be available?</h2>
-<ul>
-<li><strong>Bringing income to the losses.</strong> A loss company acquires a profitable business or income-producing assets for cash, or for stock representing less than a 50-point ownership shift. Because the loss company&rsquo;s own ownership has not changed, Section 382 does not apply, though Section 384 can restrict the use of its losses against built-in gains of the acquired assets for five years.</li>
-<li><strong>Acquiring the loss company.</strong> A buyer acquires the loss corporation, or merges with it in a tax-free reorganization in which the losses carry over under Section 381. The losses survive, but subject to the Section 382 annual limit.</li>
-<li><strong>Recapitalizing the loss company.</strong> New capital is raised in amounts and forms designed to keep cumulative ownership shifts below the 50-point threshold, so the losses remain unrestricted as the business grows.</li>
-<li><strong>Restructuring in bankruptcy.</strong> Special rules in Section 382(l)(5) and (l)(6) can preserve more of a company&rsquo;s losses when creditors take ownership in a Chapter 11 reorganization.</li>
-</ul>
-<p>Public companies with significant NOLs often adopt tax benefit preservation plans, which discourage purchases that could trigger an inadvertent ownership change.</p>
-<h2 id="example">Illustrative example</h2>
-<p>A corporation holds $50 million of NOL carryforwards. At the 21 percent federal corporate rate, their nominal value is $10.5 million of federal tax.</p>
-<p>If an investor acquires the company when its equity is worth $10 million, and the long-term tax-exempt rate is assumed to be 3.5 percent, Section 382 limits the use of the losses to $350,000 a year, worth at most $73,500 of federal tax a year. At that pace the losses would take more than a century to use, so their economic value to the buyer is a small fraction of their nominal value.</p>
-<p>If the same company instead acquires a profitable business earning $5 million a year, without an ownership change, it may be able to offset up to 80 percent of that income with post-2017 losses, $4 million a year, saving up to $840,000 of federal tax annually, subject to Sections 384 and 269 and to the facts.</p>
-<p class="example-note">Figures are illustrative and simplified. They ignore state tax, timing, the present value of future savings and many rules that may apply.</p>
-<h2 id="limitations">Limitations and risks</h2>
-<ul>
-<li><strong>Section 269.</strong> The IRS can disallow losses where the principal purpose of an acquisition was to secure the tax benefit.</li>
-<li><strong>Business continuity.</strong> Failing to continue the loss company&rsquo;s historic business for two years after an ownership change can eliminate the losses.</li>
-<li><strong>Measurement.</strong> Whether an ownership change has occurred depends on a detailed study of shareholder history, option grants and prior transactions. Errors are common and costly.</li>
-<li><strong>State law.</strong> States follow their own rules. California, for example, suspended NOL deductions for many larger taxpayers for tax years 2024 through 2026.</li>
-<li><strong>Valuation.</strong> The value of an NOL depends on when it can actually be used. Losses usable only slowly, or only if future profits materialize, are worth far less than their face amount.</li>
-</ul>
-<h2 id="capital-losses">What about capital loss carryforwards?</h2>
-<p>A corporation&rsquo;s capital losses can offset only capital gains. Under Section 1212 they carry back three years and forward five, then expire, and after an ownership change they are limited under Section 383 alongside NOLs. Because of the short carryforward, timing a transaction that generates capital gains is often the central question.</p>
-<h2 id="faq">Frequently asked questions</h2>
-<div class="faq-mini">
-<details><summary>Can an individual sell or transfer an NOL?</summary><p>No. An individual&rsquo;s NOL can be used only on that individual&rsquo;s own returns, and any unused amount expires after the final return following death.</p></details>
-<details><summary>Does a merger eliminate a company&rsquo;s NOLs?</summary><p>Not necessarily. In many tax-free reorganizations the losses carry over to the surviving corporation under Section 381, but they become subject to the Section 382 annual limit if an ownership change has occurred.</p></details>
-<details><summary>What is the long-term tax-exempt rate?</summary><p>A rate the IRS publishes each month, based on yields of long-term tax-exempt obligations. The rate in effect for the month of the ownership change is used to calculate the Section 382 limit.</p></details>
-<details><summary>How much is an NOL worth?</summary><p>Its nominal value is the loss multiplied by the tax rate. Its economic value depends on how quickly it can be used under the applicable limits and on the likelihood of future taxable income, and is usually much lower.</p></details>
-</div>
-` },
-  { slug: 'non-grantor-trusts-state-tax', category: 'Tax strategy', title: 'Non-grantor trusts and state income tax planning', summary: 'How a properly sited trust can reduce state tax on investment income, and the residency rules states use to challenge it.', link: '/tax-strategy/income-shifting', date: '', draft: true, body: '' },
-  { slug: 'cost-segregation-bonus-depreciation', category: 'Real estate', title: 'Cost segregation and bonus depreciation', summary: 'How accelerating depreciation creates early deductions, and who can use them against other income.', link: '/tax-strategy/real-estate', date: '', draft: true, body: '' },
-  { slug: '1031-exchanges-and-dsts', category: 'Real estate', title: '1031 exchanges and Delaware statutory trusts', summary: 'The deadlines, the qualified intermediary, and when a DST makes sense as replacement property.', link: '/tax-strategy/real-estate', date: '', draft: true, body: '' },
-  { slug: 'qsbs-section-1202', category: 'M&A and transactions', title: 'Qualified small business stock and Section 1202', summary: 'Excluding gain on the sale of a company&rsquo;s stock, who qualifies, and how trusts can multiply the exclusion.', link: '/ma-advisory', date: '', draft: true, body: '' },
-  { slug: 'tax-planning-before-selling-a-business', category: 'M&A and transactions', title: 'Tax planning before selling a business', summary: 'The steps that must be taken before a buyer is in view, and how much they can change after-tax proceeds.', link: '/ma-advisory', date: '', draft: true, body: '' },
-  { slug: 'asset-sale-vs-stock-sale', category: 'M&A and transactions', title: 'Asset sales vs. stock sales', summary: 'Why buyers and sellers want different structures, and how the gap is bridged.', link: '/ma-advisory', date: '', draft: true, body: '' },
-  { slug: 'section-382-limitations', category: 'M&A and transactions', title: 'Understanding Section 382 limitations', summary: 'How an ownership change caps the use of net operating losses, and how the limit is calculated.', link: '/ma-advisory', date: '', draft: true, body: '' },
-  { slug: 'transferable-tax-credits', category: 'M&A and transactions', title: 'Transferable tax credits', summary: 'Which credits can be sold for cash, how the market prices them, and the buyer&rsquo;s risks.', link: '/ma-advisory', date: '', draft: true, body: '' },
-  { slug: 'domestic-vs-offshore-asset-protection-trusts', category: 'Asset protection', title: 'Domestic vs. offshore asset protection trusts', summary: 'Nevada and South Dakota against the Cook Islands and Nevis: protection, cost, control and reporting.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
-  { slug: 'asset-protection-for-physicians', category: 'Asset protection', title: 'Asset protection for physicians and business owners', summary: 'Where professionals are exposed, what the law already protects, and the structures that cover the rest.', link: '/asset-protection/pre-litigation', date: '', draft: true, body: '' },
-  { slug: 'pre-litigation-planning', category: 'Asset protection', title: 'Why pre-litigation planning has to come first', summary: 'Fraudulent transfer law, timing, and why planning done in calm years holds up.', link: '/asset-protection/pre-litigation', date: '', draft: true, body: '' },
-  { slug: 'choosing-a-trust-jurisdiction', category: 'Trusts and estate planning', title: 'Choosing the right trust jurisdiction', summary: 'How Nevada, South Dakota and Delaware compare on tax, duration, protection and privacy.', link: '/asset-protection/trusts-and-fiduciary', date: '', draft: true, body: '' },
-  { slug: 'directed-trusts', category: 'Trusts and estate planning', title: 'Understanding directed trusts', summary: 'Splitting investment, distribution and administration among trustees and advisers.', link: '/asset-protection/trusts-and-fiduciary', date: '', draft: true, body: '' },
-  { slug: 'dynasty-trusts', category: 'Trusts and estate planning', title: 'Dynasty trusts and multigenerational wealth', summary: 'Holding assets for generations outside each heir&rsquo;s estate, and the states that allow it.', link: '/asset-protection/succession', date: '', draft: true, body: '' },
-  { slug: 'estate-freeze-strategies', category: 'Trusts and estate planning', title: 'Estate freeze strategies: GRATs and sales to grantor trusts', summary: 'Passing future growth to heirs while fixing the value left in the estate.', link: '/asset-protection/succession', date: '', draft: true, body: '' },
-  { slug: 'establishing-a-single-family-office', category: 'Family office', title: 'Establishing a single-family office', summary: 'When a family office makes sense, what it costs, and how it is structured and staffed.', link: '/family-office', date: '', draft: true, body: '' },
-  { slug: 'independent-wealth-management-oversight', category: 'Family office', title: 'Independent oversight of wealth managers', summary: 'Investment policy, manager selection and consolidated reporting from someone who does not manage the money.', link: '/family-office', date: '', draft: true, body: '' }
-];
+const INSIGHTS = []; // articles are built into their own pages
 
 /* ===================================================================== */
 (function () {
