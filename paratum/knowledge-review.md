@@ -1,6 +1,6 @@
 # Paratum Knowledge — draft articles for independent review
 
-Generated 2026-11-24. 7 articles. All are drafts pending professional review; none is published on paratum.com. Staging URLs are on orellestudio.com/paratum and carry a noindex tag.
+Generated 2026-11-24. 9 articles. All are drafts pending professional review; none is published on paratum.com. Staging URLs are on orellestudio.com/paratum and carry a noindex tag.
 
 Review request: check every statement of law, figure, threshold, date and example for technical and legal accuracy; flag overstatements and missing qualifications; propose replacement language.
 
@@ -13,6 +13,8 @@ Review request: check every statement of law, figure, threshold, date and exampl
 5. [Offshore asset protection trusts: Cook Islands, Nevis, Belize, Cayman, Gibraltar and others compared](#5)
 6. [Equity stripping: how it works and where it fails](#6)
 7. [Charitable giving strategies compared: from donor-advised funds to NIMCRUTs](#7)
+8. [Oil and gas investments as a tax strategy: how they work, and their limits](#8)
+9. [Cost segregation and bonus depreciation for real estate and agricultural property](#9)
 
 
 ---
@@ -867,5 +869,223 @@ A donor-advised fund is simpler, cheaper and offers higher deduction limits. A p
 ### How Paratum can help
 
 Paratum coordinates the charities, trust counsel, independent trustees, appraisers and CPAs involved in charitable planning, and fits the gift to a family’s tax, liquidity and succession goals.
+
+*General information, not legal, tax or investment advice.*
+
+---
+
+<a id="8"></a>
+
+## 8. Oil and gas investments as a tax strategy: how they work, and their limits
+
+- **Staging URL:** https://orellestudio.com/paratum/knowledge/oil-and-gas-tax-strategy/
+- **Production URL (planned):** https://paratum.com/knowledge/oil-and-gas-tax-strategy
+- **Category:** Tax strategy (Tax strategy · Energy)
+- **Date:** 2026-11-23 · **Author:** Paratum · **Reviewer:** Aaron Sokol, JD, MBA (review pending)
+- **Summary:** How direct oil and gas investments generate deductions through intangible drilling costs, depreciation and depletion, when those deductions can offset other income, and the limits, recapture and investment risks that come with them.
+
+### The short answer
+
+A direct investment in oil and gas drilling, usually as a working interest, can produce large first-year deductions: qualifying intangible drilling costs (IDCs) may be deducted in the year paid or incurred, equipment can be depreciated (with 100 percent bonus depreciation for qualifying property acquired after January 19, 2025), and production income may be partly sheltered by depletion. A working interest held without limited liability is not a passive activity, so its losses can offset other income, but only within the at-risk, basis and excess business loss limits (\$256,000 single, \$512,000 joint for 2026). Deductions can be recaptured on sale, and the investment itself carries drilling, price, liquidity and operator risk that matter more than the tax benefit.
+
+### How does an oil and gas investment create deductions?
+
+Drilling a well involves three kinds of cost, each treated differently:
+
+- **Intangible drilling and development costs (IDCs).** Labor, fuel, chemicals, mud, site preparation and other costs with no salvage value. Under Section 263(c) and the regulations, an operator or working interest owner may elect to deduct qualifying IDCs in the year paid or incurred rather than capitalize them. For most wells, IDCs are the majority of drilling cost. Independent producers can deduct them in full; integrated oil companies must capitalize 30 percent under Section 291(b). Costs of a dry hole are also deductible.
+- **Tangible equipment.** Casing, wellhead equipment, pumps and tanks are depreciated, generally over seven years. Qualifying property acquired and placed in service after January 19, 2025 is eligible for 100 percent bonus depreciation under Section 168(k), which can accelerate these deductions into the first year.
+- **Lease and acquisition costs.** The cost of acquiring the lease or mineral rights is recovered through depletion as the property produces.
+
+Once a well produces, the owner reports its share of revenue less operating costs. **Depletion** then shelters part of that income. Cost depletion recovers the owner’s basis as reserves are produced. Percentage depletion, available to independent producers and royalty owners, allows a deduction of generally 15 percent of gross income from the property, limited to 100 percent of the property’s net income, to 65 percent of the taxpayer’s overall taxable income, and to the first 1,000 barrels of average daily production (or the gas equivalent). Percentage depletion can continue after basis has been fully recovered.
+
+### Can the deductions offset ordinary income?
+
+Sometimes. Most investment losses are passive and can offset only passive income. Section 469(c)(3) makes an exception for a **working interest** in an oil or gas property held directly or through an entity that does not limit the owner’s liability: such an interest is not treated as passive, so its losses can offset wages, business income and investment income. Drilling programs often admit investors as general partners for this reason, converting them to limited partners after drilling. Once a loss year has been treated as nonpassive, later income from the same interest generally remains nonpassive.
+
+Several limits still apply, in this order:
+
+- **Basis and at-risk.** Losses are deductible only to the extent of the investor’s basis and amount at risk under Section 465, which generally excludes nonrecourse financing.
+- **Excess business loss limit.** Under Section 461(l), now permanent, an individual’s net business losses can offset no more than \$256,000 of other income (\$512,000 for joint filers) in 2026. The excess becomes a net operating loss carryforward, usable in later years subject to the 80 percent limit.
+- **Alternative minimum tax.** Excess IDCs can be a preference item for alternative minimum tax purposes. The preference is limited for independent producers, but the AMT effect should still be modeled for each investor.
+
+A **royalty interest**, by contrast, bears no drilling or operating costs and produces no IDC deduction. Royalty income is generally portfolio income, partly sheltered by percentage depletion.
+
+### Common ways to invest
+
+| Structure                            | What the investor holds                                           | Tax character                                                                 | Typical considerations                                                                          |
+|--------------------------------------|-------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Drilling program (partnership)       | Units in a partnership that acquires working interests and drills | IDC and depreciation pass through; nonpassive while held as a general partner | Sponsor quality, fees, diversification across wells, liability during the general partner phase |
+| Direct non-operated working interest | A fractional working interest under a joint operating agreement   | Same deductions, held directly                                                | Concentration in few wells, cash calls, direct operational liability, insurance                 |
+| Royalty or mineral interest          | A share of production revenue free of costs                       | Portfolio income with depletion; no IDC                                       | Valuation, operator activity on the acreage, commodity prices                                   |
+| Publicly traded energy securities    | Shares or MLP units                                               | No direct IDC deduction; MLP distributions have their own tax rules           | Liquidity, market risk                                                                          |
+
+### Timing and prepayments
+
+IDCs are deductible when paid or incurred under the investor’s method of accounting. Prepaid drilling costs can generally be deducted in the year paid only if drilling begins within 90 days after the close of the year and the payment otherwise satisfies the economic performance rules. This is why many programs close in the final weeks of the year; investors should confirm the program’s drilling schedule rather than rely on its marketing.
+
+### Recapture on sale
+
+Deductions taken now can be recaptured later. Under Section 1254, on a sale of the property, previously deducted IDCs and depletion that reduced basis are generally recaptured as ordinary income to the extent of the gain. Depreciation on equipment is likewise recaptured as ordinary income. The benefit is therefore partly a deferral, which is most valuable when deductions are taken at a high tax rate and income is recognized later at a lower one.
+
+### Illustrative example
+
+A married couple filing jointly, with \$1.2 million of wage and investment income and no other business losses, invests \$500,000 as general partners in a drilling program in 2026. Suppose the program allocates them \$375,000 of deductible IDCs and \$60,000 of bonus depreciation in the first year, all within their basis and amount at risk. Their \$435,000 loss is below the \$512,000 excess business loss limit and could offset other income, saving roughly \$160,000 of federal tax at a 37 percent rate. If the wells produce, later income is partly sheltered by depletion; if they are sold, IDCs and depreciation are recaptured as ordinary income to the extent of the gain.
+
+Illustrative only. Allocations, timing, state tax, the investors’ other income and losses, the program’s actual results and many other rules affect the outcome. A tax benefit does not make an unsound investment sound.
+
+### Investment risks
+
+- **Drilling risk.** Wells can be dry or produce less than projected.
+- **Commodity risk.** Oil and gas prices are volatile and drive both income and value.
+- **Liquidity.** Program interests and working interests are generally illiquid for many years.
+- **Operator and sponsor risk.** Results depend heavily on the operator’s skill, costs and integrity, and on program fees.
+- **Liability.** A working interest owner, or a general partner in a program, can be exposed to operational and environmental liabilities, usually addressed through insurance and the program’s structure.
+- **Regulation.** Program interests are generally securities. They are offered under securities laws, often only to accredited investors, through registered firms.
+
+### Frequently asked questions
+
+**Q: How much of an investment is deductible in the first year?**
+
+It depends on the program’s mix of intangible and tangible costs, when drilling occurs, and the investor’s basis, at-risk amount and other losses. Program projections should be confirmed by the investor’s own tax adviser.
+
+**Q: Do oil and gas losses always offset wages and business income?**
+
+No. Only losses from a qualifying working interest are nonpassive, and they remain subject to the basis, at-risk and excess business loss limits.
+
+**Q: Is a royalty interest a tax shelter?**
+
+Not in the same way. It produces no drilling deductions; its tax advantage is percentage depletion on the income it produces.
+
+**Q: What happens when I sell?**
+
+Previously deducted IDCs, depletion that reduced basis, and depreciation are generally recaptured as ordinary income to the extent of the gain.
+
+### Primary sources
+
+- [26 U.S.C. § 263(c): Intangible drilling and development costs](https://www.law.cornell.edu/uscode/text/26/263)
+- [Treas. Reg. § 1.612-4: Charges to capital and to expense in the case of oil and gas wells](https://www.law.cornell.edu/cfr/text/26/1.612-4)
+- [26 U.S.C. § 291(b): Special rules for integrated oil companies](https://www.law.cornell.edu/uscode/text/26/291)
+- [26 U.S.C. § 469(c)(3): Working interests in oil and gas property](https://www.law.cornell.edu/uscode/text/26/469)
+- [26 U.S.C. § 465: At-risk limitations](https://www.law.cornell.edu/uscode/text/26/465)
+- [26 U.S.C. § 461(l): Excess business losses](https://www.law.cornell.edu/uscode/text/26/461)
+- [26 U.S.C. §§ 611–613A: Depletion and percentage depletion for oil and gas](https://www.law.cornell.edu/uscode/text/26/613A)
+- [26 U.S.C. § 1254: Recapture of intangible drilling costs and depletion](https://www.law.cornell.edu/uscode/text/26/1254)
+- [26 U.S.C. § 57(a)(2): Alternative minimum tax preference for intangible drilling costs](https://www.law.cornell.edu/uscode/text/26/57)
+- [26 U.S.C. § 168(k): Bonus depreciation](https://www.law.cornell.edu/uscode/text/26/168)
+
+### How Paratum can help
+
+Paratum coordinates energy tax counsel, the client’s CPA, independent petroleum engineers and established operators to evaluate whether an energy investment fits a client’s income, liquidity and risk tolerance. Interests in drilling programs are generally securities offered through registered firms.
+
+*General information, not legal, tax or investment advice.*
+
+---
+
+<a id="9"></a>
+
+## 9. Cost segregation and bonus depreciation for real estate and agricultural property
+
+- **Staging URL:** https://orellestudio.com/paratum/knowledge/cost-segregation-and-bonus-depreciation/
+- **Production URL (planned):** https://paratum.com/knowledge/cost-segregation-and-bonus-depreciation
+- **Category:** Real estate (Real estate · Tax strategy · Agriculture)
+- **Date:** 2026-11-23 · **Author:** Paratum · **Reviewer:** Aaron Sokol, JD, MBA (review pending)
+- **Summary:** How a cost segregation study reclassifies parts of a building into shorter-lived property eligible for 100 percent bonus depreciation, who can use the resulting deductions, how farm and ranch property differs, and the recapture, audit and planning considerations.
+
+### The short answer
+
+A cost segregation study is an engineering analysis that separates the components of a building, such as electrical and plumbing serving specific equipment, specialty finishes, fixtures and site improvements, from the structure itself. Those components are depreciated over 5, 7 or 15 years instead of 27.5 years (residential rental) or 39 years (nonresidential), and qualifying property acquired after January 19, 2025 is eligible for 100 percent bonus depreciation, so a large share of a building’s cost can be deducted in its first year. Whether the deduction offsets other income depends on the passive activity rules, real estate professional or short-term rental status, and the excess business loss limit. Accelerated depreciation is recaptured on sale, and it is not always the best structure for a particular owner’s goals.
+
+### What is cost segregation?
+
+Without a study, the entire depreciable cost of a building (its purchase price or construction cost, less land) is generally recovered on a straight-line basis over 27.5 years for residential rental property or 39 years for nonresidential property. Many parts of a building, however, are not “structural” for tax purposes. A cost segregation study, performed by engineers and tax specialists, identifies those components and their costs:
+
+- **5- and 7-year personal property:** carpeting, cabinetry, decorative lighting, dedicated electrical and plumbing for equipment, appliances, security systems and similar items.
+- **15-year land improvements:** parking lots, sidewalks, landscaping, fencing, site drainage and outdoor lighting.
+- **Qualified improvement property:** certain interior improvements to nonresidential buildings made after the building was placed in service, also 15-year property.
+
+Typical studies reclassify roughly 15 to 40 percent of a building’s depreciable basis, depending on the property type. The IRS’s Cost Segregation Audit Techniques Guide describes what it considers a quality study, including engineering-based methodology and documentation tied to actual costs.
+
+### How bonus depreciation multiplies the effect
+
+Property with a recovery period of 20 years or less is eligible for bonus depreciation under Section 168(k). The 2025 tax law made 100 percent bonus depreciation permanent for qualifying property acquired and placed in service after January 19, 2025. Property acquired under a binding contract on or before that date remains subject to the earlier phase-down. As a result, the components identified in a cost segregation study can generally be deducted entirely in the year the property is placed in service, rather than over 5 to 15 years.
+
+Section 179 expensing offers a further, elective route for certain property, subject to annual dollar limits and a taxable income limitation.
+
+### Studies on property already owned
+
+A study need not be done at purchase. An owner who has been depreciating a building over 27.5 or 39 years can commission a study later and claim the missed depreciation in a single year through an automatic change in accounting method (Form 3115), without amending prior returns. Bonus depreciation on those components depends on when the property was acquired.
+
+### Who can use the deductions?
+
+The deduction is only as valuable as the owner’s ability to use it:
+
+- **Passive investors.** Rental real estate is generally a passive activity, so the losses offset only passive income, with the excess carried forward until passive income arises or the property is sold.
+- **Real estate professionals.** A taxpayer who spends more than 750 hours a year and more than half of their working time in real property businesses in which they materially participate, and who materially participates in the rental, can treat rental losses as nonpassive under Section 469(c)(7).
+- **Short-term rentals.** A property with an average guest stay of seven days or less is not a “rental activity” under the passive activity regulations; if the owner materially participates, losses can be nonpassive without real estate professional status.
+- **Excess business loss limit.** Even nonpassive losses can offset no more than \$256,000 of other income (\$512,000 for joint filers) in 2026 under Section 461(l); the excess becomes a net operating loss carryforward.
+- **State conformity.** Some states, including California, do not follow federal bonus depreciation, so state deductions follow a slower schedule.
+
+### Agricultural property
+
+Farms and ranches have their own recovery periods, and much of their value often sits in assets that cost segregation and bonus depreciation can accelerate:
+
+- **Land** is never depreciable, so allocating purchase price between land and improvements is the first and most important step.
+- **Single-purpose agricultural and horticultural structures,** such as purpose-built livestock facilities and greenhouses, are generally 10-year property, while general-purpose farm buildings are generally 20-year property.
+- **Land improvements,** such as drainage tile, irrigation systems, wells, ponds and roads, are often 15-year property; fences are generally 7-year farm property.
+- **Machinery and equipment** used in farming is generally 7-year property, or 5-year for new machinery and equipment placed in service after 2017 (excluding certain items such as grain bins and fences).
+- **Trees and vines** bearing fruits or nuts may be eligible for bonus depreciation in the year planted or grafted, by election.
+- **Qualified production property.** The 2025 law added Section 168(n), an elective 100 percent deduction for certain nonresidential real property used in qualified production activities, which include agricultural production, where construction begins after January 19, 2025 and before 2029 and the property is placed in service before 2031. It is subject to detailed requirements and recapture if the property’s use changes.
+
+Because farm purchases often bundle land, buildings, improvements, equipment and sometimes plantings, a careful allocation and a study can move a meaningful share of the price into short recovery periods. Passive activity, material participation and excess business loss rules apply to farm owners as well, and landowners who lease to an operator are generally passive.
+
+> A note from Paratum
+>
+> Cost segregation paired with bonus depreciation is often a sound move, but it is not automatically the right one. Depending on an owner’s goals and fact pattern, such as a planned sale, a 1031 exchange, an estate plan that relies on a basis adjustment at death, the owner’s passive or real estate professional status, or state tax exposure, alternative structures may fit better. Accelerating deductions into a year when they cannot be used, or ahead of a sale that recaptures them, can produce less benefit than expected. We look at accelerated depreciation alongside those alternatives before recommending it.
+
+### Recapture and other costs
+
+- **Recapture on sale.** Depreciation on components classified as personal property is recaptured as ordinary income under Section 1245 when the property is sold at a gain. Depreciation on the building itself is generally taxed at up to 25 percent as unrecaptured Section 1250 gain. Cost segregation therefore converts some future capital gain into ordinary income, while providing the time value of earlier deductions.
+- **Exchanges and death.** A like-kind exchange can defer recapture if the replacement property contains enough property of the same character; property held until death generally receives a basis adjustment that eliminates the deferred recapture.
+- **Study cost and audit risk.** Studies cost money and must withstand IRS review. Aggressive allocations without engineering support are a common audit issue.
+- **Dispositions.** Replaced components can sometimes be written off when removed, an additional benefit of having them separately identified.
+
+### Illustrative example
+
+An investor acquires a multifamily property in 2026 for \$5 million, of which \$1 million is allocated to land. A study reclassifies \$1 million of the \$4 million building basis into 5-, 7- and 15-year property. With 100 percent bonus depreciation, the investor can deduct about \$1 million for those components in the first year, plus first-year straight-line depreciation on the remaining \$3 million over 27.5 years, instead of roughly \$140,000 in total without a study. Whether that deduction reduces taxes now depends on the investor’s passive or real estate professional status and the excess business loss limit; on a later sale, the \$1 million is generally recaptured as ordinary income to the extent of gain.
+
+Illustrative only, using simplified mid-month conventions and no state tax. Results depend on the property, the study, the owner’s tax position and holding period.
+
+### Frequently asked questions
+
+**Q: Is cost segregation worth it for a small property?**
+
+It depends on the depreciable basis, the share likely to be reclassified, the owner’s ability to use the deductions and the expected holding period. Studies are commonly considered once a building’s depreciable basis reaches several hundred thousand dollars or more.
+
+**Q: Can I do a study on a building I bought years ago?**
+
+Yes. Missed depreciation can be claimed in one year through an automatic accounting method change, without amending prior returns.
+
+**Q: Do the deductions offset my salary?**
+
+Only if the losses are nonpassive, for example through real estate professional status or a qualifying short-term rental with material participation, and then only up to the excess business loss limit.
+
+**Q: Does cost segregation apply to farms?**
+
+Yes. Farm buildings, land improvements, irrigation, fences and equipment have their own recovery periods, and a careful allocation of the purchase price can accelerate a large part of the cost. Land itself is never depreciable.
+
+### Primary sources
+
+- [26 U.S.C. § 168: Accelerated cost recovery system (including § 168(k) bonus depreciation and § 168(n) qualified production property)](https://www.law.cornell.edu/uscode/text/26/168)
+- [IRS: Cost Segregation Audit Techniques Guide](https://www.irs.gov/businesses/cost-segregation-audit-techniques-guide-table-of-contents)
+- [26 U.S.C. § 179: Election to expense certain depreciable business assets](https://www.law.cornell.edu/uscode/text/26/179)
+- [26 U.S.C. § 469: Passive activity losses (including § 469(c)(7) real estate professionals)](https://www.law.cornell.edu/uscode/text/26/469)
+- [Treas. Reg. § 1.469-1T(e)(3): Definition of rental activity (short-term rentals)](https://www.law.cornell.edu/cfr/text/26/1.469-1T)
+- [26 U.S.C. § 461(l): Excess business losses](https://www.law.cornell.edu/uscode/text/26/461)
+- [26 U.S.C. §§ 1245 and 1250: Depreciation recapture](https://www.law.cornell.edu/uscode/text/26/1245)
+- [IRS: Treasury and IRS guidance on the additional first-year depreciation deduction (IR-2026-06)](https://www.irs.gov/newsroom/treasury-irs-issue-guidance-on-the-additional-first-year-depreciation-deduction-amended-as-part-of-the-one-big-beautiful-bill)
+
+### How Paratum can help
+
+Paratum coordinates qualified cost segregation engineers, the client’s CPA and real estate tax counsel, and evaluates accelerated depreciation alongside the other structures available for the client’s property and goals.
 
 *General information, not legal, tax or investment advice.*
