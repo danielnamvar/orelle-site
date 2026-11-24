@@ -121,7 +121,7 @@ main{min-height:60vh}
 @keyframes drift{from{transform:scale(1)}to{transform:scale(1.08)}}
 .hero-content{position:relative;display:flex;flex-direction:column;justify-content:flex-end;min-height:max(var(--vh),520px);padding-top:calc(var(--navh) + 40px);padding-bottom:clamp(64px,11vh,120px)}
 .hero-h1{font-size:clamp(2.6rem,5.4vw,5rem);color:#fff;max-width:17ch;text-wrap:balance;font-weight:500;line-height:1.02}
-.hero-sub{font-size:clamp(1.05rem,1.4vw,1.3rem);max-width:34rem;margin:20px 0 34px;color:rgba(255,255,255,.88)}
+.hero-sub{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.9rem,3.7vw,3.4rem);line-height:1.08;max-width:none;margin:14px 0 34px;color:var(--brass);letter-spacing:.005em}
 .hero-foot{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-top:36px}
 .hero-foot .hero-btns{margin-top:0}
 .scroll-cue{display:flex;flex-direction:row;align-items:center;gap:14px;height:48px;padding:0;color:rgba(255,255,255,.66);transition:color .25s,opacity .45s;flex:none}
@@ -449,6 +449,8 @@ footer.site .sep{margin:0 10px}
 .hero-content{z-index:1}
 .hero-sub+.hero-foot{margin-top:28px}
 
+.about-copy{max-width:820px}
+
 </style>
 </head>
 <body>
@@ -525,10 +527,10 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
   </div>
 
   <div class="band band-light">
-    <div class="wrap narrow">
+    <div class="wrap"><div class="about-copy">
       <p class="statement">Paratum Inc. (&ldquo;Paratum&rdquo;) is a Beverly Hills-based boutique wealth management and advisory firm specialized in designing tax mitigation, asset protection and succession strategies for institutions, high-net-worth families and business owners in complex, high-stakes situations.</p>
       <p class="statement">Since 1994, Paratum&rsquo;s leadership has delivered resilient, future-proof solutions that protect wealth, shield privacy and preserve the legacy of its clients.</p>
-    </div>
+    </div></div>
   </div>
 </section>
 
