@@ -22,6 +22,7 @@
 <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FinancialService","name":"Paratum, Inc.","url":"https://paratum.com/","telephone":"+1-310-780-9936","slogan":"Stewards of your net worth","address":{"@type":"PostalAddress","streetAddress":"369 South Doheny Drive, Suite 411","addressLocality":"Beverly Hills","addressRegion":"CA","postalCode":"90211","addressCountry":"US"},"areaServed":"Worldwide","description":"Boutique management and advisory firm designing tax mitigation and deferral, M&A, asset protection and succession strategies, and coordinating the specialists who implement them."}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://paratum.com/"},{"@type":"ListItem","position":2,"name":"Asset protection","item":"https://paratum.com/asset-protection"},{"@type":"ListItem","position":3,"name":"Trust & Fiduciary Services: Trustees, Directed Trusts & Trust Situs","item":"https://paratum.com/asset-protection/trusts-and-fiduciary"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a directed trust?","acceptedAnswer":{"@type":"Answer","text":"A trust that divides duties among a trustee and named advisers, so that investments, distributions and administration can each be handled by the party best suited to them."}},{"@type":"Question","name":"Why does trust situs matter?","acceptedAnswer":{"@type":"Answer","text":"The state where a trust is based governs its law, its state income tax, how long it can last and how well it protects assets."}},{"@type":"Question","name":"Can an existing trust be changed?","acceptedAnswer":{"@type":"Answer","text":"Often. Depending on its terms and state law, a trust may be modified, moved to a new state or decanted into a new trust with better terms."}},{"@type":"Question","name":"Does Paratum act as trustee?","acceptedAnswer":{"@type":"Answer","text":"No. Trustee services are provided by qualified independent trustees and trust companies. Paratum helps select and oversee them."}}]}</script>
 <style>
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:500;font-display:swap;src:url(/paratum/fonts/cormorant-500.woff2) format('woff2')}
 @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:swap;src:url(/paratum/fonts/cormorant-600.woff2) format('woff2')}
@@ -471,6 +472,12 @@ header.site.solid .nav a.nl:hover,header.site.solid .nav a.nl.cur{text-shadow:0 
 header.site.solid::before,body.menu-open header.site::before{background:rgba(245,241,233,.98)}
 .drawer{background:var(--ivory)}
 header.site.solid .dd-panel{background:var(--ivory)}
+/* People: professional network */
+.network-h{margin-top:80px}
+.network-lede{max-width:640px;margin:22px 0 22px;color:var(--muted,#5b6470)}
+.network{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,1fr);column-gap:48px;max-width:900px}
+.network li{font-family:var(--serif);font-size:1.3rem;padding:14px 0;border-bottom:1px solid var(--rule)}
+@media (max-width:959.98px){.network{grid-template-columns:1fr}.network-h{margin-top:56px}}
 
 </style>
 </head>
@@ -491,7 +498,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
         <div class="dd-panel" role="menu">
           <div class="dd-col"><a class="dd-h" href="/tax-strategy">Tax strategy</a><a href="/tax-strategy/oil-and-gas">Oil and gas</a><a href="/tax-strategy/ppli">PPLI</a><a href="/tax-strategy/income-shifting">Income shifting</a><a href="/tax-strategy/real-estate">Real estate</a></div>
           <div class="dd-col"><a class="dd-h" href="/asset-protection">Asset protection</a><a href="/asset-protection/structures">Protection structures</a><a href="/asset-protection/trusts-and-fiduciary">Trusts and fiduciary</a><a href="/asset-protection/succession">Succession</a><a href="/asset-protection/pre-litigation">Pre-litigation planning</a></div>
-          <div class="dd-col"><a class="dd-h" href="/ma-advisory">M&amp;A advisory</a><a href="/ma-advisory">Sell-side and buy-side</a><a href="/ma-advisory">Tax attribute monetization</a><a class="dd-h dd-gap" href="/family-office">Family office</a><a href="/family-office">Wealth management oversight</a><a href="/family-office">Merchant banking</a></div>
+          <div class="dd-col"><a class="dd-h" href="/ma-advisory">M&amp;A advisory</a><a href="/ma-advisory">Sell-side and buy-side</a><a href="/ma-advisory">Tax attribute monetization</a><a href="/ma-advisory">Restructurings</a><a class="dd-h dd-gap" href="/family-office">Family office</a><a href="/family-office">Wealth management oversight</a><a href="/family-office">Merchant banking</a><a href="/family-office">Family office formation</a></div>
         </div>
       </div>
       <a class="nl" href="/people" data-t="People">People</a>
@@ -659,7 +666,7 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       </div>
       <div class="sol">
         <div class="sol-head"><h2><a href="/family-office">Family office services</a></h2><p>Oversight of the advisers and managers who invest a family&rsquo;s capital, merchant banking for the family office&rsquo;s own transactions, and family office setup.</p></div>
-        <ul class="sol-links"><li><a href="/family-office">Wealth management oversight</a></li><li><a href="/family-office">Merchant banking</a></li><li><a href="/family-office">Family office setup</a></li></ul>
+        <ul class="sol-links"><li><a href="/family-office">Wealth management oversight</a></li><li><a href="/family-office">Merchant banking</a></li><li><a href="/family-office">Family office formation</a></li></ul>
       </div>
     </div>
   </div>
@@ -726,8 +733,8 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>A working interest carries the costs, the deductions and the operational risk. A royalty interest receives a share of production without bearing costs, and offers depletion but not the drilling deduction. Many investors hold both over time.</p>
       <h2>Risks and considerations</h2>
       <p>Wells can be dry or produce less than expected. Commodity prices move. The investment is illiquid, and a working interest can carry liability that is usually addressed through the program's structure. Deductions can be recaptured on sale, and the alternative minimum tax and state rules can change the result. The quality of the operator matters more than the tax benefit.</p>
-      <h2>Who Paratum brings in</h2>
-      <p>Energy tax counsel, the client's CPA, independent petroleum engineers for reserve reviews, and established operators.</p>
+      <h2>Our role</h2>
+      <p>Paratum designs the strategy and coordinates the specialists who carry it out: energy tax counsel, the client's CPA, independent petroleum engineers for reserve reviews, and established operators.</p>
       <div class="faq-mini">
         <h2>Questions</h2>
         <details><summary>How much of the investment is deductible in the first year?</summary><p>It depends on the program's mix of intangible and tangible costs and the timing of drilling. Many programs target a majority of the investment as deductible in the first year; the client's tax counsel confirms the figure for a specific program.</p></details>
@@ -759,8 +766,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       </ol>
       <h2>The rules that matter</h2>
       <p>The policy must meet the tax code's definition of life insurance and its diversification requirements, and the policyholder may not direct the specific investments, a limit known as the investor control doctrine. A policy funded too quickly can become a modified endowment contract, which changes how withdrawals and loans are taxed. These rules are why design and ongoing administration matter.</p>
-      <h2>Who Paratum brings in</h2>
-      <p>Insurance carriers that offer private placement policies, licensed agents, insurance-dedicated fund managers, trust counsel and the client's CPA. Policies are placed only by licensed professionals.</p>
+      <h2>Our role</h2>
+      <p>Paratum designs the strategy and coordinates the specialists who carry it out: insurance carriers that offer private placement policies, licensed agents, insurance-dedicated fund managers, trust counsel and the client's CPA. Policies are placed only by licensed professionals.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>How does PPLI work?</summary><p>Qualifying investments are held inside a privately issued life insurance policy, where they can grow without current income tax. The death benefit generally passes to beneficiaries free of income tax.</p></details>
+        <details><summary>Who is PPLI designed for?</summary><p>Generally, qualified purchasers and accredited investors with substantial investable assets, a long horizon and a portfolio that produces significant annual tax.</p></details>
+        <details><summary>What are the costs?</summary><p>Insurance charges, carrier and premium-tax charges, and the fees of the underlying investment managers. Because policies are institutionally priced, costs are usually well below those of retail policies, but they must be weighed against the expected tax savings.</p></details>
+        <details><summary>What can go wrong?</summary><p>A policy that fails the tax code&rsquo;s definition of life insurance, breaches the diversification rules or the investor control doctrine, or is funded too quickly can lose some or all of its tax benefits. Careful design and administration are essential.</p></details>
+      </div>
       <p class="fine">Paratum is not an insurance agency and does not sell insurance. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -785,8 +799,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Families with high income concentrated in one generation, owners of closely held businesses, and residents of high-tax states with investment income that need not be earned there.</p>
       <h2>Risks and considerations</h2>
       <p>The tax law ignores shifts that lack substance: income from services is taxed to the person who performs them, children's investment income can be taxed at their parents' rates, and states pursue trusts they consider resident. Control, ownership and economics must actually change. Paratum's work is to design a structure that will hold up, with counsel who will defend it.</p>
-      <h2>Who Paratum brings in</h2>
-      <p>Tax and trust counsel, the client's CPA, independent trustees and valuation firms.</p>
+      <h2>Our role</h2>
+      <p>Paratum designs the strategy and coordinates the specialists who carry it out: tax and trust counsel, the client's CPA, independent trustees and valuation firms.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>What is income shifting?</summary><p>Legitimately moving income-producing assets or business interests to family members, trusts or entities that are taxed at lower rates or in lower-tax states.</p></details>
+        <details><summary>Can a trust reduce state income tax?</summary><p>A properly structured non-grantor trust may avoid state income tax on investment income, depending on where the trust is administered, who its trustees and beneficiaries are, and where the income is sourced.</p></details>
+        <details><summary>Can income shifting be combined with estate planning?</summary><p>Yes. Transferring ownership interests can serve both purposes, moving income today and future appreciation out of the estate.</p></details>
+        <details><summary>What limits apply?</summary><p>The assignment-of-income doctrine, economic substance requirements, gift tax, the kiddie tax and state residency rules for trusts all have to be addressed.</p></details>
+      </div>
       <p class="fine">Not tax advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -808,8 +829,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>A DST lets an owner exchange into a fractional interest in institutional property, such as a portfolio of apartments or industrial buildings, without managing it. It suits owners who want to keep deferring but stop operating.</p>
       <h2>Opportunity zone funds</h2>
       <p>Capital gains from any source can be reinvested in a qualified opportunity fund, deferring the original gain, and appreciation on the new investment held long enough can be excluded from tax.</p>
-      <h2>Who Paratum brings in</h2>
-      <p>Cost segregation engineers, qualified intermediaries for exchanges, DST and fund sponsors, real estate tax counsel and lenders.</p>
+      <h2>Our role</h2>
+      <p>Paratum designs the strategy and coordinates the specialists who carry it out: cost segregation engineers, qualified intermediaries for exchanges, DST and fund sponsors, real estate tax counsel and lenders.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>What is cost segregation?</summary><p>An engineering study that identifies building components eligible for shorter depreciation periods, accelerating deductions into the early years of ownership.</p></details>
+        <details><summary>How does a 1031 exchange work?</summary><p>Investment or business real estate is sold and the proceeds reinvested in like-kind property through a qualified intermediary, within 45 days to identify and 180 days to close, deferring the gain.</p></details>
+        <details><summary>What is a Delaware statutory trust?</summary><p>A trust that holds institutional real estate and sells fractional interests that can qualify as replacement property in a 1031 exchange, letting an owner keep deferring without managing property.</p></details>
+        <details><summary>Can real estate losses offset other income?</summary><p>Only within the passive activity rules. Real estate professionals who materially participate, and certain short-term rental owners, may use losses against other income; others generally carry them forward.</p></details>
+      </div>
       <p class="fine">Not tax advice or an offer of any security. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -832,12 +860,14 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Paratum identifies these attributes, values them, and finds a buyer, merger partner or structure that can use them. Section 382 caps how much of a company's NOLs can be used each year after a change in ownership, so the value of an attribute depends heavily on how the transaction is built. Paratum also advises on selling eligible clean-energy credits for cash under the transferability rules.</p>
       <h2>Restructurings and recapitalizations</h2>
       <p>A restructuring or bankruptcy can erase tax attributes or preserve them. Paratum works with restructuring counsel so that losses and credits survive a reorganization where possible, and become part of the value recovered.</p>
-      <h2>Who Paratum brings in</h2>
-      <p>M&amp;A and tax counsel, accountants for quality-of-earnings and tax due diligence, valuation firms, lenders, and registered investment banks where a transaction requires one.</p>
+      <h2>Our role</h2>
+      <p>Paratum designs the strategy and coordinates the specialists who carry it out: M&amp;A and tax counsel, accountants for quality-of-earnings and tax due diligence, valuation firms, lenders, and registered investment banks where a transaction requires one.</p>
       <div class="faq-mini">
         <h2>Questions</h2>
         <details><summary>Can a company's NOLs be sold on their own?</summary><p>Not directly. Losses belong to the company, so they are realized through a merger, acquisition or restructuring that lets a profitable business use them, within the Section 382 limits.</p></details>
         <details><summary>When should a business owner start planning a sale?</summary><p>Ideally one to two years ahead. Many of the most effective steps, such as gifts to trusts or changes in entity, must be taken before a buyer is in view.</p></details>
+        <details><summary>Can tax credits be sold?</summary><p>Certain federal clean-energy credits, and some state credits, can be transferred to an unrelated buyer for cash under the applicable rules.</p></details>
+        <details><summary>Does Paratum execute securities transactions?</summary><p>No. Securities transactions and regulated investment banking work are carried out by registered firms.</p></details>
       </div>
       <p class="fine">Paratum is not a broker-dealer or investment bank and does not offer securities. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
@@ -890,8 +920,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Equity stripping places legitimate, documented debt against an asset, typically real estate or a business, so that little equity remains exposed. The borrowed funds are invested elsewhere, often in protected structures. It must involve real lenders or real obligations on commercial terms; arrangements that exist only on paper can be disregarded.</p>
       <h2>Privacy</h2>
       <p>Ownership structures that keep a family's name off public records do not by themselves protect assets, but they reduce the chance of being targeted in the first place.</p>
-      <h2>Who Paratum brings in</h2>
-      <p>Domestic and offshore asset protection counsel, independent trustees and trust companies, lenders, and the client's CPA for the reporting that follows.</p>
+      <h2>Our role</h2>
+      <p>Paratum designs the strategy and coordinates the specialists who carry it out: domestic and offshore asset protection counsel, independent trustees and trust companies, lenders, and the client's CPA for the reporting that follows.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>What is a domestic asset protection trust?</summary><p>An irrevocable trust, available in states such as Nevada, South Dakota and Delaware, of which the creator can remain a discretionary beneficiary while assets are protected from future creditors after a waiting period.</p></details>
+        <details><summary>What is an offshore asset protection trust?</summary><p>A trust governed by the law of a jurisdiction such as the Cook Islands or Nevis, which does not enforce U.S. judgments and makes it difficult and expensive for a creditor to reach the assets. U.S. tax and reporting obligations still apply.</p></details>
+        <details><summary>Is asset protection legal?</summary><p>Yes, when it is done before a claim exists or is foreseeable, for legitimate reasons, and with full tax reporting. Transfers made to defeat a known creditor can be reversed.</p></details>
+        <details><summary>Can a structure guarantee protection?</summary><p>No. Effectiveness depends on timing, jurisdiction, how the structure is administered and the law that applies. Layering several structures makes recovery harder and more costly for a claimant.</p></details>
+      </div>
       <p class="fine">Not legal advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -915,6 +952,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>For larger families, a private trust company owned by the family can act as trustee for all of its trusts, keeping decisions in family hands under a formal governance structure.</p>
       <h2>Ongoing oversight</h2>
       <p>Paratum reviews trustee performance, fees, investment results and compliance with the trust's terms, and coordinates changes when the family's circumstances or the law move.</p>
+      <h2>Our role</h2>
+      <p>Paratum coordinates trust counsel, independent trustees, trust companies and investment professionals so the structure stays aligned with the family&rsquo;s objectives. Trustee services are provided by qualified independent fiduciaries.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>What is a directed trust?</summary><p>A trust that divides duties among a trustee and named advisers, so that investments, distributions and administration can each be handled by the party best suited to them.</p></details>
+        <details><summary>Why does trust situs matter?</summary><p>The state where a trust is based governs its law, its state income tax, how long it can last and how well it protects assets.</p></details>
+        <details><summary>Can an existing trust be changed?</summary><p>Often. Depending on its terms and state law, a trust may be modified, moved to a new state or decanted into a new trust with better terms.</p></details>
+        <details><summary>Does Paratum act as trustee?</summary><p>No. Trustee services are provided by qualified independent trustees and trust companies. Paratum helps select and oversee them.</p></details>
+      </div>
       <p class="fine">Paratum is not a trustee or trust company. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -938,6 +984,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Passing an operating business means deciding who will own it, who will run it, and how those who do not take part are treated fairly. Paratum coordinates the legal, tax and valuation work and the agreements that make the transition stable.</p>
       <h2>Family governance</h2>
       <p>Family constitutions, councils and education for heirs give a family a way to make decisions together and prepare the next generation for responsibility, which often matters more than any document.</p>
+      <h2>Our role</h2>
+      <p>Paratum coordinates estate counsel, tax professionals, valuation specialists and independent fiduciaries into one succession plan that reflects both the family&rsquo;s finances and its wishes.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>What is a dynasty trust?</summary><p>A trust designed to hold assets for several generations outside each beneficiary&rsquo;s taxable estate, often with protection from creditors and divorce.</p></details>
+        <details><summary>What is an estate freeze?</summary><p>A strategy that fixes the value of an asset in the senior generation&rsquo;s estate and passes future appreciation to heirs, commonly through a GRAT or a sale to a grantor trust.</p></details>
+        <details><summary>When should business succession planning begin?</summary><p>Years before a transition. Early planning leaves room to address tax, governance and management continuity on the family&rsquo;s own timetable.</p></details>
+        <details><summary>Does succession planning include family governance?</summary><p>It should. Governance agreements, family councils and education for heirs set out how decisions are made and prepare the next generation.</p></details>
+      </div>
       <p class="fine">Not legal or tax advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -962,6 +1017,15 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       </ol>
       <h2>The legal limits</h2>
       <p>Moving assets after a claim arises, or when one is foreseeable, can be reversed as a fraudulent transfer and can expose the people involved to liability. Paratum's work is preventive and is done with counsel who will stand behind it. If a dispute is already underway, the right first call is to litigation counsel.</p>
+      <h2>Our role</h2>
+      <p>Paratum&rsquo;s role is preventive strategy and coordination. Independent counsel evaluates the exposure and puts the structures in place; litigation, where it arises, is handled by litigation counsel.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>Who should consider pre-litigation planning?</summary><p>Physicians, executives, business owners, real estate investors and anyone whose wealth or work creates meaningful liability exposure.</p></details>
+        <details><summary>When should it begin?</summary><p>Before any claim arises or is reasonably foreseeable. Planning done early is more flexible and far more durable.</p></details>
+        <details><summary>Can assets be moved after a lawsuit is filed?</summary><p>Transfers made to hinder, delay or defraud a creditor can be reversed and can create additional liability. An existing dispute should be taken to litigation counsel.</p></details>
+        <details><summary>Does Paratum provide litigation defense?</summary><p>No. Paratum&rsquo;s role is preventive planning and coordination. Legal representation is provided by independent licensed attorneys.</p></details>
+      </div>
       <p class="fine">Not legal advice. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -979,8 +1043,16 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
       <p>Paratum helps families set an investment policy, select and monitor the registered investment advisers and managers who invest their capital, and see the whole of it in consolidated reporting. It does not manage money itself, which lets it judge the managers who do.</p>
       <h2>Merchant banking</h2>
       <p>Family offices increasingly invest directly in real estate, operating companies and energy. Paratum helps source and structure those transactions, arranges debt and equity alongside the family's own capital with lenders and registered firms, and brings in co-investors where a deal is larger than one family should take alone.</p>
-      <h2>Family office setup</h2>
+      <h2>Family office formation</h2>
       <p>For families forming a single-family office, Paratum coordinates the entity structure, governance, staffing and the outside providers it relies on.</p>
+      <h2>Our role</h2>
+      <p>Paratum brings together the professionals and institutions a family relies on and keeps a single view across all of them. Investment management is performed by registered investment advisers and qualified managers; securities transactions by registered firms.</p>
+      <div class="faq-mini">
+        <h2>Questions</h2>
+        <details><summary>Does Paratum manage investments?</summary><p>No. Investment management is performed by independent registered investment advisers and managers. Paratum helps select and oversee them.</p></details>
+        <details><summary>Can Paratum work with an existing family office?</summary><p>Yes. Paratum provides structuring, transaction and coordination support alongside a family office&rsquo;s existing staff and advisers.</p></details>
+        <details><summary>Can Paratum help form a single-family office?</summary><p>Yes. Paratum coordinates the legal, organizational and operational work of forming one, including governance and the choice of outside providers.</p></details>
+      </div>
       <p class="fine">Paratum is not a registered investment adviser or broker-dealer. See <a href="/legal" data-sec="disclosures">Disclosures</a>.</p>
     </div>
   </div>
@@ -1012,6 +1084,13 @@ if((p==='/'||!live)&&!(location.hash&&location.hash.length>1)&&!matchMedia('(pre
     <div class="wrap">
       <h2 class="sec-h">Team</h2>
       <div class="team-grid" id="people"></div>
+    </div>
+    <div class="wrap">
+      <h2 class="sec-h network-h">Professional network</h2>
+      <p class="network-lede">Each engagement draws on an established network of independent specialists, selected for the needs of the client.</p>
+      <ul class="network">
+        <li>Tax attorneys and accountants</li><li>Trust and estate counsel</li><li>Independent trustees and fiduciaries</li><li>Investment advisers and asset managers</li><li>Private banks and lenders</li><li>Insurance carriers and licensed agents</li><li>Valuation and transaction specialists</li><li>Registered investment banks</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -1278,7 +1357,24 @@ const INSIGHTS = [
   { slug: 'equity-stripping', category: 'Asset protection', title: 'Equity stripping: how it works and where it fails', summary: 'Using legitimate debt to reduce exposed equity, and the mistakes that let a court disregard it.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
   { slug: 'offshore-estate-planning', category: 'Offshore planning', title: 'Offshore estate planning for U.S. families', summary: 'When offshore trusts and entities make sense, how they are taxed and reported, and what they cost.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
   { slug: 'cook-islands-vs-nevis-vs-gibraltar', category: 'Offshore planning', title: 'Cook Islands vs. Nevis vs. Gibraltar trusts', summary: 'How the leading offshore jurisdictions compare on protection, cost, reputation and reporting.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
-  { slug: 'monetizing-nols', category: 'M&A and transactions', title: 'Monetizing NOLs: turning tax losses into value', summary: 'How net operating losses are realized through transactions, and how Section 382 limits them.', link: '/ma-advisory', date: '', draft: true, body: '' }
+  { slug: 'monetizing-nols', category: 'M&A and transactions', title: 'Monetizing NOLs: turning tax losses into value', summary: 'How net operating losses are realized through transactions, and how Section 382 limits them.', link: '/ma-advisory', date: '', draft: true, body: '' },
+  { slug: 'non-grantor-trusts-state-tax', category: 'Tax strategy', title: 'Non-grantor trusts and state income tax planning', summary: 'How a properly sited trust can reduce state tax on investment income, and the residency rules states use to challenge it.', link: '/tax-strategy/income-shifting', date: '', draft: true, body: '' },
+  { slug: 'cost-segregation-bonus-depreciation', category: 'Real estate', title: 'Cost segregation and bonus depreciation', summary: 'How accelerating depreciation creates early deductions, and who can use them against other income.', link: '/tax-strategy/real-estate', date: '', draft: true, body: '' },
+  { slug: '1031-exchanges-and-dsts', category: 'Real estate', title: '1031 exchanges and Delaware statutory trusts', summary: 'The deadlines, the qualified intermediary, and when a DST makes sense as replacement property.', link: '/tax-strategy/real-estate', date: '', draft: true, body: '' },
+  { slug: 'qsbs-section-1202', category: 'M&A and transactions', title: 'Qualified small business stock and Section 1202', summary: 'Excluding gain on the sale of a company&rsquo;s stock, who qualifies, and how trusts can multiply the exclusion.', link: '/ma-advisory', date: '', draft: true, body: '' },
+  { slug: 'tax-planning-before-selling-a-business', category: 'M&A and transactions', title: 'Tax planning before selling a business', summary: 'The steps that must be taken before a buyer is in view, and how much they can change after-tax proceeds.', link: '/ma-advisory', date: '', draft: true, body: '' },
+  { slug: 'asset-sale-vs-stock-sale', category: 'M&A and transactions', title: 'Asset sales vs. stock sales', summary: 'Why buyers and sellers want different structures, and how the gap is bridged.', link: '/ma-advisory', date: '', draft: true, body: '' },
+  { slug: 'section-382-limitations', category: 'M&A and transactions', title: 'Understanding Section 382 limitations', summary: 'How an ownership change caps the use of net operating losses, and how the limit is calculated.', link: '/ma-advisory', date: '', draft: true, body: '' },
+  { slug: 'transferable-tax-credits', category: 'M&A and transactions', title: 'Transferable tax credits', summary: 'Which credits can be sold for cash, how the market prices them, and the buyer&rsquo;s risks.', link: '/ma-advisory', date: '', draft: true, body: '' },
+  { slug: 'domestic-vs-offshore-asset-protection-trusts', category: 'Asset protection', title: 'Domestic vs. offshore asset protection trusts', summary: 'Nevada and South Dakota against the Cook Islands and Nevis: protection, cost, control and reporting.', link: '/asset-protection/structures', date: '', draft: true, body: '' },
+  { slug: 'asset-protection-for-physicians', category: 'Asset protection', title: 'Asset protection for physicians and business owners', summary: 'Where professionals are exposed, what the law already protects, and the structures that cover the rest.', link: '/asset-protection/pre-litigation', date: '', draft: true, body: '' },
+  { slug: 'pre-litigation-planning', category: 'Asset protection', title: 'Why pre-litigation planning has to come first', summary: 'Fraudulent transfer law, timing, and why planning done in calm years holds up.', link: '/asset-protection/pre-litigation', date: '', draft: true, body: '' },
+  { slug: 'choosing-a-trust-jurisdiction', category: 'Trusts and estate planning', title: 'Choosing the right trust jurisdiction', summary: 'How Nevada, South Dakota and Delaware compare on tax, duration, protection and privacy.', link: '/asset-protection/trusts-and-fiduciary', date: '', draft: true, body: '' },
+  { slug: 'directed-trusts', category: 'Trusts and estate planning', title: 'Understanding directed trusts', summary: 'Splitting investment, distribution and administration among trustees and advisers.', link: '/asset-protection/trusts-and-fiduciary', date: '', draft: true, body: '' },
+  { slug: 'dynasty-trusts', category: 'Trusts and estate planning', title: 'Dynasty trusts and multigenerational wealth', summary: 'Holding assets for generations outside each heir&rsquo;s estate, and the states that allow it.', link: '/asset-protection/succession', date: '', draft: true, body: '' },
+  { slug: 'estate-freeze-strategies', category: 'Trusts and estate planning', title: 'Estate freeze strategies: GRATs and sales to grantor trusts', summary: 'Passing future growth to heirs while fixing the value left in the estate.', link: '/asset-protection/succession', date: '', draft: true, body: '' },
+  { slug: 'establishing-a-single-family-office', category: 'Family office', title: 'Establishing a single-family office', summary: 'When a family office makes sense, what it costs, and how it is structured and staffed.', link: '/family-office', date: '', draft: true, body: '' },
+  { slug: 'independent-wealth-management-oversight', category: 'Family office', title: 'Independent oversight of wealth managers', summary: 'Investment policy, manager selection and consolidated reporting from someone who does not manage the money.', link: '/family-office', date: '', draft: true, body: '' }
 ];
 
 /* ===================================================================== */
